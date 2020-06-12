@@ -1,0 +1,63 @@
+/* dashboard card */
+.card-view {
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  max-width: 880px;
+  border: 1px solid #dfe3e8;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column; }
+  .card-view__header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #dfe3e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 auto;
+    box-sizing: border-box; }
+    .card-view__header span {
+      max-width: 400px; }
+      .card-view__header span.failed {
+        color: red; }
+      .card-view__header span.success {
+        color: green; }
+    .card-view__header--border-fluid {
+      border-bottom: 1px solid #dddddd;
+      margin: 0;
+      padding: 10px; }
+    .card-view__header--no-border {
+      border-bottom: none; }
+    .card-view__header__title {
+      color: #455565;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0;
+      display: inline-block; }
+      .card-view__header__title a {
+        color: #455565; }
+    .card-view__header__left {
+      float: left; }
+    .card-view__header__right__item {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: middle; }
+    .card-view__header .dropdown .btn-primary {
+      min-width: auto; }
+  .card-view__body {
+    flex: 1 1 0; }
+    .card-view__body.scrollable {
+      overflow-y: auto; }
+
+.empty-card-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%; }
+  .empty-card-data__info {
+    font-weight: 500;
+    margin-bottom: 4px; }
+  .empty-card-data a {
+    color: #009cf6;
+    font-weight: 500; }

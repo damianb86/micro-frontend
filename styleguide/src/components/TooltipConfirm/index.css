@@ -1,0 +1,41 @@
+.tooltip-confirm {
+  position: relative;
+  text-align: left; }
+  .tooltip-confirm__content {
+    background-color: #FFFFFF;
+    position: absolute;
+    border: 1px solid #CAD1D8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    margin-top: -104px;
+    padding: 10px;
+    width: 200px; }
+    .tooltip-confirm__content p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 20px;
+      color: #455565; }
+    .tooltip-confirm__content__options {
+      margin-top: 12px;
+      text-align: right; }
+      .tooltip-confirm__content__options a {
+        color: #455565;
+        display: inline-block;
+        border-bottom: 1px solid transparent; }
+      .tooltip-confirm__content__options__yes {
+        margin-right: 10px; }
+      .tooltip-confirm__content__options__yes:hover {
+        color: #009CF6;
+        border-bottom: 1px solid #009CF6; }
+      .tooltip-confirm__content__options__no:hover {
+        color: #FB657E;
+        border-bottom: 1px solid #FB657E; }
+    .tooltip-confirm__content svg {
+      width: 20px;
+      height: 10px;
+      transform: rotate(180deg);
+      position: absolute;
+      fill: white;
+      stroke: #CAD1D8;
+      margin-top: 10px; }

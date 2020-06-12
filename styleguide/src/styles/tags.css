@@ -1,0 +1,50 @@
+.tags-wrapper {
+  font-size: 11px;
+  margin-left: -2px;
+  color: #99AABB;
+  position: relative; }
+  .tags-wrapper__tag {
+    background-color: #ffffff;
+    border: 1px solid #99AABB;
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0 0 5px 5px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    position: relative; }
+    .tags-wrapper__tag:hover {
+      color: #455565;
+      border-color: #455565;
+      cursor: pointer; }
+      .tags-wrapper__tag:hover .tags-wrapper__tag__delete {
+        display: inline-block;
+        color: #455565; }
+    .tags-wrapper__tag + .icon-action-wrapper {
+      margin-left: 10px; }
+    .tags-wrapper__tag__delete {
+      color: #99AABB;
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #ffffff;
+      display: none;
+      padding: 0 4px; }
+  .tags-wrapper--people-grid-view {
+    height: 23px;
+    overflow: hidden;
+    white-space: nowrap; }
+  .tags-wrapper--panel {
+    margin-bottom: 15px; }
+
+.add-tag-link {
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-size: 13px;
+  color: #99aaba;
+  display: inline-block;
+  padding-top: 2px; }
+  .add-tag-link:hover {
+    color: #009cf6; }
+  .add-tag-link.active {
+    color: #009cf6; }

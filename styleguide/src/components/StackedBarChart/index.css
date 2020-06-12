@@ -1,0 +1,54 @@
+.card--stacked-bar-chart {
+  width: 100%;
+  margin-top: 10px;
+  max-width: none;
+  min-height: 452px;
+  margin-bottom: 0; }
+  .card--stacked-bar-chart .c3-ygrid {
+    stroke-dasharray: 0;
+    stroke: #DFE3E6; }
+  .card--stacked-bar-chart .c3-ygrid-lines .c3-ygrid-line {
+    stroke-dasharray: 0;
+    stroke: #BEC9D0;
+    stroke-width: 3; }
+  .card--stacked-bar-chart .c3-defocused {
+    opacity: 0.3; }
+
+.card__no-stats-data-present-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center; }
+
+.card .card-view__header {
+  padding: 26px 20px 10px 20px; }
+  .card .card-view__header__right__item {
+    margin-right: 20px; }
+
+.c3-stacked-bar-chart {
+  max-height: unset !important; }
+  .c3-stacked-bar-chart clipPath[id$="clip-xaxis"] {
+    display: none; }
+  .c3-stacked-bar-chart .domain {
+    display: none; }
+  .c3-stacked-bar-chart .tick text {
+    fill: #455565;
+    font-size: 12px; }
+  .c3-stacked-bar-chart .tick line {
+    display: none; }
+
+.stacked-bar {
+  padding: 7px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .stacked-bar__chart {
+    max-width: unset;
+    margin-left: -12px;
+    flex: 1 1 auto;
+    overflow-x: auto !important; }
+  .stacked-bar__right {
+    flex: 0 0 auto;
+    margin-left: 10px;
+    max-height: 400px;
+    overflow-y: auto; }

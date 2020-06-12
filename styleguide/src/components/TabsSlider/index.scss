@@ -1,0 +1,64 @@
+@import "../../../styles/_variables.scss";
+
+.tabs-slider {
+  overflow: auto;
+  max-width: 100vw;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  ul {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    transition: all 0.2s linear;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:first-child .tabs-slider__item__link {
+      margin-left: 0;
+    }
+
+    &__link {
+      display: block;
+      padding: 8px 14px;
+      cursor: pointer;
+      color: $dark-steel-grey;
+      margin: 0;
+      border-bottom: 2px solid transparent;
+      outline: none;
+
+      &:hover,
+      &:focus,
+      &--active {
+        color: #455565;
+        text-decoration: none;
+        font-weight: 500;
+        border-bottom: 2px solid #455565;
+      }
+
+      &::after {
+        display: block;
+        content: attr(title);
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        font-weight: 500;
+      }
+    }
+
+    &__custom {
+      text-align: center;
+    }
+  }
+}

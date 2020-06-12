@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+.select-checkbox-dropdown {
+  &__select {
+    padding: 11px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-height: 195px;
+    overflow-y: auto;
+
+    .checkbox-label {
+      margin: 10px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .select-checkbox-dropdown {
+    &__mobile {
+      &__select {
+        padding: 0 6px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    
+        .checkbox-label {
+          margin: 10px;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

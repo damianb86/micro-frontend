@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/16/Subtract</title>
+    <defs>
+      <rect id="icon-subtract-path-1" x="2" y="7" width="12" height="2" rx="1"></rect>
+    </defs>
+    <g id="Icon/16/Subtract" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="icon-subtract-mask-2" fill="white">
+            <use xlink:href="#icon-subtract-path-1"></use>
+        </mask>
+        <use id="icon-16-subtract" fill="#455565" xlink:href="#icon-subtract-path-1"></use>
+        <g id="Color/Slate-1" mask="url(#icon-subtract-mask-2)" fill="#455565">
+            <rect x="0" y="0" width="16" height="16"></rect>
+        </g>
+    </g>
+</svg>

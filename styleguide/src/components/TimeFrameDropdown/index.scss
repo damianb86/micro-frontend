@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+
+@media (max-width: $breakpoint-mobile) {
+  .time-frame-dropdown {
+    &__mobile {
+      .time-frame-selector {
+        width: 100%;
+
+        .DateRangePicker, .DateRangePickerInput {
+          width: 100%;
+        }
+
+        .DateInput {
+          width: calc(50% - 18px) !important;
+
+          &_input {
+            width: 100%;
+          }
+        }
+
+        &__presets {
+          padding: 0 7px 4px 7px;
+    
+          .dropdown-button {
+            &__button {
+              max-width: none;
+            }
+          }
+    
+          &__label {
+            font-size: 12px;
+          }
+        }
+    
+        &__date-picker-wrapper {
+          padding: 14px 7px;
+    
+          &__label {
+            font-size: 12px;
+
+            &__start {
+              width: calc(50% + 22px);
+            }
+          }
+    
+          .DateRangePickerInput_arrow {
+            svg {
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

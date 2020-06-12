@@ -1,0 +1,104 @@
+@import '../../styles/variables';
+
+.text-editor {
+  position: relative;
+  font-size: 14px;
+
+  &__template {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    height: 30px;
+    padding: 0px 10px;
+    margin: 0 6px 5px 0;
+  }
+
+  &__attachment {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+
+    &__link {
+      display: flex;
+      color: #778da4;
+      align-items: center;
+
+      &__icon {
+        margin-left: 5px;
+      }
+    }
+
+    &__dropdown {
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #CAD1D8;
+      right: 0;
+      top: calc(100% + 10px);
+      border-radius: 4px;
+      width: 240px;
+
+      &__list {
+        padding: 25px 20px;
+        box-sizing: border-box;
+        max-height: 200px;
+        overflow-y: auto;
+
+        &__item {
+          align-items: center;
+          display: flex;
+          margin-top: 5px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &__name {
+            font-weight: 500;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-right: 10px;
+            flex: 1 1 auto;
+            width: calc(100% - 30px);
+          }
+
+          &__close use {
+            fill: #778da4;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &__add {
+        padding: 20px;
+        display: block;
+        text-align: center;
+        border-top: 1px solid #dfe3e8;
+        color: #009CF6;
+        font-weight: 500;
+
+        &:hover {
+          color: #009CF6;
+        }
+      }
+    }
+  }
+
+  .editor-with-template {
+    .cke_top {
+      padding: 6px 2px 2px 110px;
+    }
+  }
+
+  .cke_top {
+    background: #f5f5f6 !important;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    .editor-with-template {
+      .cke_top {
+        padding: 50px 2px 2px 10px;
+      }
+    }
+  }
+}

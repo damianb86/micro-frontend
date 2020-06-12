@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <circle id="icon-16-dot-filled-a" cx="8" cy="8" r="6"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#455565" xlink:href="#icon-16-dot-filled-a"/>
+  </g>
+</svg>

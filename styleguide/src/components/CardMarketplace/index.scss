@@ -1,0 +1,126 @@
+@import '../../styles/variables';
+
+.card-action {
+  background-color: $white;
+  border-radius:  4px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04);
+  border: 1px solid $grey-1;
+  box-sizing: border-box;
+  height: 231px;
+  width: 202px;
+  padding: 5px;
+
+  &__default {
+    display: flex;
+    flex-direction: column;
+    height: 218px;
+  }
+
+  &__image {
+    cursor: pointer;
+    margin: 26px auto 13px auto;
+    width: 117px;
+
+    img {
+      max-width: 100%;
+      max-height: 104px;
+    }
+  }
+
+  &__status {
+    margin: 0 25px;
+
+    &__text, &__date {
+      span {
+        font-size: 12px;
+        line-height: 16px;
+        font-family: "PingFang SC";
+      }
+
+      span:first-child {
+        display: inline-block;
+        width: 80px;
+        color: $slate-2;
+        font-family: Roboto;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex: 1;
+    text-align: center;
+
+    a {
+      align-self: flex-end;
+      margin: 0 auto 8px auto;
+    }
+
+    &.delete {
+      a {
+        color: $action-red-1 !important;
+      }
+    }
+  }
+
+  &.disable {
+    a {
+      color: $action-blue-1;
+      @include font-weight(medium);
+    }
+  }
+
+  &.waiting {
+    a {
+      cursor: default;
+    }
+  }
+
+  &.disable, &.waiting {
+    img {
+      opacity: 0.5;
+    }
+  }
+
+  &__hover {
+    display: flex;
+    flex-direction: column;
+    height: 218px;
+
+    h3 {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      margin: 5px;
+    }
+
+    p {
+      color: #5B6B7D;
+      font-family: "PingFang SC";
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 7px;
+      padding: 0 7px;
+      max-height: 145px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    div {
+      flex: 1;
+      display: flex;
+      align-self: flex-end;
+
+      a {
+        display: block;
+        text-decoration: none;
+        text-align: right;
+        margin-right: 20px;
+        align-self: flex-end;
+        color: $action-blue-1;
+        @include font-weight(medium);
+      }
+    }
+  }
+}

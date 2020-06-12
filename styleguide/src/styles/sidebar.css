@@ -1,0 +1,180 @@
+/* Sidebar */
+.site-brand {
+  background: url(../assets/images/icon-chevron-down-455565.svg) no-repeat 196px 32px/16px 16px, url(../assets/images/logo-clockwork-logomark.svg) no-repeat 20px 24px/155px;
+  display: block;
+  height: 31px;
+  padding: 24px 40px;
+  font-size: 0; }
+  .site-brand.active, .site-brand:hover {
+    background-image: url(../assets/images/icon-chevron-down-fff.svg), url(../assets/images/logo-clockwork-logomark-white.svg);
+    background-color: rgba(28, 34, 40, 0.5); }
+
+.sidebar {
+  background-color: #455565;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+  flex: 0 0 auto;
+  font-weight: 600;
+  height: 100vh;
+  transition: all 0.2s linear;
+  white-space: nowrap;
+  width: 240px;
+  position: relative;
+  flex-direction: column;
+  display: flex; }
+  .sidebar.collapsed {
+    width: 75px; }
+    .sidebar.collapsed .site-brand {
+      background: url(../assets/images/C_Logo_99aabb.svg) no-repeat center 24px/31px;
+      padding: 24px 37px; }
+      .sidebar.collapsed .site-brand:hover {
+        background: rgba(28, 34, 40, 0.5) url(../assets/images/C_Logo.svg) no-repeat center 24px/31px; }
+    .sidebar.collapsed .recently-visited__link {
+      justify-content: center; }
+    .sidebar.collapsed .sidebar-slider .icon-action-wrapper {
+      position: static;
+      transform: translateY(0); }
+    .sidebar.collapsed .recently-visited__link {
+      background-position: center;
+      font-size: 0; }
+  .sidebar__section {
+    margin: 10px 0 24px;
+    flex: 0 0 auto;
+    width: 100%; }
+    .sidebar__section__list {
+      margin: 0; }
+      .sidebar__section__list__item {
+        font-weight: 300;
+        font-size: 16px; }
+        .sidebar__section__list__item__link {
+          color: #99aabb;
+          display: block;
+          width: 100%; }
+          .sidebar__section__list__item__link svg {
+            margin-right: 12px;
+            vertical-align: inherit;
+            width: 24px;
+            flex: 0 0 auto; }
+          .sidebar__section__list__item__link:hover {
+            background-color: rgba(28, 34, 40, 0.5); }
+          .sidebar__section__list__item__link.icon-action-wrapper {
+            padding: 10px 24px;
+            display: flex;
+            align-items: center;
+            width: auto; }
+          .sidebar__section__list__item__link:hover, .sidebar__section__list__item__link:active, .sidebar__section__list__item__link:focus {
+            color: #99aabb;
+            text-decoration: none; }
+          .sidebar__section__list__item__link.active {
+            color: #ffffff; }
+            .sidebar__section__list__item__link.active svg path {
+              fill: white; }
+            .sidebar__section__list__item__link.active svg path#Line {
+              stroke: white; }
+  .sidebar-slider {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .sidebar-slider .icon-action-wrapper {
+      width: 44px;
+      height: 44px;
+      background-size: 16px;
+      background-position: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0; }
+    .sidebar-slider--collapsed {
+      justify-content: center;
+      padding-right: 0; }
+
+.recently-visited {
+  position: relative;
+  flex: 0 0 auto;
+  transition: all 0.2s linear; }
+  .recently-visited__link {
+    color: #99aabb;
+    padding: 24px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; }
+    .recently-visited__link:hover {
+      color: #ffffff;
+      background: rgba(28, 34, 40, 0.5); }
+      .recently-visited__link:hover svg path {
+        fill: #ffffff; }
+  .recently-visited .site-dropdown {
+    bottom: 100%;
+    top: auto; }
+    .recently-visited .site-dropdown__list__item a {
+      display: block;
+      width: 100%;
+      box-sizing: border-box; }
+
+.projects {
+  padding-top: 80px;
+  margin-left: 55px; }
+
+/* Switch Firm */
+.switch-firm {
+  position: relative;
+  flex: 0 0 auto; }
+
+.site-dropdown__main {
+  display: flex;
+  padding: 20px;
+  align-items: center; }
+  .site-dropdown__main__logo {
+    width: 40px;
+    margin-right: 10px; }
+  .site-dropdown__main__details {
+    width: calc(100% - 50px); }
+    .site-dropdown__main__details__name {
+      font-size: 16px;
+      color: #455565;
+      font-weight: 500; }
+    .site-dropdown__main__details__role {
+      font-size: 12px;
+      font-weight: 500;
+      color: #99aabb; }
+
+/* Sidebar Firm Dropdown */
+.site-dropdown {
+  text-align: left;
+  width: 250px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  position: absolute;
+  left: 20px;
+  top: 100%;
+  z-index: 100; }
+  .site-dropdown a:hover {
+    background-color: #f2f6fa; }
+  .site-dropdown__single-item a {
+    margin: 8px 0;
+    padding: 10px 20px;
+    display: block;
+    color: #455565;
+    font-size: 14px;
+    font-weight: 500; }
+  .site-dropdown__list {
+    margin: 0;
+    padding: 8px 0;
+    font-size: 14px; }
+    .site-dropdown__list__item > :first-child {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      color: #455565;
+      font-weight: 500; }
+      .site-dropdown__list__item > :first-child span {
+        font-weight: 500; }
+    .site-dropdown__list__item__img {
+      width: 24px;
+      margin-right: 10px; }

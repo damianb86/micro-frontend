@@ -1,0 +1,97 @@
+.grid-view {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 -15px; }
+  .grid-view__item-wrapper {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 30px; }
+  .grid-view__item {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    position: relative;
+    height: 100%; }
+    .grid-view__item__summary {
+      padding: 20px 20px 0;
+      text-align: center; }
+      .grid-view__item__summary--projects {
+        height: calc(100% - 91px); }
+      .grid-view__item__summary--candidates {
+        height: calc(100% - 81px); }
+      .grid-view__item__summary--people {
+        height: calc(100% - 81px); }
+      .grid-view__item__summary--companies {
+        height: calc(100% - 81px); }
+      .grid-view__item__summary__img-wrapper {
+        margin: 0 auto;
+        position: relative;
+        width: 60px; }
+        .grid-view__item__summary__img-wrapper .do-not-contact-icon {
+          position: absolute;
+          top: 0;
+          right: 0; }
+      .grid-view__item__summary__img {
+        border-radius: 50%;
+        height: 60px;
+        overflow: hidden;
+        width: 60px;
+        margin: 0 auto 10px; }
+      .grid-view__item__summary__info {
+        margin-bottom: 5px;
+        display: block;
+        font-size: 14px;
+        width: 100%;
+        min-height: 24px; }
+        .grid-view__item__summary__info--name {
+          font-size: 16px; }
+        .grid-view__item__summary__info--companies-desc p {
+          margin-bottom: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+      .grid-view__item__summary__extra-icons {
+        display: block;
+        min-height: 21px; }
+      .grid-view__item__summary__status {
+        margin: 15px 0;
+        padding: 0 20px; }
+      .grid-view__item__summary__chkbox {
+        left: 20px;
+        position: absolute;
+        top: 17px; }
+      .grid-view__item__summary__color-category {
+        position: absolute;
+        right: 30px;
+        top: 12px; }
+    .grid-view__item__actions {
+      border-top: 1px solid #e8e8e8;
+      border-radius: 0 0 9px 9px;
+      margin: 20px 0 0 0;
+      text-align: center;
+      padding: 20px 20px 20px 14px; }
+      .grid-view__item__actions__left {
+        float: left; }
+        .grid-view__item__actions__left__options {
+          margin-bottom: 0; }
+          .grid-view__item__actions__left__options__icon {
+            display: inline-block;
+            padding: 0 6px;
+            text-align: center; }
+      .grid-view__item__actions__right {
+        float: right; }
+      .grid-view__item__actions .btn {
+        border-radius: 0 0 5px 5px; }
+
+.drop-direction__right {
+  border-right: 10px solid #d2d2d2;
+  margin-right: 20px; }
+
+.drop-direction__left {
+  border-left: 10px solid #d2d2d2;
+  margin-left: 20px; }
+
+@media (min-width: 768px) {
+  .grid-view__item-wrapper {
+    width: 33.33%; } }

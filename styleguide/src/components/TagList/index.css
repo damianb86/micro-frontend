@@ -1,0 +1,9 @@
+.taglist {
+  margin-bottom: 10px; }
+  .taglist__item {
+    margin: 0 10px 10px 0; }
+  .taglist__add {
+    margin-bottom: 10px;
+    color: #455565;
+    display: inline-block;
+    font-weight: 500; }

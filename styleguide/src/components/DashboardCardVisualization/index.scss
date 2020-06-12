@@ -1,0 +1,114 @@
+@import '../../styles/variables';
+
+.dashboard-visualization {
+  padding: 20px;
+
+  &__legend {
+    display: flex;
+    justify-content: space-between;
+
+    &__count {
+      width: 33%;
+      height: 149px;
+
+      &__number {
+        font-size: 24px;
+        line-height: 32px;
+        @include font-weight(medium);
+      }
+
+      &__text {
+        font-size: 14px;
+        line-height: 20px;
+        color: $dark-steel-grey;
+        @include font-weight(medium);
+      }
+    }
+
+    &__legend {
+      width: 66%;
+      color: $slate-2;
+      font-size: 12px;
+
+      ul.legends {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-height: 134px;
+        flex-wrap: wrap;
+        overflow: auto;
+        padding-bottom: 5px;
+        
+        li {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  &__chart {
+    margin: 0 -5px 0 -10px;
+  }
+
+  .c3-chart-bar {
+    .c3-bar {
+      stroke-width: 0;
+    }
+  }
+
+  .c3-grid line {
+    stroke: $grey-3;
+    stroke-dasharray: 0;
+  }
+
+  .c3-axis.c3-axis-y {
+    path {
+      stroke: transparent;
+    }
+
+    .tick {
+      font-size: 11px;
+      fill: $slate-1;
+
+      line { 
+        display: none;
+      }
+    }
+
+    .c3-axis-y-label {
+      font-size: 11px;
+      fill: $slate-2;
+    }
+  }
+
+  // There are 26 unique note_categories, add an additional 24 buffer for a total of 50 styles.
+  @for $i from 0 through 50 {
+    .c3-chart-bar:nth-child(#{$i + 1}) {
+      .c3-bar-#{$i} {
+        stroke-width: 7;
+        stroke-linejoin: round;
+        transform: translateY(3.5px); // We translate this down because the stroke-with make line higher
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .dashboard-visualization {
+    &__legend {
+      &__count {
+        width: 50%;
+      }
+
+      &__legend {
+        width: 50%;
+        
+        ul.legends {
+          li {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

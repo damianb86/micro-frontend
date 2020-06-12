@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.attachment-list {
+  &__item {
+    font-size: 14px;
+    @include font-weight(medium);
+    margin: 12px 0;
+
+    .name {
+      color: $default-color;
+      max-width: calc(100% - 50px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      @include font-weight(medium);
+    }
+
+    .delete {
+      color: $danger;
+      float: right;
+      cursor: pointer;
+    }
+  }
+}

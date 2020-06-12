@@ -1,0 +1,58 @@
+.card-view__header--activity-summary {
+  height: auto; }
+  .card-view__header--activity-summary .card-view__header__title {
+    margin: 4px 0 15px;
+    float: none; }
+  .card-view__header--activity-summary .card-view__header__right {
+    margin-bottom: 15px; }
+
+.activity-summary-header-candidates-count {
+  clear: both; }
+  .activity-summary-header-candidates-count span:first-child {
+    color: #788da4;
+    font-size: 14px; }
+  .activity-summary-header-candidates-count__item {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px; }
+
+.activity-summary__item {
+  margin-bottom: 50px; }
+  .activity-summary__item__title {
+    color: #788da4;
+    font-weight: 600;
+    margin: 10px 0 30px; }
+  .activity-summary__item__button-sec {
+    margin: 10px 0 30px; }
+    .activity-summary__item__button-sec .btn + .btn {
+      margin-left: 40px; }
+  .activity-summary__item__table {
+    width: 250px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 600; }
+
+.card-view__body--activity-summary .row .col-md-4:last-child .activity-summary__item {
+  margin-bottom: 0; }
+
+.card-view__body table.activity-summary__item__table > tbody > tr > td {
+  padding: 5px; }
+
+@media (min-width: 768px) {
+  .card-view__header--activity-summary {
+    height: 50px; }
+    .card-view__header--activity-summary .card-view__header__title {
+      margin: 4px 0 0;
+      float: left; }
+    .card-view__header--activity-summary .card-view__header__right {
+      margin-bottom: 0; }
+  .activity-summary-header-candidates-count {
+    clear: none;
+    margin: 2px 0 0 45px;
+    display: inline-block; } }
+
+@media (min-width: 992px) {
+  .activity-summary__item {
+    margin-bottom: 0; }
+    .activity-summary__item__chart {
+      min-height: 195px; } }

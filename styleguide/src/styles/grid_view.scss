@@ -1,0 +1,154 @@
+@import 'variables';
+
+.grid-view {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 -15px;
+
+  &__item-wrapper {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    background-color: $white-color;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    position: relative;
+    height: 100%;
+
+    &__summary {
+      padding: 20px 20px 0;
+      text-align: center;
+
+      &--projects {
+        height: calc(100% - 91px);
+      }
+
+      &--candidates {
+        height: calc(100% - 81px);
+      }
+
+      &--people {
+        height: calc(100% - 81px);
+      }
+
+      &--companies {
+        height: calc(100% - 81px);
+      }
+
+      &__img-wrapper {
+        margin: 0 auto;
+        position: relative;
+        width: 60px;
+
+        .do-not-contact-icon {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      &__img {
+        border-radius: 50%;
+        height: 60px;
+        overflow: hidden;
+        width: 60px;
+        margin: 0 auto 10px;
+      }
+
+      &__info {
+        margin-bottom: 5px;
+        display: block;
+        font-size: 14px;
+        width: 100%;
+        min-height: 24px;
+
+        &--name {
+          font-size: 16px;
+        }
+
+        &--companies-desc {
+          p {
+            margin-bottom: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      &__extra-icons {
+        display: block;
+        min-height: 21px;
+      }
+
+      &__status {
+        margin: 15px 0;
+        padding: 0 20px;
+      }
+
+      &__chkbox {
+        left: 20px;
+        position: absolute;
+        top: 17px;
+      }
+
+      &__color-category {
+        position: absolute;
+        right: 30px;
+        top: 12px;
+      }
+    }
+
+    &__actions {
+      border-top: 1px solid #e8e8e8;
+      border-radius: 0 0 9px 9px;
+      margin: 20px 0 0 0;
+      text-align: center;
+      padding: 20px 20px 20px 14px;
+
+      &__left {
+        float: left;
+
+        &__options {
+          margin-bottom: 0;
+
+          &__icon {
+            display: inline-block;
+            padding: 0 6px;
+            text-align: center;
+          }
+        }
+      }
+
+      &__right {
+        float: right;
+      }
+
+      .btn {
+        border-radius: 0 0 5px 5px;
+      }
+    }
+  }
+}
+
+
+.drop-direction {
+  &__right{
+    border-right: 10px solid #d2d2d2;
+    margin-right: 20px;
+  }
+  &__left{
+    border-left: 10px solid #d2d2d2;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-view__item-wrapper {
+    width: 33.33%;
+  }
+}

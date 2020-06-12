@@ -1,0 +1,20 @@
+@import 'variables';
+
+.form-modal-content {
+  &__item {
+    display: block;
+    margin-bottom: 20px;
+
+    &__value {
+      color: $default-color;
+    }
+  }
+
+  &__space-generator {
+    margin: 40px 1px 1px;
+  }
+
+  .filepicker .dz-message {
+    width: 100%;
+  }
+}

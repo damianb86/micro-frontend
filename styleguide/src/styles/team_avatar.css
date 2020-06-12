@@ -1,0 +1,45 @@
+.avatar-container {
+  display: inline-block;
+  position: relative; }
+  .avatar-container div:first-child {
+    cursor: pointer; }
+  .avatar-container:hover .avatar-info {
+    display: block; }
+
+.avatar-info {
+  color: #455565;
+  display: none;
+  position: absolute;
+  left: 25px;
+  bottom: 9px;
+  background: #fff;
+  width: 180px;
+  text-align: left;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1;
+  margin-bottom: 0; }
+  .avatar-info:before {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 110px;
+    position: absolute;
+    left: -5px;
+    top: -5px; }
+  .avatar-info__name {
+    font-weight: 600; }
+  .avatar-info__item {
+    display: block;
+    position: relative;
+    z-index: 2; }
+
+.list-view__tbody .avatar-container {
+  margin: 5px 5px 5px 0; }
+  .list-view__tbody .avatar-container .user-initials-circle {
+    margin-right: 0; }
+
+.list-view__tbody > div .list-view__tbody__row:first-child .avatar-info, .list-view__tbody > div .list-view__tbody__row:first-child + .list-view__tbody__row .avatar-info {
+  top: 10px;
+  bottom: auto; }

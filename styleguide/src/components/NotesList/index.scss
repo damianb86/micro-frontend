@@ -1,0 +1,138 @@
+@import '../../styles/variables';
+
+.notes-list {
+  overflow-y: visible;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__add {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    svg {
+      width: 53px;
+      height: 53px;
+      path {
+        fill: #009CF6;
+        stroke: #009CF6;
+      }
+    }
+  }
+
+  .loading-spinner {
+    display: flex;
+    position: relative;
+  }
+
+  &__items {
+    flex: 1 1  auto;
+    .stacked-list-content {
+      &__label {
+        font-size: 12px;
+        display: flex;
+        max-width: 100%;
+
+        &__item {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      &__body {
+        max-width: 368px;
+        overflow: hidden;
+      }
+    }
+
+    .stacked-list-with-threads__item.has-replies {
+      .stacked-list-content__label__item:last-child {
+        max-width: 320px;
+      }
+    }
+
+    .stacked-list-with-threads.reply {
+      .stacked-list-content__label__item {
+        max-width: 312px;
+      }
+    }
+
+    .dropdown {
+      ul.dropdown-menu {
+        li.hide, li.show, li.pin {
+          svg {
+            width: 13px;
+            height: 13px;
+            margin-bottom: -1px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-mobile){
+    .select-options__menu {
+      max-width: 165px !important;
+      min-width: 160px;
+    }
+
+    .select-multiple-dropdown  {
+      max-width: 290px;
+    }
+
+    .notes-list {
+      &__add {
+        bottom: 60px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .btn-primary {
+      font-size: 10px;
+    }
+
+    .caret {
+      width: 8px;
+      height: 8px;
+      margin-left: 1px !important;
+    }
+  }
+}
+
+.person-panel-filters {
+  background-color: #F5F8FB;
+  display:flex;
+  justify-content: flex-start;
+  padding: 16px 20px;
+  flex: 0 0 auto;
+
+  .dropdown .btn-primary:focus {
+    outline: none;
+  }
+
+  .dropdown:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .select-multiple-dropdown {
+    left: 0;
+  }
+
+  .select-options {
+    &__menu {
+      max-width: 330px;
+    }
+
+    ul li a {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

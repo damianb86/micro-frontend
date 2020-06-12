@@ -1,0 +1,45 @@
+.read-more {
+  overflow-wrap: break-word;
+
+  &__content {
+    line-height: 19px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding: 10px 40px;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding: 10px 40px;
+  }
+
+  ul ul, ol ul {
+    list-style-type: circle;
+    padding: 0 40px;
+  }
+
+  ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+    list-style-type: square;
+    padding: 0 40px;
+  }
+
+  blockquote {
+    border-color: #ccc;
+    border-left-width: 5px;
+    border-style: solid;
+    font-style: italic;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    margin: 13px 40px;
+    padding: 2px 8px 2px 20px;
+  }
+}
+
+.read-more__truncated {
+  display: block;
+}

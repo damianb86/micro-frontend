@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/24/Nav/Schools/On</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-1072.000000, -68.000000)" fill="#FFFFFF">
+            <g id="24" transform="translate(820.000000, 16.000000)">
+                <g id="Icon/24/Nav/Schools/On" transform="translate(248.000000, 48.000000)">
+                    <g id="Icon/24/Nav/Schools" transform="translate(4.000000, 4.000000)">
+                        <path d="M1.35112344,0.506671291 L8,3 L8,16 L0.648876558,13.2433287 C0.258572834,13.0969648 -1.05917429e-15,12.7238441 -1.11022302e-15,12.3069995 L0,1.44300047 C-6.76353751e-17,0.890715718 0.44771525,0.443000468 1,0.443000468 C1.11991195,0.443000468 1.23884638,0.464567394 1.35112344,0.506671291 Z" id="Rectangle-3"></path>
+                        <path d="M9,3 L15.6488766,0.506671291 C16.1659969,0.312751168 16.7424091,0.574756701 16.9363292,1.09187703 C16.9784331,1.20415408 17,1.32308852 17,1.44300047 L17,12.3069995 C17,12.7238441 16.7414272,13.0969648 16.3511234,13.2433287 L9,16 L9,3 Z" id="Rectangle-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,94 @@
+.site-access {
+  left: 50%;
+  margin: 0 auto;
+  max-width: 485px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%; }
+  .site-access__wrapper {
+    background-color: #ffffff;
+    padding: 30px; }
+  .site-access--password-setup {
+    text-align: left; }
+  .site-access__img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-bottom: 30px; }
+    .site-access__img img {
+      max-height: 100%;
+      max-width: 100%; }
+  .site-access__form__input {
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 30px; }
+    .site-access__form__input--no-bottom-space {
+      margin-bottom: 0; }
+  .site-access__form__submit-btn {
+    margin-top: 30px; }
+  .site-access__logo {
+    margin-bottom: 30px; }
+    .site-access__logo img {
+      max-height: 100%;
+      max-width: 100%; }
+  .site-access__header {
+    margin-bottom: 20px; }
+    .site-access__header h3 {
+      font-size: 16px;
+      margin-top: 0; }
+  .site-access__info {
+    padding-left: 10px;
+    margin-bottom: 20px; }
+
+.password-strength-meter {
+  background-color: #e4e4e4;
+  border-radius: 8px;
+  display: inline-block;
+  height: 13px;
+  vertical-align: middle;
+  width: calc(100% - 50px); }
+  .password-strength-meter__item {
+    background-color: red;
+    height: 13px;
+    border-radius: 8px; }
+
+.password-strength-text {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  width: 50px; }
+
+.chkbox-label--password-setup {
+  margin-top: 40px; }
+
+.support-link--password-setup {
+  margin-top: 20px; }
+
+.mfa__site-access__header {
+  text-align: left; }
+
+.mfa__site-access a {
+  cursor: pointer; }
+
+.mfa__code-input {
+  display: block;
+  width: 200px;
+  margin: 10px auto 0;
+  text-align: center; }
+
+.mfa__code-query-wrapper {
+  margin-top: 10px; }
+  .mfa__code-query-wrapper span {
+    display: block;
+    text-align: left; }
+  .mfa__code-query-wrapper a {
+    margin-left: 10px;
+    text-align: left;
+    display: block;
+    color: #009cf6; }
+
+/* User Profile */
+.change-password-btn {
+  margin: 20px 0 20px 30px; }

@@ -1,0 +1,41 @@
+.grey-text-new-category {
+  padding: 4px;
+  font-size: 16px;
+  color: #515f70;
+  text-transform: uppercas; }
+
+.project-category-modal .react-select-category-modal.Select.Select--multi .Select-value {
+  padding: 6px 11px;
+  color: #ffffff;
+  background-color: #009dfd;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4p;
+  margin: 5px 0 5px 3px; }
+  .project-category-modal .react-select-category-modal.Select.Select--multi .Select-value-icon {
+    display: block;
+    text-transform: uppercase; }
+    .project-category-modal .react-select-category-modal.Select.Select--multi .Select-value-icon:hover {
+      color: #ffffff; }
+
+.project-category-modal .tags-wrapper__tag {
+  padding: 6px 11px;
+  color: #ffffff;
+  background-color: #009dfd;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4p;
+  border: none; }
+  .project-category-modal .tags-wrapper__tag:hover {
+    border: none; }
+
+.review-mode.react-select-category-modal.Select.Select--multi .Select-value {
+  margin-right: 3px;
+  background-color: #ffffff;
+  color: #4c5f70;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
+
+.review-mode .tags-wrapper__tag {
+  background-color: #ffffff;
+  color: #4c5f70;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }

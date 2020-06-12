@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.restricted-access-message {
+  padding: 80px 0;
+  max-width: 560px;
+  text-align: center;
+  margin: 0 auto;
+
+  &__icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+
+    use {
+      fill: #99aabb;
+    }
+  }
+
+  &__title {
+    margin: 20px 0;
+    display: block;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  &__description {
+    color: $dark-steel-grey;
+    font-size: 16px;
+    margin: 0 0 20px;
+    line-height: 24px;
+  }
+
+  .pri-button {
+    float: none;
+    text-decoration: none;
+    margin-right: 0;
+  }
+}

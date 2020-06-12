@@ -1,0 +1,63 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.75 129.91">
+  <defs>
+    <style>
+      .cls-1, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5, .cls-8 {
+        stroke: #009cf6;
+      }
+
+      .cls-1, .cls-8 {
+        stroke-miterlimit: 10;
+        stroke-width: 0.57px;
+      }
+
+      .cls-2 {
+        fill: #eff6f9;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-7, .cls-8 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-7 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        stroke-width: 0.68px;
+      }
+
+      .cls-4 {
+        stroke-width: 0.71px;
+      }
+
+      .cls-5 {
+        stroke-width: 0.7px;
+      }
+
+      .cls-6 {
+        fill: #009cf6;
+      }
+
+      .cls-7 {
+        stroke: #3d9cd1;
+        stroke-dasharray: 5 4;
+      }
+    </style>
+  </defs>
+  <title>CW Strategy tab</title>
+  <polygon class="cls-1" points="25 84.92 25 19.12 47.24 30.77 73.83 19.12 99.04 30.77 123.94 19.12 123.94 87.9 99.16 103.32 73.83 89.12 47.03 98.6 25 84.92"/>
+  <polygon class="cls-2" points="73.83 19.12 99.04 30.77 99.16 103.32 73.83 89.12 73.83 19.12"/>
+  <polygon class="cls-2" points="25 19.12 25 84.92 47.03 98.6 47.24 30.77 25 19.12"/>
+  <line class="cls-3" x1="47.03" y1="33.67" x2="47.03" y2="93.03"/>
+  <line class="cls-4" x1="99.16" y1="33.67" x2="99.16" y2="99.65"/>
+  <line class="cls-5" x1="73.83" y1="22.12" x2="73.83" y2="86.26"/>
+  <path class="cls-6" d="M128.59,59.91h0a11,11,0,1,0-19.58,0h0l0,.07a11.43,11.43,0,0,0,.67,1.12l9.08,15.13,9.08-15.13a9.83,9.83,0,0,0,.68-1.12Z"/>
+  <path class="cls-7" d="M20.76,76.23S2,102.76,34.22,108.52c49.51,8.86,36.46-71.19,18.37-48.1-8.79,11.21,8.46,22.86,22,2.89C83.55,50.16,99.07,51,104,56.49"/>
+  <polygon class="cls-8" points="25 84.92 25 19.12 47.24 30.77 73.83 19.12 99.04 30.77 123.94 19.12 123.94 87.9 99.16 103.32 73.83 89.12 47.03 98.6 25 84.92"/>
+  <circle class="cls-9" cx="118.79" cy="54.87" r="7.26"/>
+</svg>

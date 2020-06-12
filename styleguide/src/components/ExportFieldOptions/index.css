@@ -1,0 +1,19 @@
+.export-fields__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; }
+  .export-fields__header__title {
+    font-weight: 500; }
+
+.export-fields__content {
+  display: flex;
+  justify-content: space-between; }
+  .export-fields__content__section {
+    flex-grow: 1; }
+    .export-fields__content__section__title {
+      font-weight: 500;
+      margin-bottom: 10px; }
+    .export-fields__content__section__list__item {
+      margin-bottom: 5px; }
+  .export-fields__content__section:nth-child(3) {
+    flex-grow: 0; }

@@ -1,0 +1,38 @@
+.progress-steps {
+  text-align: left;
+  width: 420px;
+  margin: 0 auto; }
+  .progress-steps__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 40px; }
+    .progress-steps__item--for-company {
+      width: 200px; }
+    .progress-steps__item:last-child {
+      width: 20px; }
+      .progress-steps__item:last-child .progress-steps__item__splitter {
+        display: none; }
+    .progress-steps__item__count {
+      display: inline-block;
+      vertical-align: top; }
+      .progress-steps__item__count__indicator {
+        background-color: #e9edf1;
+        border-radius: 20px;
+        display: inline-block;
+        height: 20px;
+        vertical-align: top;
+        width: 20px; }
+        .progress-steps__item__count__indicator.active {
+          background-color: #f8c752; }
+        .progress-steps__item__count__indicator.completed {
+          background-color: #50d087; }
+      .progress-steps__item__count__value {
+        display: block; }
+    .progress-steps__item__splitter {
+      background-color: #e9edf1;
+      display: inline-block;
+      height: 3px;
+      vertical-align: middle;
+      width: calc(100% - 30px);
+      margin: 0 5px; }

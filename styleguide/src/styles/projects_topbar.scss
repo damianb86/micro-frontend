@@ -1,0 +1,141 @@
+@import 'variables';
+
+/*project top bar */
+.item-count-header {
+  color: $dark-steel-grey;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  float: left;
+}
+
+.view-all-text {
+    color: $sky-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    float: left;
+    cursor: pointer;
+}
+
+.project-topbar {
+  padding: 10px;
+  position: relative;
+
+  &__actions-wrapper {
+    margin-bottom: 20px;
+  }
+
+  &__center-text {
+    display: block;
+    color: $dark-steel-grey;
+    font-weight: 600;
+    padding-top: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__action-dropdowns {
+    &.btn-toolbar > .btn, &.btn-toolbar > .btn-group, &.btn-toolbar > .input-group {
+      margin-left: 2%;
+      width: 32%;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  &__action-options {
+    margin: 0 0 20px;
+    text-align: right;
+    font-size: 0;
+
+    > li {
+      display: inline-block;
+      margin-left: 15px;
+      vertical-align: top;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &.search-holder {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .dropdown .color-category-dropdown.btn-primary, .color-category-dropdown.btn-primary:active:focus, .open > .color-category-dropdown.dropdown-toggle.btn-primary:hover, .open > .color-category-dropdown.dropdown-toggle.btn-primary:focus, .open > .color-category-dropdown.dropdown-toggle.btn-primary.focus, .open > .color-category-dropdown.dropdown-toggle.btn-primary {
+    background: $white-color;
+    width: auto;
+    padding: 6px 12px;
+    margin-right: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+  }
+}
+
+.add-link {
+  font-size: 30px;
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  display: inline-block;
+  line-height: 0.45;
+  white-space: nowrap;
+}
+
+.btn-toolbar, .btn-toolbar > .dropdown:first-child {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .project-topbar {
+    &__action-options {
+      float: right;
+      margin: 0;
+      padding-top: 8px;
+    }
+
+    &__action-dropdowns {
+      float: left;
+
+      &.btn-toolbar > .btn, &.btn-toolbar > .btn-group, &.btn-toolbar > .input-group {
+        width: auto;
+      }
+
+      &.btn-toolbar > .btn-group + .btn-group {
+        margin-left: 10px;
+      }
+    }
+
+    &__action-options {
+      li {
+        &.search-holder {
+          margin-left: 15px;
+        }
+      }
+    }
+
+    &__center-text {
+      display: inline-block;
+      margin: 0 0 0 15px;
+    }
+  }
+}
+
+@media (min-width:992px) {
+  .project-topbar {
+    padding: 10px 40px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .add-link {
+    font-size: 13px;
+    font-weight: 400;
+    width: auto;
+    height: auto;
+    line-height: normal;
+  }
+}

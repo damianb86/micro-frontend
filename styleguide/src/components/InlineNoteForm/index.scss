@@ -1,0 +1,101 @@
+@import '../../styles/variables';
+
+.add-inline-note {
+  display: block;
+  border: none;
+  margin-bottom: 0;
+  box-shadow: none;
+
+  &__configuration {
+    margin-top: 32px;
+
+    &__visibility {
+      margin-top: 5px;
+    }
+
+    &__type {
+      margin-left: 16px;
+
+      .select-options {
+        &__menu {
+          max-width: 210px !important;
+          min-width: 200px;
+        }
+      }
+    }
+
+    .dropdown {
+      float: right;
+
+      .dropdown-menu {
+        max-width: 195px;
+        min-width: initial;
+
+        li > a {
+          max-width: 163px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+
+  &__emails {
+    float: right;
+    padding-top: 6px;
+  }
+
+  &__files {
+    margin-top: 32px;
+  }
+
+  &__dropdowns-row {
+    margin-bottom: 32px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+
+    .select-options {
+      &__menu {
+        max-width: 290px;
+      }
+
+      ul li a {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .btn-primary {
+        display: flex;
+      }
+    }
+  }
+
+  .card-view {
+    &__body {
+      padding: 32px 20px;
+    }
+  }
+
+  .editor-draft-notice {
+    color: #1ab394;
+    text-align: right;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: -22px;
+  }
+
+  .dnd-list {
+    &__files {
+      &__file {
+        margin-top: 20px;
+
+        .delete {
+          color: $danger !important;
+        }
+      }
+    }
+  }
+}

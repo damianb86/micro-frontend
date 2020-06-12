@@ -1,0 +1,52 @@
+@import 'variables';
+
+.modal-content {
+  border: medium none;
+}
+
+.modal-header {
+  color: #838383;
+
+  .modal-title {
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-size: contain;
+    text-transform: capitalize;
+    color: $default-color;
+
+    &--no-icon {
+      padding-left: 0;
+    }
+  }
+
+  .close {
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/images/Close_Slate1_455565.svg);
+    text-indent: 9999px;
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  background: $white-color;
+
+  &--search-category {
+    padding: 15px 0;
+  }
+
+  &--no-space {
+    padding: 0;
+  }
+
+  .help-text {
+    color: #cccccc;
+  }
+}
+
+.modal-footer {
+  &--no-border {
+    border: none;
+  }
+}

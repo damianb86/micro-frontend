@@ -1,0 +1,7 @@
+.profile-clockwork-policy {
+  padding: 20px 0;
+  margin: 0 20px; }
+  .profile-clockwork-policy__item {
+    color: #778da4; }
+    .profile-clockwork-policy__item + .profile-clockwork-policy__item {
+      margin-left: 65px; }

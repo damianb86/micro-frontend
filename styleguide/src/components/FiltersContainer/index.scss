@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+
+.filters-container {
+  &__filter  {
+    &:first-child {
+      .collapsible-filter-container {
+        border-top: none;
+      }
+    }
+
+    &.open-filter {
+      display: none;
+
+      &.selected {
+        display: block;
+        padding-bottom: 50px;
+
+        .collapsible-filter-container {
+          border-top: none;
+        }
+      }
+    }
+  }
+
+  &__filter {
+    .collapsible-filter-container {
+      &__header {
+        &__title {
+          color: $slate-3
+        }
+      }
+    }
+  }
+}
+
+.modal-content {
+  .filters-container {
+    margin-top: -25px;
+  }
+}

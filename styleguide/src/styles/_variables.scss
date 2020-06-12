@@ -1,0 +1,113 @@
+// Clockwork Style Guide – UI color palette
+// https://invis.io/P8HC784XF52#/284561134_Colors_1
+$action-blue-1: #009CF6;
+$action-blue-2: #0288D5;
+$action-blue-3: #4589BF;
+$action-red-1: #F57188;
+$dark: #1C2228;
+$slate-1: #455565;
+$slate-2: #778DA4;
+$slate-3: #99AABB;
+$grey-1: #CAD1D8;
+$grey-2: #DFE3E8;
+$grey-3: #E9EDF1;
+$grey-4: #F5F8FB;
+$grey-5: #D3D3D3;
+$grey-6: #E3E3E3;
+$white: #FFFFFF;
+
+$white-color: #ffffff;
+$default-color: #455565;
+$sky-color: #009cf6;
+$dark-steel-grey: #778da4;
+$light-grey: #97a8b8;
+$dark-grey: #1c2228;
+$success-green: #50d087;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$border-color: #dfe3e8;
+$input-placeholder-color: $default-color;
+$danger: #fb657e;
+$editable-text: #D6EFFD;
+$unread-red: #FA657D;
+$owner-orange: #FA8C5A;
+
+$chart-blue: #55ABEF;
+$chart-green: #50D087;
+$chart-yellow: #F8C752;
+$chart-red: #FB657E;
+$chart-orange: #FA8C5A;
+$chart-grey: #CCCCCC;
+$chart-lightblue: #8ECDFF;
+$chart-magenta: #FB657E;
+$chart-brown: #D0A643;
+$chart-green2: #45AF72;
+$chart-orange2: #CB764E;
+$chart-blue2: #009CF6;
+$error-color: #cc3333;
+
+$virtual-scroll-background: #F0F0F0;
+
+$es-highlighted-background: #FFE4A1;
+
+// font-weight mixin will take all native values that the CSS property takes, such as "thin" and "bold", as well as numeric values.
+// Added are additional named values between the native values, such as "extra-light" or "light".
+// Exampe usage: @include font-weight(black);
+@mixin font-weight($weight) {
+    $weights: (
+      thin: 100,
+      extra-light: 200,
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semi-bold: 600,
+      bold: 700,
+      extra-bold: 800,
+      black: 900,
+    );
+
+    $output: $weight;
+    @if map-has-key($weights, $weight) {
+      $output: map-get($weights, $weight);
+    }
+
+    font-weight: $output;
+  }
+
+// ui pallete
+$grey1: #cad1d8;
+
+// card styles
+$border-radius: 4px;
+$card-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+
+//z-indexes
+$modal-action-button: 7000;
+$modal: 6000;
+$main-menu: 5000;
+$overlay: 4000;
+$popover: 3500;
+$dropdown: 3000;
+$dropdown-backdrop: 2500;
+$default: 1;
+$below: -1;
+
+//breakpoints
+$breakpoint-mobile: 768px;
+
+// this export is being used in js files
+:export {
+  popover: $popover;
+  chart-blue: $chart-blue;
+  chart-green: $chart-green;
+  chart-yellow: $chart-yellow;
+  chart-red: $chart-red;
+  chart-orange: $chart-orange;
+  chart-grey: $chart-grey;
+  chart-lightblue: $chart-lightblue;
+  chart-magenta: $chart-magenta;
+  chart-brown: $chart-brown;
+  chart-green2: $chart-green2;
+  chart-orange2: $chart-orange2;
+  chart-blue2: $chart-blue2;
+}

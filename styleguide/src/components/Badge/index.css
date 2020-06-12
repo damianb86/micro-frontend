@@ -1,0 +1,23 @@
+.badge {
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 6px;
+  height: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .badge-success {
+    background-color: #28a745;
+    color: #ffffff; }
+  .badge-unread_notifications {
+    background-color: #FA657D;
+    color: #ffffff; }
+  .badge-round-on-top {
+    border-radius: 100%;
+    padding: 0;
+    float: right;
+    height: 8px;
+    width: 8px;
+    margin: 1px; }

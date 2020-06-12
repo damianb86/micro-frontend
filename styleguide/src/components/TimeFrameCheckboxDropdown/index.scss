@@ -1,0 +1,134 @@
+@import '../../styles/variables';
+
+.timeframe-checkbox-dropdown {
+  hr {
+    border-top: 1px solid $border-color;
+    margin: 0 20px 9px 20px;
+  }
+
+  &__datepicker {
+    width: unset;
+    margin-bottom: 5px;
+  }
+
+  &__select {
+    padding: 11px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 200px;
+    overflow-y: auto;
+
+    .checkbox-label {
+      margin: 10px;
+      font-size: 14px;
+      font-weight: font-weight(medium);
+    }
+  }
+
+  &__multi-select {
+    padding: 12px 20px 8px 20px;
+
+    &__label {
+      margin-bottom: 8px;
+
+      span {
+        display: inline-block;
+        color: $slate-1;
+      }
+    }
+
+    &__dd-button {
+      > button {
+        width: 180px;
+      }
+
+      &__search-box {
+        .search-select-multi__input-wrapper {
+          border: none;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+          border-bottom: 1px solid $grey-2;
+          width: 300px;
+          padding: 5px;
+        }
+
+        .search-select-multi {
+          &__list {
+            position: relative;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .timeframe-checkbox-dropdown {
+    &__mobile {
+      &__select {
+        width: initial;
+        padding: 11px 0;
+  
+        .checkbox-label {
+          margin: 10px 7px;
+        }
+      }
+  
+      hr {
+        border-top: 1px solid $grey-2;
+        margin: 0 7px 9px 7px;
+      }
+
+      .time-frame-selector {
+        width: 100%;
+
+        .DateRangePicker, .DateRangePickerInput {
+          width: 100%;
+        }
+
+        .DateInput {
+          width: calc(50% - 18px) !important;
+
+          &_input {
+            width: 100%;
+          }
+        }
+
+        &__presets {
+          padding: 0 7px 4px 7px;
+    
+          .dropdown-button {
+            &__button {
+              max-width: none;
+            }
+          }
+    
+          &__label {
+            font-size: 12px;
+          }
+        }
+    
+        &__date-picker-wrapper {
+          padding: 14px 7px;
+    
+          &__label {
+            font-size: 12px;
+
+            &__start {
+              width: calc(50% + 22px);
+            }
+          }
+    
+          .DateRangePickerInput_arrow {
+            svg {
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

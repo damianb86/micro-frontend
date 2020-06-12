@@ -1,0 +1,93 @@
+@import '../../styles/variables';
+
+.dashboard-candidates-added {
+  padding: 20px;
+
+  &__legend {
+    display: flex;
+    justify-content: space-between;
+    max-height: 52px;
+    overflow: visible;
+
+    &__active, &__today {
+      &__number {
+        font-size: 24px;
+        line-height: 32px;
+        @include font-weight(medium);
+      }
+
+      &__text {
+        font-size: 14px;
+        line-height: 20px;
+        color: $dark-steel-grey;
+        @include font-weight(medium);
+      }
+    }
+
+    &__today {
+      flex-grow: 2;
+      margin: 0 0 0 15px;
+    }
+  }
+
+  &__chart {
+    margin: 112px -5px 0 -10px;
+  }
+
+  .c3-chart-bar {
+    .c3-bar {
+      stroke-width: 0;
+    }
+  }
+
+  .c3-grid line {
+    stroke: $grey-3;
+    stroke-dasharray: 0;
+  }
+
+  .c3-axis.c3-axis-y, .c3-axis.c3-axis-x {
+    path {
+      stroke: transparent;
+    }
+
+    .tick {
+      font-size: 11px;
+      fill: $slate-1;
+
+      line { 
+        display: none;
+      }
+    }
+
+    .c3-axis-y-label, .c3-axis-x-label {
+      font-size: 11px;
+      fill: $slate-2;
+    }
+  }
+
+  .c3-chart-bar{
+    .c3-bar {
+      stroke-width: 7;
+      stroke-linejoin: round;
+      transform: translateY(3.5px);
+    }
+  }
+
+  .dropdown-button {
+    &__button {
+      padding-top: 0 !important;
+      color: $slate-1;
+      @include font-weight(medium);
+      display: flex;
+    }
+  }
+
+  &__empty {
+    color: $slate-1;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+    @include font-weight(medium);
+  }
+}

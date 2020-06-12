@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <path id="icon-16-checkbox-disabled-a" d="M4,2 C2.8954305,2 2,2.8954305 2,4 L2,12 C2,13.1045695 2.8954305,14 4,14 L12,14 C13.1045695,14 14,13.1045695 14,12 L14,4 C14,2.8954305 13.1045695,2 12,2 L4,2 Z M4,0 L12,0 C14.209139,-4.05812251e-16 16,1.790861 16,4 L16,12 C16,14.209139 14.209139,16 12,16 L4,16 C1.790861,16 2.705415e-16,14.209139 0,12 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#FFF" fill-opacity=".24" fill-rule="nonzero" d="M4,2 C2.8954305,2 2,2.8954305 2,4 L2,12 C2,13.1045695 2.8954305,14 4,14 L12,14 C13.1045695,14 14,13.1045695 14,12 L14,4 C14,2.8954305 13.1045695,2 12,2 L4,2 Z"/>
+    <use fill="#9AB" fill-opacity=".24" fill-rule="nonzero" xlink:href="#icon-16-checkbox-disabled-a"/>
+  </g>
+</svg>

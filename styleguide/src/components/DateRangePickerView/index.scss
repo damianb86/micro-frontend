@@ -1,0 +1,22 @@
+.date-range-picker {
+  input[type="text"] {
+    width: 138px;
+  }
+
+  svg {
+    margin-left: 20px;
+    margin-right: 12px;
+  }
+
+  &.right {
+    .DateRangePicker_picker {
+      margin-right: -32px;
+    }
+  }
+
+  &.left {
+    .DateRangePicker_picker {
+      margin-right: -22px;
+    }
+  }
+}

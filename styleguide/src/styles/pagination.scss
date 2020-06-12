@@ -1,0 +1,49 @@
+@import 'variables';
+
+/* pagination */
+.pagination {
+  > li {
+    > a, > span {
+      border: none;
+      color: #939393;
+    }
+  }
+
+  &-sm {
+    > li > a, > li > span {
+      font-size: 14px;
+    }
+  }
+
+  > li > a:hover, > li > span:hover, > li > a:focus, > li > span:focus, > .active > a, > .active > span, > .active > a:hover, > .active > span:hover, > .active > a:focus, > .active > span:focus {
+    background: $white-color;
+    color: #00b3ff;
+  }
+}
+
+.site-pagination {
+  margin-top: 25px;
+
+  &__view-all {
+    font-size: 16px;
+  }
+
+  &__view-all, &__links, &__per-page {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__links {
+    margin: 0 15px;
+
+    li {
+      &:first-child + li, &:nth-last-child(2) {
+        display: none;
+      }
+
+      &:active a {
+        background: $white-color;
+      }
+    }
+  }
+}

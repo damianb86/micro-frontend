@@ -1,0 +1,231 @@
+@import 'variables';
+
+/* Drop zone */
+.dz-started {
+  padding: 5px 0;
+  border-radius: 5px;
+  border: 1px dashed #C7C7C7;
+  height: 250px;
+  overflow: auto;
+  background-color: white;
+
+  .dz-preview {
+    display: inline-block;
+    &.dz-image-preview {
+      margin-top: 35px;
+    }
+  }
+
+  .dz-message {
+    display: none;
+  }
+}
+
+.filepicker {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .dz-details {
+    margin-left: 15px;
+  }
+
+  .dz-size {
+    vertical-align: middle;
+  }
+
+  .dz-error {
+    color: $error-color;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .dz-message {
+    background-color: $white-color;
+    border: 1px dashed #C7C7C7;
+    color: $default-color;
+    float: left;
+    height: 100px;
+    line-height: normal;
+    text-align: center;
+    width: 100%;
+    position: relative;
+
+    > div {
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      left: 50%;
+      width: 220px;
+    }
+
+    svg {
+      height: 40px;
+      width: 40px;
+    }
+
+    &__wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &__display-message {
+        cursor: pointer;
+      }
+    }
+
+    .choose-files-btn {
+      background-color: $sky-color;
+      background-image: url(../assets/images/Cloud_Upload_icon.svg);
+      background-position: 10px 0;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      display: block;
+      font-weight: 400;
+      height: 28px;
+      padding: 5px;
+      padding-left: 40px;
+      line-height: 28px;
+    }
+  }
+
+  .dz-preview {
+    vertical-align: top;
+    position: relative;
+    vertical-align: middle;
+    min-height: 100px;
+  }
+
+  .dz-filename {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 120px;
+  }
+
+  .dz-date, .dz-size, .dz-remove {
+    display: inline-block;
+    margin-right: 8px;
+    color: #d8d8d8;
+  }
+
+  .dz-remove {
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  img {
+    max-width: 100px;
+  }
+}
+
+.drop-zone-img {
+  min-height: 120px;
+}
+
+/*drag and drop */
+[draggable] {
+  cursor: pointer;
+}
+
+.draggable {
+  padding: 1%;
+  width: 25%;
+}
+
+.dragged {
+  opacity: 0.7;
+}
+
+.placeholder {
+  opacity: 0.5;
+}
+
+/* file upload block */
+.file-upload-block {
+  margin: 0 11px;
+
+  &__btn-container {
+    margin-top: 10px;
+
+    >div, >button {
+      font-size: 13px;
+      margin-bottom: 20px;
+      margin-right: 10px !important;
+
+      + .btn {
+        margin-left: 0px !important;
+      }
+    }
+  }
+
+  .filepicker .dz-message {
+    width: 100%;
+  }
+
+  .commited-files-list {
+    border-top: 1px solid #cccccc;
+    padding-top: 19px;
+    margin-left: 10px;
+    padding-left: 0;
+    list-style: none;
+    font-family: 'Nunito',helvetica,arial,sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 300;
+    color: $default-color;
+
+    li {
+      line-height: 1.49;
+      margin-bottom: 11px;
+
+      > a {
+        vertical-align: middle;
+      }
+      .file-label {
+        &:hover {
+          color: $sky-color !important;
+        }
+      }
+      .close-circle-icon {
+        margin-left: 12px;
+        background-size: 13px 13px;
+        width: 13px;
+        height: 13px;
+        &:hover {
+          background-image: url(../assets/images/Close_Blue_009CF6.svg);
+        }
+      }
+    }
+  }
+}
+
+.drag-drop-msg-splitter {
+  display: block;
+  margin: 10px 0;
+}
+
+/* responsive styles */
+@media (min-width: 1200px) {
+  .filepicker {
+    &.full-width {
+      .dz-message {
+        width: 100%;
+      }
+    }
+
+    .dz-message {
+      width: 200px;
+    }
+
+    .dz-preview {
+      margin: 0 0 10px 5px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.thumbs-feedback {
+  display: flex;
+
+  &__up, &__down {
+    display: flex;
+
+    span {
+      width: 22px;
+      text-align: left;
+      margin-left: 3px;
+    }
+  }
+
+  &__up {
+    span {
+      color: $success-green;
+    }
+  }
+
+  &__down {
+    span {
+      color: $danger;
+    }
+  }
+}

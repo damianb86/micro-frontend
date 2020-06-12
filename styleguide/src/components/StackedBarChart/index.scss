@@ -1,0 +1,85 @@
+@import "../../../styles/_variables";
+
+.card {
+  &--stacked-bar-chart {
+    width: 100%;
+    margin-top: 10px;
+    max-width: none;
+    min-height: 452px;
+    margin-bottom: 0;
+
+    .c3-ygrid{
+      stroke-dasharray: 0;
+      stroke: #DFE3E6
+    }
+
+    .c3-ygrid-lines .c3-ygrid-line {
+      stroke-dasharray: 0;
+      stroke: #BEC9D0;
+      stroke-width: 3;
+    }
+
+    .c3-defocused {
+      opacity: 0.3;
+    }
+  }
+
+  &__no-stats-data-present-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-view__header {
+    padding: 26px 20px 10px 20px;
+
+    &__right__item {
+      margin-right: 20px;
+    }
+  }
+}
+
+.c3-stacked-bar-chart {
+  max-height: unset !important;
+
+  clipPath[id$="clip-xaxis"] {
+    display: none;
+  }
+
+  .domain {
+    display: none;
+  }
+
+  .tick {
+    text {
+      fill: $default-color;
+      font-size: 12px;
+    }
+
+    line {
+      display: none;
+    }
+  }
+}
+
+.stacked-bar {
+  padding: 7px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__chart {
+    max-width: unset;
+    margin-left: -12px;
+    flex: 1 1 auto;
+    overflow-x: auto !important;
+  }
+
+  &__right {
+    flex: 0 0 auto;
+    margin-left: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}

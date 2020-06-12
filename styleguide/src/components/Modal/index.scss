@@ -1,0 +1,178 @@
+// using import to override react-modal's inline style
+@import '../../styles/variables';
+@import '../../styles/keyframes.scss';
+
+.ReactModal {
+  &__Overlay {
+    background-color: rgba(119, 141, 164, 0.8) !important;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: auto;
+    z-index: $modal;
+
+    &.closing-exit {
+      display: none;
+    }
+  }
+
+  &__Content {
+    overflow: visible !important;
+  }
+
+  &__Content--after-open {
+    padding: 0 !important;
+    border: none !important;
+    height: auto !important;
+    width: 400px;
+    border-radius: 4px !important;
+    background-color: $grey-4 !important;
+    left: 50% !important;
+    bottom: auto !important;
+    transform: translateX(-50%);
+
+    .modal-title {
+      padding: 16px 20px 16px 20px;
+      font-size: 16px;
+      font-weight: 500;
+      border-bottom: 1px solid $grey-2;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      border-radius: $border-radius $border-radius 0 0;
+
+      &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+      }
+
+      &__progress-indicator-wrapper {
+        margin-top: 20px;
+      }
+
+      svg {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+
+        use {
+          fill: $slate-3;
+        }
+      }
+    }
+
+    .modal-content {
+      padding: 30px 20px 20px;
+    }
+
+    .modal-action {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-mobile + 1) {
+  .ReactModal {
+    &__Content--after-open {
+      .modal-content {
+        &.scrollable {
+          padding: 30px 20px 20px;
+          max-height: calc(100vh - 110px);
+          overflow: auto;
+          box-sizing: border-box;
+
+          .active-form {
+            padding-bottom: 50px;
+
+            .form-actions {
+              position: absolute;
+              bottom: 0;
+              width: calc(100% - 40px);
+              background-color: #F5F8FB;
+              padding: 20px;
+              margin-left: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .ReactModal {
+    &__Overlay {
+      overflow: hidden;
+      
+      &.SlideXIn {
+        animation: SlideXIn .3s;
+      }
+
+      &.SlideYIn {
+        animation: SlideYIn .3s;
+      }
+
+      &.closing-exit {
+        display: block;
+        transform: translateY(100vh);
+        transition: transform .25s ease-out;
+      }
+    }
+
+    &__Content {
+      overflow: visible !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      top: 0 !important;
+      display: flex;
+      flex-direction: column;
+      border-radius: 0 !important;
+
+      .modal-title {
+        display: flex;
+        flex-direction: column;
+        border-bottom: none;
+  
+        &__main {
+          display: flex;
+          justify-content: space-between;
+          font-size: 20px;
+          @include font-weight(medium);
+          line-height: 24px;
+          color: $slate-1;
+  
+          svg {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      .modal-content {
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        padding-top: 24px;
+        flex: 1;
+        max-height: calc(100vh - 89px);
+        overflow: auto;
+  
+        &__body {
+          flex: 1;
+          overflow: auto;
+          max-height: none !important;
+        }
+  
+        &__footer {
+          bottom: 0;
+          padding: 20px 0px;
+        }
+      }
+    }
+  }
+}

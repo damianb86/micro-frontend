@@ -1,0 +1,34 @@
+.progress-indicator {
+  display: flex;
+  width: 100%; }
+  .progress-indicator__item {
+    display: flex;
+    align-items: center;
+    height: 8px;
+    flex: 1 1 auto; }
+    .progress-indicator__item:last-child {
+      flex: 0 0 auto; }
+      .progress-indicator__item:last-child .progress-indicator__item__splitter {
+        display: none; }
+    .progress-indicator__item__indicator {
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 50%;
+      height: 8px;
+      width: 8px;
+      box-sizing: border-box; }
+      .progress-indicator__item__indicator.inactive {
+        background-color: #ffffff;
+        border-color: #cad1d8; }
+      .progress-indicator__item__indicator.active {
+        border-color: #009cf6; }
+      .progress-indicator__item__indicator.validated, .progress-indicator__item__indicator.completed {
+        background-color: #009cf6;
+        border-color: #009cf6; }
+    .progress-indicator__item__splitter {
+      height: 2px;
+      width: calc(100% - 8px); }
+      .progress-indicator__item__splitter.active, .progress-indicator__item__splitter.validated, .progress-indicator__item__splitter.inactive {
+        background-color: #cad1d8; }
+      .progress-indicator__item__splitter.completed {
+        background-color: #009cf6; }

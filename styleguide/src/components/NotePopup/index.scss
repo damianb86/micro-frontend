@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+
+.notes-bottom-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  .dropdown {
+    .btn-primary {
+      min-width: 165px;
+    }
+
+    + .dropdown .btn-primary {
+      min-width: 140px;
+    }
+  }
+
+  .dropdown,
+  .checkbox-label {
+    margin-left: 16px;
+  }
+
+  .checkbox-label__text {
+    margin-left: 7px;
+    color: $dark-steel-grey;
+  }
+}
+
+.draft-note-notice {
+  width: 100%;
+  color: #1ab394;
+  text-align: right;
+  font-size: 12px;
+}

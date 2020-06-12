@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.context-menu {
+  width: 40px;
+  height: 32px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+  cursor: pointer;
+  float: right;
+
+  li a {
+    font-size: 13px !important;
+  }
+
+  &:hover,
+  &.active {
+    border-color: $border-color;
+    background-color: $white-color;
+  }
+
+  button {
+    border: 0;
+    box-shadow: none;
+  }
+
+  .delete-icon-link,
+  .deactivate-icon-link {
+    a {
+      color: $danger !important;
+    }
+  }
+
+  .add-link {
+    a {
+      color: $sky-color !important;
+    }
+  }
+}
+

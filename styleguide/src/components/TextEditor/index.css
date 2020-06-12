@@ -1,0 +1,61 @@
+.text-editor {
+  position: relative;
+  font-size: 14px; }
+  .text-editor__template {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    height: 30px;
+    padding: 0px 10px;
+    margin: 0 6px 5px 0; }
+  .text-editor__attachment {
+    position: absolute;
+    right: 10px;
+    top: 13px; }
+    .text-editor__attachment__link {
+      display: flex;
+      color: #778da4;
+      align-items: center; }
+      .text-editor__attachment__link__icon {
+        margin-left: 5px; }
+    .text-editor__attachment__dropdown {
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #CAD1D8;
+      right: 0;
+      top: calc(100% + 10px);
+      border-radius: 4px;
+      width: 240px; }
+      .text-editor__attachment__dropdown__list {
+        padding: 25px 20px;
+        box-sizing: border-box;
+        max-height: 200px;
+        overflow-y: auto; }
+        .text-editor__attachment__dropdown__list__item {
+          align-items: center;
+          display: flex;
+          margin-top: 5px; }
+          .text-editor__attachment__dropdown__list__item:first-child {
+            margin-top: 0; }
+          .text-editor__attachment__dropdown__list__item__name {
+            font-weight: 500;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-right: 10px;
+            flex: 1 1 auto;
+            width: calc(100% - 30px); }
+          .text-editor__attachment__dropdown__list__item__close use {
+            fill: #778da4;
+            cursor: pointer; }
+      .text-editor__attachment__dropdown__add {
+        padding: 20px;
+        display: block;
+        text-align: center;
+        border-top: 1px solid #dfe3e8;
+        color: #009CF6;
+        font-weight: 500; }
+        .text-editor__attachment__dropdown__add:hover {
+          color: #009CF6; }
+  .text-editor .editor-with-template .cke_top {
+    padding: 6px 2px 2px 110px; }

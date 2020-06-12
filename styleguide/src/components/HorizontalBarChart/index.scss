@@ -1,0 +1,83 @@
+@import '../../styles/variables';
+
+.horizontal-bar-chart {
+  width: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 10px 20px;
+
+    &__title {
+      font-size: 14px;
+      @include font-weight(medium);
+    }
+
+    .dropdown-button {
+      &__button {
+        padding-top: 0 !important;
+        color: $slate-1;
+        @include font-weight(medium);
+      }
+    }
+
+    &__dropdown {
+      .select-options {
+        display: inline-block;
+
+        &__title {
+          max-width: 80px !important;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    overflow: auto;
+    max-height: 222px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+    .horizontal-bar {
+      margin-bottom: 9px;
+
+      &__value {
+        color: $slate-1;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4px;
+      }
+
+      &__bar {
+        border-radius: 4px;
+        height: 12px;
+        background-color: $grey-2;
+        width: 100%;
+
+        div {
+          border-radius: 4px;
+          height: 12px;
+          animation: MOVE-THE-BAR 0.5s ease-in-out 0s 1;
+          transition: width 0.3s ease-in-out;
+        }
+      }
+    }
+
+    &__empty {
+      color: $slate-1;
+      line-height: 20px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 60px;
+      @include font-weight(medium);
+    }
+  }
+}
+
+@keyframes MOVE-THE-BAR {
+  0% {
+    width: 0%;
+  }
+}

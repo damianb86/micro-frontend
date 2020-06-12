@@ -1,0 +1,18 @@
+.action-bar {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 40px;
+  box-sizing: border-box; }
+  .action-bar__right {
+    float: right;
+    margin-top: 1px; }
+    .action-bar__right__total-count {
+      float: right;
+      font-weight: 500;
+      color: #778da4;
+      margin: 5px 20px 0 0; }
+  .action-bar__left {
+    float: left;
+    display: flex; }
+  .action-bar button:first-child {
+    margin-right: 0; }

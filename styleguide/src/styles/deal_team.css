@@ -1,0 +1,48 @@
+.deal-team {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .deal-team__header {
+    padding: 10px 0;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 400; }
+    .deal-team__header__left {
+      float: left;
+      margin: 0;
+      font-size: 18px; }
+    .deal-team__header__right {
+      float: right;
+      font-size: 18px; }
+  .deal-team__body {
+    flex: 1 1 auto; }
+  .deal-team__member {
+    padding: 10px; }
+    .deal-team__member__img {
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: top;
+      width: 40px;
+      overflow: hidden; }
+      .deal-team__member__img img {
+        max-height: 100%; }
+    .deal-team__member__content {
+      display: inline-block;
+      width: calc(100% - 50px);
+      vertical-align: middle; }
+      .deal-team__member__content__details {
+        float: left;
+        width: calc(100% - 188px); }
+        .deal-team__member__content__details__name {
+          font-weight: 400;
+          font-size: 16px; }
+        .deal-team__member__content__details__name, .deal-team__member__content__details__designation-with-company {
+          display: block; }
+      .deal-team__member__content__buttons {
+        float: right;
+        padding-top: 7px; }
+        .deal-team__member__content__buttons .text-bright-green {
+          display: inline-block;
+          margin-top: 5px; }

@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.search-select-multi-criteria-dropdown {
+  &__search {
+    .search-select-multi__input-wrapper {
+      border: none;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom: 1px solid $grey-2;
+      width: 360px;
+      padding: 5px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__select {
+    padding: 11px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .search-select-multi-criteria-dropdown {
+    &__mobile {
+      .search-select-multi {
+        &__input-wrapper {
+          width: 100% !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          border: none !important;
+        }
+      }
+    }
+  }
+}

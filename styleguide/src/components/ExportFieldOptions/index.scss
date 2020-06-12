@@ -1,0 +1,35 @@
+.export-fields {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    &__title {
+      font-weight: 500;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    &__section {
+      flex-grow: 1;
+
+      &__title {
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      &__list {
+        &__item {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &__section:nth-child(3) {
+      flex-grow: 0;
+    }
+  }
+}

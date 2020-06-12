@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="11px" viewBox="0 0 19 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 57.1 (101010) - https://sketch.com -->
+    <title>Tags</title>
+    <g id="sidebar-interaction" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tags" transform="translate(-30.000000, -380.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Component/Sidebar/Desktop/report">
+                <g id="Component/Sidebar/Desktop/Uncollapsed">
+                    <g id="Navigation" transform="translate(0.000000, 88.000000)">
+                        <g id="report" transform="translate(1.000000, 278.000000)">
+                            <g id="icon-24-report-white-Icon/24/Nav/Tags/On" transform="translate(26.000000, 8.000000)">
+                                <g id="noun_Tag_508219" transform="translate(12.000000, 12.000000) rotate(45.000000) translate(-12.000000, -12.000000) translate(3.000000, 3.000000)">
+                                    <path d="M15.5543838,2.33157572 C13.5456865,0.211672862 10.4689148,0.393623544 8.5309626,2.33157572 L1.18087063,9.68608216 C0.209687308,10.652851 0.209687308,12.2288167 1.18087063,13.1955855 L4.690374,16.7050889 C5.65714286,17.6718578 7.23310852,17.6718578 8.19987738,16.7050889 L15.5543838,9.35058246 C17.492336,7.41704476 17.5630812,4.45147858 15.5543838,2.33157572 Z M13.710975,4.97172943 C13.0214821,4.97172943 12.4524831,4.41611866 12.4524831,3.71323757 C12.4524831,3.02374469 13.014788,2.45474571 13.710975,2.45474571 C14.407162,2.45474571 14.9694669,3.01705058 14.9694669,3.71323757 C14.9694669,4.41611866 14.407162,4.97172943 13.710975,4.97172943 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

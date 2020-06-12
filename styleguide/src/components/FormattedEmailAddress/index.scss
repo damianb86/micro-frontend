@@ -1,0 +1,16 @@
+.formatted-email {
+  display: inline-block;
+
+  &__address {
+    color: inherit;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .truncate {
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,71 @@
+/* Deals List View */
+.deals-list-view img {
+  max-width: 60px;
+  max-height: 20px; }
+
+/* Add Deals Popup */
+.add-deal-popup .modal-dialog {
+  width: 650px; }
+
+.add-deal-popup__btn-section {
+  margin-top: 40px; }
+
+.add-deals-likelihood {
+  padding-top: 16px; }
+  .add-deals-likelihood .deals-likelihood__progress-show {
+    width: calc(100% - 75px); }
+
+.deal-size-input {
+  padding: 6px 12px; }
+
+.pendulum-email-value {
+  width: 100%; }
+
+.deals-tbody-bottom-padding .list-view__tbody > div:last-child {
+  margin-bottom: 150px; }
+
+/* status popup */
+.deals-likelihood-wrapper {
+  position: relative; }
+  .deals-likelihood-wrapper:hover .status-popup {
+    display: block; }
+
+.status-popup {
+  background-color: #ffffff;
+  border: 1px solid;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 430px;
+  z-index: 1;
+  display: none; }
+  .status-popup:before {
+    border-color: transparent transparent #1e1e1e;
+    border-style: solid;
+    border-width: 0 6px 6px;
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: -7px;
+    z-index: 2; }
+  .status-popup__header {
+    margin-bottom: 15px;
+    text-align: left; }
+    .status-popup__header__item {
+      display: block;
+      margin-bottom: 10px; }
+    .status-popup__header__left {
+      float: left;
+      width: 185px; }
+    .status-popup__header__right {
+      float: right; }
+
+/* responsive styles */
+@media (min-width: 768px) {
+  .grid-view__item-wrapper:not(:nth-child(3n+1)) .status-popup {
+    right: 8px;
+    left: auto; }
+    .grid-view__item-wrapper:not(:nth-child(3n+1)) .status-popup:before {
+      right: 8px;
+      left: auto; } }

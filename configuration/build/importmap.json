@@ -1,0 +1,15 @@
+{
+  "imports": {
+    "@clockwork/root-config": "//localhost:9000/clockwork-root-config.js",
+    "@clockwork/configuration": "//localhost:8010/clockwork-configuration.js",
+    "@clockwork/styleguide": "//localhost:8010/build/clockwork-styleguide.js",
+    "@clockwork/api": "//localhost:8010/build/clockwork-api.js",
+    "@clockwork/left-app": "//localhost:8010/build/clockwork-left-app.js",
+    "@clockwork/content-app": "//localhost:8010/build/clockwork-content-app.js",
+    "@clockwork/login-app": "//localhost:8010/build/clockwork-login-app.js",
+    "@clockwork/top-app": "//localhost:8010/build/clockwork-top-app.js",
+    "@clockwork/multiple-cards-app": "//localhost:8010/build/clockwork-multiple-cards-app.js",
+    "@clockwork/storybook-app": "//localhost:8010/build/clockwork-storybook-app.js",
+    "@clockwork/right-bar-app": "//localhost:8010/build/clockwork-right-bar-app.js"
+  }
+}

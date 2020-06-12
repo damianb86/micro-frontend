@@ -1,0 +1,81 @@
+@import 'variables';
+
+/*Client View Mode*/
+.client-mode-message {
+  background-color: #29aae1;
+  padding: 10px;
+  position: fixed;
+  z-index: 1050;
+  width: 100%;
+
+  &__text {
+    color: $white-color;
+    width: calc(100% - 130px);
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+
+    &__user-name {
+      text-transform: uppercase;
+      font-style: italic;
+      display: block;
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.client-mode {
+  .main-content {
+    padding: 62px 0 0;
+  }
+
+  .sidebar {
+    padding-top: 109px;
+  }
+
+  .details-view {
+    top: 59px;
+    height: calc(100% - 59px);
+
+    &--minimize {
+      top: auto;
+    }
+  }
+
+  .project-tabs-wrapper {
+    width: 100%;
+  }
+}
+
+.candidate-list-view--client-mode {
+  .list-view__thead > div:first-child, .list-view__tbody__row > div:first-child {
+    padding-left: 25px;
+  }
+}
+
+.grid-view__item__summary--client-mode {
+  height: calc(100% - 81px);
+}
+
+@media (min-width: 768px) {
+  .client-mode-message {
+    &__text {
+      font-size: 26px;
+
+      &__user-name {
+        display: inline-block;
+        width: calc(100% - 380px);
+        vertical-align: text-top;
+      }
+    }
+  }
+
+  .client-mode {
+    .main-content {
+      padding: 60px 0 0;
+    }
+  }
+}

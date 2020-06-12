@@ -1,0 +1,151 @@
+@import '../../styles/variables';
+
+.custom-slider {
+  padding: 0 7px;
+
+  &__title {
+    @include font-weight(medium);
+    margin: 0 20px 20px -7px;
+    display: inline-block;
+  }
+
+  .rc-slider-track {
+    background-color: $action-blue-1;
+  }
+
+  .rc-slider-handle {
+    border: 1px solid $action-blue-1;
+    width: 13px;
+    height: 13px;
+    background-color: $grey-4 !important;
+
+    &:focus, &:active {
+      box-shadow: 0 0 2px 1px $action-blue-2;
+    }
+  }
+
+  .rc-slider-step {
+    .rc-slider-dot {
+      display: none;
+    }
+  }
+
+  .rc-slider-mark  {
+    top: 16px;
+  }
+
+  .rc-slider-mark-text {
+    color: $default-color;
+
+    &-active {
+      color: $default-color;
+    }
+  }
+
+  &__titles {
+    display: inline-block;
+
+    &__title {
+      font-weight: 500;
+      margin: 0 17px 15px -12px;
+      padding: 5px;
+      cursor: pointer;
+      background-color: $action-blue-1;
+      color: white;
+      border-radius: 2px;
+    }
+  }
+
+  .rc-slider {
+    &.color {
+      &-grey {
+        .rc-slider-track, .rc-slider-handle {
+          background-color: $grey-6 !important;
+          border: 1px solid $grey-6;
+        }
+      }
+
+      &-red {
+        .rc-slider-track, .rc-slider-handle {
+          background-color: $danger !important;
+          border: 1px solid $danger;
+        }
+      }
+
+      &-dark-orange {
+        .rc-slider-track, .rc-slider-handle {
+          background-color: $chart-orange2 !important;
+          border: 1px solid $chart-orange2;
+        }
+      }
+
+      &-light-orange {
+        .rc-slider-track, .rc-slider-handle {
+          background-color: $chart-orange !important;
+          border: 1px solid $chart-orange;
+        }
+      }
+
+      &-green {
+        .rc-slider-track, .rc-slider-handle {
+          background-color: $chart-green !important;
+          border: 1px solid $chart-green;
+        }
+      }
+    }
+  }
+}
+
+.rc-slider-tooltip {
+  z-index: 999999;
+
+  .rc-slider-tooltip-arrow {
+    display: none;
+  }
+
+  .rc-slider-tooltip-inner {
+    background-color: $white;
+    color: $default-color;
+    border: 1px solid $action-blue-1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 3px 6px;
+    height: 20px;
+  }
+
+  &.rc-slider-tooltip-placement-top {
+    padding-bottom: 0;
+  }
+
+  &.color {
+    &-grey {
+      .rc-slider-tooltip-inner {
+        border: 1px solid $grey-6;
+      }
+    }
+
+    &-red {
+      .rc-slider-tooltip-inner {
+        border: 1px solid $danger;
+      }
+    }
+
+    &-dark-orange {
+      .rc-slider-tooltip-inner {
+        border: 1px solid $chart-orange2;
+      }
+    }
+
+    &-light-orange {
+      .rc-slider-tooltip-inner {
+        border: 1px solid $chart-orange;
+      }
+    }
+
+    &-green {
+      .rc-slider-tooltip-inner {
+        border: 1px solid $chart-green;
+      }
+    }
+  }
+}

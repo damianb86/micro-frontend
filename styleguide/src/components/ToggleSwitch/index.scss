@@ -1,0 +1,73 @@
+@import '../../styles/variables';
+$toggle-switch-bg-color-on: $success-green;
+
+.switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  min-width: 36px;
+  vertical-align: middle;
+
+  &-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+
+    &.disabled {
+      .slider { cursor: not-allowed; }
+    }
+  }
+
+  &-label {
+    font-weight: 500;
+    margin-left: 46px;
+    color: $dark-steel-grey;
+    vertical-align: middle;
+  }
+
+  input {
+    display:none;
+
+    &:focus + .slider {
+      box-shadow: 0 0 1px $toggle-switch-bg-color-on;
+    }
+
+    &:checked {
+      + .slider {
+        background-color: $toggle-switch-bg-color-on;
+
+        &:before {
+          transform: translateX(16px);
+        }
+      }
+
+      ~ .switch-label {
+        color: $toggle-switch-bg-color-on;
+      }
+    }
+  }
+
+  .slider {
+    background-color: #CAD1D8;
+    border-radius: 36px;
+    cursor: pointer;
+    height: 20px;
+    width: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+
+    &:before {
+      background-color: $white-color;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.24);
+      border-radius: 20px;
+      bottom: 2px;
+      content: "";
+      height: 16px;
+      left: 2px;
+      position: absolute;
+      transition: all 0.2s linear 0s;
+      width: 16px;
+    }
+  }
+}

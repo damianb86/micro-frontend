@@ -1,0 +1,225 @@
+@import "../../styles/variables";
+
+.project-list {
+  .empty-message {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.project-list-item {
+  background-color: $white;
+  border: 1px solid $grey-3;
+  border-radius: 4px;
+  padding: 14px 20px 19px 13px;
+  margin-bottom: 30px;
+
+  &__top {
+    display: flex;
+
+    &__left {
+      flex: 1;
+
+      &__title {
+        &__top {
+          display: flex;
+
+          h2 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            margin: 0 0 0 20px;
+          }
+
+          &__name-link {
+            color: $slate-1;
+          }
+
+          .icons {
+            margin-left: 2px;
+
+            svg {
+              margin-left: 7px;
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+
+        &__bottom {
+          display: flex;
+          margin: 34px 0 0 15px;
+        }
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 252px;
+
+      &__status {
+        border: 1px solid $grey-3;
+        width: 240px;
+        margin-left: 20px;
+
+        &__top {
+          border-bottom: 1px solid $grey-3;
+          color: $slate-2;
+          font-size: 12px;
+          line-height: 18px;
+        }
+
+        &__bottom {
+          font-weight: 500;
+
+          span:last-child {
+            text-align: right;
+            padding-right: 15px;
+            width: calc(50% - 15px)
+          }
+        }
+
+        &__top, &__bottom {
+          display: flex;
+          padding: 9px;
+
+          span {
+            display: block;
+            width: 50%;
+            text-align: center;
+          }
+        }
+      }
+
+      &__logo {
+        margin-bottom: 20px;
+
+        img {
+          height: 40px;
+          max-width: 240px;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    margin: 18px 15px 5px 15px;
+    border-top: 1px solid $grey-3;
+
+    &__project-team, &__project-dates, &__project-profile {
+      margin-top: 20px;
+
+      p {
+        color: #778DA4;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        margin-bottom: 13px;
+      }
+
+      .field {
+        margin-right: 0 !important;
+      }
+    }
+
+    &__project-team {
+      flex: 1;
+      width: 100px;
+      margin-right: 60px;
+    }
+
+    &__project-dates {
+      flex: 1;
+      width: 350px;
+      margin-right: 60px;
+
+      &__fields {
+        display: flex;
+        flex-direction: column;
+        margin-top: -13px;
+      }
+
+      &__first, &__second, &__third {
+        display: flex;
+
+        .field {
+          margin-right: 25px !important;
+          width: 110px !important;
+        }
+
+        .field:last-child {
+          margin-right: 0 !important;
+        }
+      }
+
+      &__third {
+        .field {
+          width: 150px !important;
+          max-width: 150px !important;
+        }
+      }
+    }
+
+    &__project-profile {
+      flex: 1;
+
+      &__fields {
+        display: flex;
+        flex-direction: column;
+        margin-top: -13px;
+      }
+
+      &__first, &__second, &__third {
+        display: flex;
+
+        .field {
+          margin-right: 25px !important;
+          width: 150px !important;
+          max-width: 150px !important;
+        }
+
+        .field:last-child {
+          margin-right: 0 !important;
+        }
+      }
+
+      &__third {
+        .field:last-child {
+          flex: 1;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .tag-item {
+          margin: 4px 4px 0 0;
+        }
+      }
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 25px 0 0;
+    max-width: 100px;
+
+    &__name {
+      color: $slate-2;
+      font-size: 14px;
+      line-height: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &__value, &__value span {
+      margin-top: 4px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.input-groups {
+  margin-bottom: 30px; }
+  .input-groups label {
+    font-size: 12px;
+    color: #455565;
+    margin-bottom: 8px; }
+  .input-groups input[type="text"],
+  .input-groups input[type="email"],
+  .input-groups input[type="password"],
+  .input-groups input[type="number"],
+  .input-groups input[type="date"],
+  .input-groups select,
+  .input-groups textarea,
+  .input-groups .dropdown {
+    width: 100%;
+    font-family: inherit;
+    font-size: 14px; }
+    .input-groups input[type="text"]:disabled,
+    .input-groups input[type="email"]:disabled,
+    .input-groups input[type="password"]:disabled,
+    .input-groups input[type="number"]:disabled,
+    .input-groups input[type="date"]:disabled,
+    .input-groups select:disabled,
+    .input-groups textarea:disabled,
+    .input-groups .dropdown:disabled {
+      cursor: not-allowed;
+      opacity: 0.48; }
+  .input-groups input[type="text"],
+  .input-groups input[type="email"],
+  .input-groups input[type="password"],
+  .input-groups input[type="number"],
+  .input-groups input[type="date"] {
+    color: #1c2228;
+    font-weight: 400;
+    padding: 0 10px; }
+  .input-groups textarea {
+    color: #1c2228;
+    font-weight: 400;
+    height: 110px;
+    padding: 8px 10px;
+    margin: 0; }
+  .input-groups .dropdown-menu,
+  .input-groups .dropdown-toggle {
+    width: 100%; }
+  .input-groups .field-error {
+    display: block;
+    font-size: 12px; }

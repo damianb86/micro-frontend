@@ -1,0 +1,14 @@
+.notes-bottom-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; }
+  .notes-bottom-bar .dropdown .btn-primary {
+    min-width: 165px; }
+  .notes-bottom-bar .dropdown + .dropdown .btn-primary {
+    min-width: 140px; }
+  .notes-bottom-bar .dropdown,
+  .notes-bottom-bar .checkbox-label {
+    margin-left: 16px; }
+  .notes-bottom-bar .checkbox-label__text {
+    margin-left: 7px;
+    color: #778da4; }

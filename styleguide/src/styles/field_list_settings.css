@@ -1,0 +1,82 @@
+.field-settings {
+  position: relative; }
+
+.field-list-settings {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  z-index: 1060;
+  font-size: 13px;
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.15); }
+  .field-list-settings__field-search {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    flex: 0 0 auto; }
+    .field-list-settings__field-search img {
+      margin-right: 10px;
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      margin-top: -4px; }
+    .field-list-settings__field-search__search-img {
+      display: none; }
+    .field-list-settings__field-search input {
+      border: none; }
+  .field-list-settings__selected-list {
+    flex: 0 0 auto; }
+    .field-list-settings__selected-list h4 {
+      padding: 0 10px; }
+    .field-list-settings__selected-list ul {
+      max-height: 200px;
+      overflow-y: auto; }
+    .field-list-settings__selected-list__item {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      list-style: none;
+      z-index: 1100; }
+      .field-list-settings__selected-list__item:first-child {
+        border-top: 1px solid #ccc; }
+      .field-list-settings__selected-list__item img {
+        width: 16px; }
+      .field-list-settings__selected-list__item span {
+        display: inline-block;
+        width: calc(100% - 42px);
+        margin-left: 10px; }
+  .field-list-settings__data-list {
+    overflow-y: auto;
+    flex: 1 1 auto; }
+    .field-list-settings__data-list h4 {
+      padding: 0 10px; }
+    .field-list-settings__data-list ul {
+      overflow-y: auto;
+      height: calc(100% - 36px); }
+      .field-list-settings__data-list ul li {
+        padding: 0 10px; }
+  .field-list-settings__btn {
+    padding: 10px;
+    flex: 0 0 auto; }
+  .field-list-settings h4 {
+    font-weight: 600; }
+
+@media (min-width: 992px) {
+  .field-list-settings {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 30px;
+    width: 250px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+    .field-list-settings__field-search__back-img {
+      display: none; }
+    .field-list-settings__field-search__search-img {
+      display: inline-block; }
+    .field-list-settings__data-list ul {
+      max-height: 120px; } }

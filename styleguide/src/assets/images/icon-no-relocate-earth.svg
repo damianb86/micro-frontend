@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-no-relocate-earth</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="9" cy="9" r="9"></circle>
+        <circle id="path-3" cx="9" cy="9" r="9"></circle>
+        <path d="M17.5,17.5 L0.5,0.5" id="path-5"></path>
+        <filter x="-20.6%" y="-20.6%" width="141.2%" height="141.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Projects-&gt;-Candidates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Candidates-1.15" transform="translate(-397.000000, -482.000000)">
+            <g id="body" transform="translate(280.000000, 108.000000)">
+                <g id="main">
+                    <g id="projects" transform="translate(0.000000, 62.000000)">
+                        <g id="Group-13" transform="translate(0.000000, 72.000000)">
+                            <g id="card-candidate">
+                                <g id="no-color-icons" transform="translate(119.000000, 238.000000)">
+                                    <g id="icon-no-relocate-earth" transform="translate(0.000000, 4.000000)">
+                                        <g id="Group-4">
+                                            <mask id="mask-2" fill="white">
+                                                <use xlink:href="#path-1"></use>
+                                            </mask>
+                                            <use id="Oval-1" fill="#99AABB" xlink:href="#path-1"></use>
+                                            <path d="M17.4,12.15 C17.4,12.15 17.2746114,9.53154882 15.75,8.55 C15.0902551,8.12525451 12.7486127,8.61036101 12.3,8.25 C11.8232819,7.86706246 11.3802231,7.16997328 11.1,6.45 C10.4604755,4.80687821 12.682818,5.15154608 12.9,4.5 C13.1171821,3.84845392 13.2927186,3.69381081 12.3,2.85 C11.3072814,2.00618919 10.4306015,2.42754136 9.9,1.95 C9.36939849,1.47245864 9.3,0.15 9.3,0.15 L11.1,-1.6875 C11.1,-1.6875 15.5566485,-0.996868285 16.875,0 C18.1933515,0.996868285 20.25,5.23125 20.25,5.23125 L17.4,12.15 Z" id="Path-69" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                                            <path d="M16.35,14.4 C16.35,14.4 14.8407244,14.3496755 13.2,14.1 C11.5592756,13.8503246 10.958938,12.4729052 9.6,12.9 C8.24106204,13.3270948 7.8,13.6665666 7.8,14.7 C7.8,15.7334334 9.35012337,16.3835389 9.6,16.8 C9.84987663,17.2164611 9.45,17.9999997 9.45,17.9999997" id="Path-70" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                                            <path d="M1.65,3.9 C1.65,3.9 4.1285886,5.26571772 4.8,5.4 C5.4714114,5.53428228 6.07668811,4.74360624 6.15,4.8 C6.72668811,5.24360624 7.69323135,5.27554601 6.75,6.9 C5.80676865,8.52445399 4.53748683,8.55047408 4.5,9.9 C4.46251317,11.2495259 6.35008939,11.8715818 6.6,12.3 C6.73800929,12.5365874 7.05,12.6 6.6,13.05 C6.15,13.5 6.11534319,13.4622252 5.25,13.2 C3.31741826,12.6143692 2.56375637,11.5360815 1.65,10.8 C0.73624363,10.0639185 0,8.85 0,8.85" id="Path-71" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                                            <mask id="mask-4" fill="white">
+                                                <use xlink:href="#path-3"></use>
+                                            </mask>
+                                            <circle stroke="#99AABB" cx="9" cy="9" r="8.5"></circle>
+                                        </g>
+                                        <g id="Path-10" stroke-linecap="round">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                            <use stroke="#99AABB" stroke-width="1" xlink:href="#path-5"></use>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

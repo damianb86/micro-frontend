@@ -1,0 +1,98 @@
+@import "../../../styles/_variables";
+
+.side-panel {
+  box-shadow: -2px 0 1px 0 rgba(0,0,0,.04);
+  background-color: $white-color;
+  box-sizing: border-box;
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: width linear 0.3s, transform linear 0.3s;
+  visibility: hidden;
+  z-index: 10;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+
+  &.expand {
+    width: 100%;
+  }
+
+  &.minimize {
+    height: 48px;
+    padding: 8px 12px;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    cursor: pointer;
+    border-width: 2px 0 0 2px;
+    border-color: #009CF6;
+    border-style: solid;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
+
+    &__controls {
+      top: 4px;
+      right: 0;
+
+      .expand-collapse-item,
+      .minimize-item {
+        display: none;
+      }
+    }
+  }
+
+  &.show {
+    transform: translateX(0);
+    width: 440px;
+    visibility: visible;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #455565;
+  }
+
+  &__controls {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    max-height: 16px;
+
+    &__item {
+      margin-left: 8px;
+
+      a {
+        display: inline-block;
+      }
+
+      svg {
+        use,
+        g {
+          fill: #99aabb;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 1 auto;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    &.show {
+      width: 100%;
+    }
+  }
+}

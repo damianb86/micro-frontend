@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+.search-multiple-dropdown {
+  &__search {
+    .search-select-multi {
+      &__input-wrapper {
+        border: none;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom: 1px solid $grey-2;
+        width: 360px;
+        padding: 5px;
+        margin-bottom: 15px;
+      }
+
+      &__list {
+        position: relative;
+        border: 0;
+      }
+    }
+  }
+
+  &__select {
+    padding: 11px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.borderLess {
+    .dropdown-button {
+      &__button {
+        border: none;
+        box-shadow: none;
+        padding: 8px 0;
+        font-size: 12px;
+        min-width: auto;
+        background: none;
+      }
+    }
+  }
+}

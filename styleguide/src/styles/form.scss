@@ -1,0 +1,159 @@
+@import "variables";
+$input-background-color: $white-color;
+$input-placeholder-color: #999;
+$input-font-size: 13px;
+$input-border-color: #dfe3e8;
+$input-border-radius: 4px;
+$input-focus-color: $sky-color;
+$input-height: 32px;
+$input-line-height: 32px;
+$readonly-input-background: #eee;
+$primary-button-text: $white-color;
+$primary-button-background: $sky-color;
+$primary-button-border-color: #0288d5;
+$primary-button-hover-background: #286090;
+$primary-button-hover-border-color: #286090;
+$secondary-button-color: $default-color;
+$secondary-button-text: $default-color;
+$secondary-button-background: $white-color;
+$secondary-button-border-color: #dfe3e8;
+$delete-button-border-color: #c44f63;
+$delete-button-text: $white-color;
+$secondary-delete-button-text: $danger;
+$secondary-delete-button-background: $white-color;
+$secondary-delete-button-border-color: #dfe3e8;
+$button-disabled-color: #aeaeae;
+
+@mixin shared-button-style {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $font-weight-medium;
+  padding: 4px 12px 4px !important;
+  text-align: center;
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.478;
+  float: right;
+  margin-right: 5px;
+
+  img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+@mixin pri-button {
+  @include shared-button-style;
+  background-color: $primary-button-background;
+  border-color: $primary-button-border-color;
+  color: $primary-button-text;
+}
+
+@mixin sec-button {
+  @include shared-button-style;
+  background-color: $secondary-button-background;
+  border-color: $secondary-button-border-color;
+  color: $secondary-button-text;
+  margin-right: 10px;
+}
+
+@mixin delete-button {
+  @include shared-button-style;
+  background-color: $danger;
+  border-color: $delete-button-border-color;
+  color: $delete-button-text;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $delete-button-text;
+  }
+}
+
+@mixin secondary-delete-button {
+  @include shared-button-style;
+  background-color: $secondary-delete-button-background;
+  border-color: $secondary-delete-button-border-color;
+  color: $secondary-delete-button-text;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $secondary-delete-button-text;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  border: 1px solid $input-border-color;
+  border-radius: $input-border-radius;
+  background-color: $input-background-color;
+  box-sizing: border-box;
+  padding: 0 12px;
+  transition: all 0.15s ease-in-out;
+  vertical-align: middle;
+
+  &:focus {
+    border-color: $input-focus-color;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select {
+  height: $input-height;
+}
+
+.pri-button {
+  @include pri-button;
+
+  svg {
+    use {
+      fill: $white-color;
+    }
+  }
+}
+
+.sec-button {
+  @include sec-button;
+}
+
+.pri-button, .sec-button {
+  svg + span {
+    margin-left: 5px;
+  }
+
+  svg, span {
+    vertical-align: middle;
+  }
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.delete-button {
+  @include delete-button;
+}
+
+.secondary-delete-button {
+  @include secondary-delete-button;
+}
+
+.field-error {
+  color: $danger;
+  display: block;
+}
+
+label {
+  display: inline-block;
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 768px) {
+  // Hide sidebar, headers and menu to mobile version
+  // We are putting new responsive components in its place
+  #sidebar-container, #header-container, #mainheading, #sidebar {
+    display: none;
+  }
+
+  // The page must not have margins or paddings for the responsive design to cover 100%
+  #page {
+    padding: 0 !important;
+  }
+
+  #mainbar {
+    margin: 0 !important;
+    min-width: unset !important;
+  }
+}

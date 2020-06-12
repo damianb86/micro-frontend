@@ -1,0 +1,34 @@
+.visibility-toggle-form {
+  padding: 25px 0;
+  border-bottom: 1px solid #dfe3e8;
+  margin: 0 20px;
+  font-size: 14px; }
+  .visibility-toggle-form__description {
+    font-size: 12px;
+    margin-bottom: 35px; }
+  .visibility-toggle-form .checkbox-label__text {
+    font-size: 15px; }
+  .visibility-toggle-form__sec {
+    margin-bottom: 20px; }
+    .visibility-toggle-form__sec:last-child {
+      margin-bottom: 0; }
+    .visibility-toggle-form__sec__title {
+      margin: 0;
+      display: inline-block;
+      cursor: pointer; }
+    .visibility-toggle-form__sec .icon-action-wrapper {
+      float: right;
+      background-position: 0 -1px; }
+    .visibility-toggle-form__sec__content {
+      margin-top: 10px; }
+      .visibility-toggle-form__sec__content .checkbox-label {
+        margin: 0 0 15px 0;
+        display: block; }
+      .visibility-toggle-form__sec__content.candidate .checkbox-label {
+        width: 50%;
+        display: inline-block; }
+      .visibility-toggle-form__sec__content .visibility-settings-sub-title:first-child {
+        margin-top: 0px; }
+
+.visibility-settings-sub-title {
+  margin: 10px 0 8px; }

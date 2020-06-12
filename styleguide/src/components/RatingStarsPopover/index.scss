@@ -1,0 +1,29 @@
+.rating-stars-pop-over {
+  .simple-pop-over__content {
+    max-height: 200px;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+    font-size: 14px;
+
+    &__title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__rating {
+      display: flex;
+
+      &__number {
+        margin-left: auto;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__item:first-child {
+    margin-top: 6px;
+  }
+}

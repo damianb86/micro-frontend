@@ -1,0 +1,126 @@
+.stacked-list-with-threads {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .stacked-list-with-threads__item {
+    display: flex;
+    background-color: #ffffff;
+    border-top: 1px solid #e9edf1;
+    border-left: 2px solid #99AABB;
+    padding: 15px 12px 15px 8px;
+    position: relative; }
+    .stacked-list-with-threads__item__no-padding {
+      padding: 0px; }
+    .stacked-list-with-threads__item__action-controls {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .stacked-list-with-threads__item__action-controls svg {
+        margin-right: 10px; }
+        .stacked-list-with-threads__item__action-controls svg path, .stacked-list-with-threads__item__action-controls svg polygon, .stacked-list-with-threads__item__action-controls svg rect {
+          fill: #455565 !important; }
+        .stacked-list-with-threads__item__action-controls svg defs > path {
+          fill: #455565; }
+        .stacked-list-with-threads__item__action-controls svg g > g > path:nth-child(2) {
+          stroke: #455565; }
+      .stacked-list-with-threads__item__action-controls .dropdown .dropdown-menu {
+        max-width: 140px;
+        min-width: fit-content; }
+        .stacked-list-with-threads__item__action-controls .dropdown .dropdown-menu li:last-child > a {
+          color: #FB657E; }
+          .stacked-list-with-threads__item__action-controls .dropdown .dropdown-menu li:last-child > a svg path {
+            fill: #FB657E !important; }
+      .stacked-list-with-threads__item__action-controls .dropdown .caret {
+        display: none; }
+      .stacked-list-with-threads__item__action-controls__top .dropdown button path {
+        fill: #99aabb !important; }
+      .stacked-list-with-threads__item__action-controls__top .dropdown ul > li.hide {
+        display: none; }
+      .stacked-list-with-threads__item__action-controls__botton a {
+        cursor: pointer;
+        color: #009CF6;
+        width: 80px;
+        display: block;
+        margin-left: -62px;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: right; }
+    .stacked-list-with-threads__item__title {
+      white-space: nowrap;
+      max-width: 280px;
+      position: relative; }
+      .stacked-list-with-threads__item__title__avatar, .stacked-list-with-threads__item__title__title {
+        display: inline-block;
+        vertical-align: middle; }
+      .stacked-list-with-threads__item__title__avatar {
+        width: 32px;
+        height: 32px; }
+        .stacked-list-with-threads__item__title__avatar .avatar-image {
+          height: 32px; }
+        .stacked-list-with-threads__item__title__avatar__pin-icon {
+          position: absolute;
+          top: -10px;
+          left: -10px; }
+      .stacked-list-with-threads__item__title__title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #1C2228;
+        margin-left: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 240px; }
+    .stacked-list-with-threads__item .stacked-list-content__title__main {
+      max-width: 325px;
+      overflow: hidden;
+      padding: 10px 0 0 10px;
+      margin: -10px 0 0 -10px; }
+    .stacked-list-with-threads__item .stacked-list-content__tags span {
+      height: 20px;
+      font-size: 12px;
+      padding: 2px 7px; }
+    .stacked-list-with-threads__item .stacked-list-content__label {
+      display: initial !important; }
+      .stacked-list-with-threads__item .stacked-list-content__label__item {
+        display: block;
+        max-width: 325px; }
+    .stacked-list-with-threads__item__files {
+      margin-top: 10px; }
+      .stacked-list-with-threads__item__files a {
+        font-size: 14px;
+        font-weight: 500;
+        color: #455565;
+        text-decoration: none;
+        display: block;
+        margin-top: 4px; }
+    .stacked-list-with-threads__item .read-more .sky-text {
+      color: #009CF6;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 20px; }
+  .stacked-list-with-threads__item.visible {
+    border-left: 8px solid #50D087;
+    padding-left: 2px; }
+    .stacked-list-with-threads__item.visible .dropdown ul li.hide {
+      display: initial; }
+    .stacked-list-with-threads__item.visible .dropdown ul li.show {
+      display: none; }
+    .stacked-list-with-threads__item.visible::before {
+      content: "";
+      position: absolute;
+      border-left: 8px solid #50D087;
+      height: 1px;
+      left: -8px;
+      top: -1px; }
+
+.stacked-list-with-threads.reply {
+  border-top: 1px solid #e9edf1; }
+  .stacked-list-with-threads.reply li.stacked-list-with-threads__item {
+    margin-left: 40px; }
+  .stacked-list-with-threads.reply .stacked-list-with-threads__is-reply {
+    margin: 28px 0 -47px 14px;
+    opacity: 0.5; }
+    .stacked-list-with-threads.reply .stacked-list-with-threads__is-reply svg {
+      transform: rotate(180deg); }
+  .stacked-list-with-threads.reply .stacked-list-with-threads__is-reply-form {
+    padding: 26px 20px; }

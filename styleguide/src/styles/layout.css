@@ -1,0 +1,22 @@
+.main {
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  height: 100vh; }
+  .main .main-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.2s linear;
+    min-width: 245px; }
+    .main .main-content .navbar-header {
+      margin: 0; }
+    .main .main-content .content-wrapper {
+      overflow-x: hidden;
+      overflow-y: auto;
+      flex: 1 1 auto; }

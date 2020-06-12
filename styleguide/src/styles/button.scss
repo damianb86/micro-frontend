@@ -1,0 +1,50 @@
+@import "variables";
+
+.btn-primary {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: $font-weight-medium;
+  background: $white-color;
+  border-radius: 4px;
+  color: $default-color;
+  border: 1px solid #dfe3e8;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  padding: 8px;
+  text-align: left;
+  line-height: 1;
+  cursor: pointer;
+
+  .caret {
+    background-image: url("../assets/images/Chevron_Down_Slate1_455565.svg");
+    width: 12px;
+    height: 12px;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border: none;
+    margin: 1px 0 0 15px;
+  }
+
+  &.borderLess {
+    border: none;
+    box-shadow: none;
+    padding: 8px 0;
+    font-size: 12px;
+    min-width: auto;
+    background: none;
+
+    .caret {
+      margin: 0 0 0 5px;
+    }
+
+    .select-options {
+      &__title {
+        max-width: 70px;
+      }
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

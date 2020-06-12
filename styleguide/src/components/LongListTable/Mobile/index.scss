@@ -1,0 +1,114 @@
+.long-list-table-mobile {
+  color: #778DA4;
+  font-size: 14px;
+  min-width: 330px;
+  margin-bottom: -1em;
+  
+  p {
+    margin: 0;
+  }
+
+  &__count {
+    text-align: right;
+    margin-right: 22px;
+    padding-top: 20px;
+
+    &__number {
+      color: #009CF6;
+      font-weight: 500;
+    }
+
+    p:last-child {
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+  }
+
+  &__cell {
+
+    &__data {
+      font-size: 12px;
+      min-width: 130px;
+      padding-left: 20px;
+
+      &__top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+      }
+
+      &__avatar {
+        margin-right: 12px;
+      }
+
+      &__phone-email {
+        max-height: 19px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &__name {
+        font-weight: 500;
+      }
+
+      &__name, &__position, &__company {
+        color: #1C2228;
+        font-size: 14px;
+      }
+
+      &__icons {
+        position: absolute;
+        right: 20px;
+        display: flex;
+        margin-top: -16px;
+
+        .icon {
+          margin-left: 16px;
+        }
+
+        .icon-on {
+          use {
+            fill: #009CF6;
+          }
+        }
+
+        .icon-off {
+          use {
+            fill: #99AABB;
+          }
+        }
+      }
+    }
+
+    &__status {
+      padding-right: 20px;
+      text-align: right;
+      font-size: 12px;
+    }
+
+    &__status.padding-top {
+      padding-top: 10px;
+    }
+  }
+
+  .list-view {
+    border-top: none;
+
+    &__thead {
+      display: none;
+    }
+
+    &__tbody {
+      border-radius: 8px;
+
+      &__row{
+
+        &__cell {
+          vertical-align: top;
+          padding: 14px 0;
+        }
+      }
+    }
+  }
+}

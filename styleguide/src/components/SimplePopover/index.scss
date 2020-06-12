@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.simple-pop-over-container {
+  display: flex;
+
+  .simple-pop-over {
+    position: relative;
+    text-align: left;
+    z-index: $popover;
+
+    &__content {
+      background-color: #FFFFFF;
+      position: absolute;
+      border: 1px solid #CAD1D8;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04);
+      box-sizing: border-box;
+      padding: 15px;
+      margin-left: 5px;
+      overflow: auto;
+    }
+  }
+}

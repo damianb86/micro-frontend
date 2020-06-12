@@ -1,0 +1,59 @@
+.long-list-table {
+  &__icon {
+    path, use {
+      fill: #009CF6;
+    }
+
+    &__off {
+      path, use {
+        fill: #99AABB;
+      }
+    }
+  }
+
+  .badge {
+    background-color: #FB657E;
+    color: #ffffff;
+    float: none;
+    display: inline-block;
+    margin-bottom: 6px;
+    border-radius: 100%;
+    height: 8px;
+    width: 8px;
+  }
+
+  .list-view {
+    &__thead__cell {
+      height: 36px;
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: 500;
+    }
+
+    &__tbody__row__cell {
+      font-size: 14px;
+      padding: 10px;
+
+      .row-name {
+        color: #1C2228;
+        font-weight: 500;
+      }
+
+      .row-name, .avatar {
+        cursor: pointer;
+      }
+    }
+
+    &__tbody__row__cell:last-child {
+      padding: 10px 14px 10px 14px
+    }
+  }
+}
+
+.long-list-table-no-border {
+  border: none;
+
+  .list-view__tbody {
+    border: none;
+  }
+}

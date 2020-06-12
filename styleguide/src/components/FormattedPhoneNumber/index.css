@@ -1,0 +1,4 @@
+.formatted-phone {
+  display: inline-block; }
+  .formatted-phone__number {
+    color: inherit; }

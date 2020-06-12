@@ -1,0 +1,24 @@
+@import "../../../../styles/variables";
+
+.percentage-with-link {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+
+  .edit-style {
+    color: $action-blue-1;
+    @include font-weight(medium);
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .percentage-with-link {
+    width: 80px;
+    @include font-weight(medium);
+    
+    span > span {
+      display: none;
+    }
+  }
+}

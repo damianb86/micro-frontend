@@ -1,0 +1,26 @@
+.restricted-access-message {
+  padding: 80px 0;
+  max-width: 560px;
+  text-align: center;
+  margin: 0 auto; }
+  .restricted-access-message__icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto; }
+    .restricted-access-message__icon use {
+      fill: #99aabb; }
+  .restricted-access-message__title {
+    margin: 20px 0;
+    display: block;
+    font-size: 28px;
+    font-weight: 500; }
+  .restricted-access-message__description {
+    color: #778da4;
+    font-size: 16px;
+    margin: 0 0 20px;
+    line-height: 24px; }
+  .restricted-access-message .pri-button {
+    float: none;
+    text-decoration: none;
+    margin-right: 0; }

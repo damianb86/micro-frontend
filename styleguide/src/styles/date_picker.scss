@@ -1,0 +1,46 @@
+@import 'variables';
+
+.SingleDatePicker_picker, .DateRangePicker_picker {
+  top: 48px !important;
+}
+
+.DateInput_fang {
+  top: 38px !important;
+}
+
+.DayPickerNavigation_svg__horizontal {
+  margin: 0 !important;
+}
+
+.CalendarMonth_table {
+  margin-top: 10px;
+}
+
+.DayPickerKeyboardShortcuts_buttonReset {
+  display: none;
+}
+
+.CalendarDay__selected.CalendarDay__selected_start,
+.CalendarDay__selected.CalendarDay__selected_end,
+.CalendarDay__hovered_span:hover {
+  background: #4589bf;
+  border-color: #4589bf;
+  color: $white-color;
+}
+
+.CalendarDay__selected_span, .CalendarDay__hovered_span {
+  background: #55abef;
+  border-color: #55abef;
+  color: $white-color;
+}
+
+.CalendarDay__selected,
+.CalendarDay__selected:hover,
+.CalendarDay__selected:active,
+.CalendarDay__selected_span:hover,
+.CalendarDay__selected_start:hover,
+.CalendarDay__selected_end:hover {
+  background: $sky-color;
+  border-color: $sky-color;
+  color: $white-color;
+}

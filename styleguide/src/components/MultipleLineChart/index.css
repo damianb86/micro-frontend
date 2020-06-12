@@ -1,0 +1,39 @@
+.multiple-line-chart {
+  max-width: none;
+  width: 100%;
+  margin: 10px 0 0 0;
+  min-height: 452px; }
+  .multiple-line-chart__content {
+    padding: 7px 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .multiple-line-chart__content__diagram {
+      max-width: unset;
+      margin-left: -12px;
+      flex: 1 1 auto;
+      overflow-x: auto !important; }
+    .multiple-line-chart__content__legends {
+      flex: 0 0 auto;
+      margin-left: 10px;
+      max-height: 400px;
+      overflow-y: auto; }
+  .multiple-line-chart .c3-multiple-line-chart .domain {
+    display: none; }
+  .multiple-line-chart .c3-multiple-line-chart .tick line {
+    display: none; }
+  .multiple-line-chart .c3-multiple-line-chart .c3-line {
+    stroke-width: 3px; }
+  .multiple-line-chart .c3-multiple-line-chart .c3-axis .tick tspan {
+    color: #455565;
+    font-family: Roboto;
+    font-size: 12px; }
+  .multiple-line-chart .c3-multiple-line-chart .c3-grid line {
+    stroke: #DFE3E8;
+    stroke-dasharray: none; }
+  .multiple-line-chart .c3-multiple-line-chart .c3-chart-lines {
+    fill: none; }
+    .multiple-line-chart .c3-multiple-line-chart .c3-chart-lines .c3-defocused {
+      opacity: 0.4 !important; }

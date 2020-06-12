@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.action-bar {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 40px;
+  box-sizing: border-box;
+
+  &__right {
+    float: right;
+    margin-top: 1px;
+
+    &__total-count {
+      float: right;
+      font-weight: 500;
+      color: $dark-steel-grey;
+      margin: 5px 20px 0 0;
+    }
+  }
+
+  &__left {
+    float: left;
+    display: flex;
+  }
+
+  button:first-child {
+    margin-right: 0;
+  }
+}

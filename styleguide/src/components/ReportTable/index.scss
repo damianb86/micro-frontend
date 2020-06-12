@@ -1,0 +1,36 @@
+.report-table-container {
+  margin: 0 -40px;
+
+  .list-view__tbody__row:first-child {
+    background-color: #E9EDF1;
+  }
+
+  .list-view__tbody__row__cell:first-child, .list-view__thead__cell:first-child{
+    padding-left: 40px;
+  }
+
+  .sort {
+    &-ascending:before,
+    &-descending:before {
+      float: right;
+      margin-left: 6px;
+      padding-top: 3px;
+      vertical-align: middle;
+      width: 12px;
+    }
+
+    &-ascending:before {
+      content: url("../../../assets/images/icon-12-arrow-up.svg");
+    }
+
+    &-descending:before {
+      content: url("../../../assets/images/icon-12-arrow-down.svg");
+    }
+
+    &-ascending:after,
+    &-descending:after {
+      content: none;
+      display: none;
+    }
+  }
+}

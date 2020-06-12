@@ -1,0 +1,9 @@
+.filter-list {
+  padding: 0; }
+  .filter-list__search {
+    padding: 10px;
+    background-color: #f5f8fb; }
+  .filter-list__item {
+    border-top: 1px solid #ececec; }
+    .filter-list__item:first-child {
+      border-top: none; }

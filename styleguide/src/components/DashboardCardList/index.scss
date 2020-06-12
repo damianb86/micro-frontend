@@ -1,0 +1,54 @@
+.dashboard-list {
+  padding: 20px;
+
+  &__title {
+    span {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  &__items {
+    overflow: auto;
+    height: 270px;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__item {
+      &__color {
+        min-width: 10px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+
+      &__name {
+        color: #778DA4;
+        font-size: 12px;
+        line-height: 14px;
+        width: 100%;
+        padding-left: 8px;
+      }
+
+      &__value {
+        width: 120px;
+        line-height: 12px;
+      }
+
+      &__percent {
+        width: 120px;
+        line-height: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#009CF6;}
+	.st2{fill:none;stroke:#009CF6;stroke-width:21.1875;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g>
+	<rect id="bg" x="-31.2" y="-41" class="st0" width="339" height="339"/>
+	<g id="icon" transform="translate(1.400000, 1.600000)">
+		<rect id="Rectangle-20" x="9.8" y="42.3" class="st1" width="233.1" height="21.2"/>
+		<path id="Rectangle-21" class="st1" d="M31,63.3h190.7l-9.5,170.6l0,0c-0.5,11.2-9.9,20-21.2,20H61.5l0,0
+			c-11.3,0-20.5-8.8-21.2-20L31,63.3z"/>
+		<path id="Rectangle-22" class="st2" d="M83.9,52.7h84.9V21c0-5.9-4.8-10.6-10.6-10.6H94.4c-5.9,0-10.6,4.8-10.6,10.6L83.9,52.7
+			L83.9,52.7z"/>
+		<rect id="Rectangle-23" x="115.6" y="105.7" class="st3" width="21.2" height="105.9"/>
+		<rect id="Rectangle-23-Copy-2" x="73.2" y="105.7" class="st3" width="21.2" height="105.9"/>
+		<rect id="Rectangle-23-Copy" x="158.1" y="105.7" class="st3" width="21.2" height="105.9"/>
+	</g>
+</g>
+<desc>Created with Sketch.</desc>
+<title>icon-trash</title>
+</svg>

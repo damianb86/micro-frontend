@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.checkboxes-form {
+  &__checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 17px 20px 0 20px;
+
+    .checkbox-label {
+      width: 50%;
+      margin: 0 0 15px 0;
+
+      &__text {
+        font-size: 14px;
+        @include font-weight(medium);
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import '../../styles/variables';
+$primaryActionButtonHeight: 69px;
+$secondaryActionButtonHeight: 54px;
+
+.form-actions {
+  margin-top: 20px;
+
+  .btn.pri-button {
+    margin-right: 0;
+
+    &.primary-delete-button {
+      background-color: $danger !important;
+    }
+  }
+
+  .delete-button {
+    background-color: $danger;
+  }
+
+  .btn.pri-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .ReactModalPortal {
+    form {
+      padding-bottom: 50px;
+    }
+
+    .form-actions {
+      background-color: $white;
+      margin: 20px -20px 0 -20px;
+      position: absolute;
+      z-index: $modal-action-button;
+      top: calc(100vh - 69px);
+      top: calc(var(--innerHeight) - #{$primaryActionButtonHeight});
+
+      &.hasOnDelete {
+        top: calc(var(--innerHeight) - #{$primaryActionButtonHeight + $secondaryActionButtonHeight});
+      }
+
+      .btn-decline {
+        display: none;
+      }
+    
+      .btn.pri-button, .btn-custom > a {
+        border: none;
+        display: block;
+        box-sizing: border-box;
+        padding: 15px 0px !important;
+        background-color: $action-blue-1;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
+        border-radius: 4px;
+        color: $white;
+        font-size: 16px;
+        @include font-weight(medium);
+        line-height: 19px;
+        text-align: center;
+        width: 100vw;
+      
+        &.disabled {
+          cursor: auto;
+          opacity: 0.24;
+        }
+      }
+
+      .btn-custom > a {
+        background-color: $white;
+        color: $action-blue-1;
+      }
+
+      &__buttons {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .secondary-delete-button {
+        box-sizing: border-box;
+        padding: 15px 0px !important;
+        margin: 0;
+        width: 100vw;
+        border: 0;
+        font-size: 16px;
+        @include font-weight(medium);
+      }
+    }
+  }
+}

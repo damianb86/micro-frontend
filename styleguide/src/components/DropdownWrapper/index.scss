@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.dropdown-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: -17px -18px 0 0;
+
+  .dropdown-button, .select-multiple-dropdown-container, .search-multiple-dropdown {
+    margin: 17px 18px 0 0 !important;
+  }
+}

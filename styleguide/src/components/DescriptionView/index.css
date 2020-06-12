@@ -1,0 +1,10 @@
+.description-view {
+  color: #455565;
+  word-wrap: break-word; }
+  .description-view ul {
+    list-style: disc;
+    padding-left: 20px; }
+
+.description-view-new {
+  color: #009CF6;
+  font-weight: 500; }

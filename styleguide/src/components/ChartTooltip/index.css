@@ -1,0 +1,32 @@
+.chart-tooltip {
+  position: relative;
+  display: flex;
+  background-color: white;
+  height: 50px;
+  width: 200px;
+  border: 1px solid #cad1d8;
+  border-radius: 5px;
+  padding: 8px 12px 8px 12px;
+  line-height: 1.49; }
+  .chart-tooltip__content__count, .chart-tooltip__aside__value {
+    font-size: 20px;
+    margin-bottom: 4px; }
+  .chart-tooltip__content__title, .chart-tooltip__aside__color {
+    line-height: 18px; }
+  .chart-tooltip__content {
+    flex: 1 1 75%; }
+    .chart-tooltip__content__count__item {
+      font-weight: 500; }
+    .chart-tooltip__content__count__label {
+      font-size: 12px;
+      color: #778da4; }
+    .chart-tooltip__content__title {
+      font-size: 12px;
+      font-weight: 500; }
+  .chart-tooltip__aside {
+    flex: 1 1 25%;
+    text-align: right; }
+    .chart-tooltip__aside svg {
+      margin-top: 5px; }
+    .chart-tooltip__aside__value {
+      font-weight: 500; }

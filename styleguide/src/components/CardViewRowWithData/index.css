@@ -1,0 +1,23 @@
+.card-view-row-with-data {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid #dfe3e8;
+  margin: 0 20px;
+  font-size: 14px; }
+  .card-view-row-with-data:first-child {
+    padding-top: 28px; }
+  .card-view-row-with-data:last-child {
+    border: none;
+    padding-bottom: 20px; }
+  .card-view-row-with-data__data, .card-view-row-with-data__content {
+    line-height: 20px; }
+  .card-view-row-with-data__data {
+    flex: 1 1 25%;
+    color: #778da4;
+    font-size: 12px;
+    text-align: right; }
+  .card-view-row-with-data__content {
+    flex: 1 1 75%; }
+    .card-view-row-with-data__content__title {
+      color: #1c2228;
+      font-weight: 500; }

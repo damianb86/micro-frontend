@@ -1,0 +1,72 @@
+@import 'variables';
+
+.tags-wrapper {
+  font-size: 11px;
+  margin-left: -2px;
+  color: #99AABB;
+  position: relative;
+
+  &__tag {
+    background-color: $white-color;
+    border: 1px solid #99AABB;
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0 0 5px 5px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    position: relative;
+
+    &:hover {
+      color: $default-color;
+      border-color: $default-color;
+      cursor: pointer;
+
+      .tags-wrapper__tag__delete {
+        display: inline-block;
+        color: $default-color;
+      }
+    }
+
+    + .icon-action-wrapper {
+      margin-left: 10px;
+    }
+
+    &__delete {
+      color: #99AABB;
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: $white-color;
+      display: none;
+      padding: 0 4px;
+    }
+  }
+
+  &--people-grid-view {
+    height: 23px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  &--panel {
+    margin-bottom: 15px;
+  }
+}
+
+.add-tag-link {
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-size: 13px;
+  color: #99aaba;
+  display: inline-block;
+  padding-top: 2px;
+
+  &:hover {
+    color: $sky-color;
+  }
+
+  &.active {
+    color: $sky-color;
+  }
+}

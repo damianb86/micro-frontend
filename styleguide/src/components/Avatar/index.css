@@ -1,0 +1,33 @@
+.avatar-image.circle, .avatar-monogram.circle {
+  border-radius: 50%; }
+
+.avatar-image.rectangular, .avatar-monogram.rectangular {
+  border-radius: 4px; }
+
+.avatar-image.small, .avatar-monogram.small {
+  width: 24px; }
+
+.avatar-image.medium, .avatar-monogram.medium {
+  width: 32px; }
+
+.avatar-image.large, .avatar-monogram.large {
+  width: 40px; }
+
+.avatar-image.extra-large, .avatar-monogram.extra-large {
+  width: 72px;
+  height: 72px; }
+
+.avatar-monogram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #99aabb;
+  color: white; }
+  .avatar-monogram.small {
+    height: 24px; }
+  .avatar-monogram.medium {
+    height: 32px; }
+  .avatar-monogram.large {
+    height: 40px; }

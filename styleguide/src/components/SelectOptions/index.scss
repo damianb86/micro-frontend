@@ -1,0 +1,172 @@
+// Dropdown customization
+@import '../../styles/variables';
+$dropdown-icon-height: 12px;
+$dropdown-icon-width: 12px;
+
+.select-options {
+  + .dropdown {
+    margin-left: 10px;
+  }
+
+  &-left {
+    + .dropdown-menu {
+      left: 0;
+      right: auto;
+    }
+  }
+
+  .pullRight {
+    right: 0;
+    left: auto;
+  }
+
+  &.open {
+    .dropdown-menu {
+      display: block;
+    }
+  }
+
+  .btn-primary {
+    height: 32px;
+    max-width: 180px;
+    display: flex;
+    justify-content: space-between;
+
+    .caret {
+      min-width: 12px;
+      min-height: 12px;
+    }
+  }
+
+  &__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 15px;
+    max-width: calc(100% - 27px);
+  }
+
+  &.use-check-mark {
+    .select-options {
+      &__menu {
+        li {
+          a {
+            padding-left: 38px;
+          }
+
+          &.selected::before {
+            background-image: url('./icons/icon-12-checkmark.svg');
+            content: '';
+            height: 12px;
+            width: 12px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 14px 0 0 14px;
+            position: absolute;
+          }
+        }
+     }
+    }
+  }
+}
+
+.select-options,
+.dropup {
+  .dropdown-menu {
+    border-radius: 4px;
+    max-height: 196px;
+    overflow: auto;
+    top: 38px;
+    box-shadow: $card-box-shadow;
+    border: 1px solid $grey-1;
+    padding: 10px 0;
+    min-width: 240px;
+    background-color: $white;
+
+    > li, ul li {
+      list-style-type: none;
+
+      &.danger a {
+        color: $danger;
+      }
+
+      &.disabled {
+        pointer-events: none;
+        opacity: 0.3;
+      }
+
+      > a {
+        padding: 10px 15px;
+        color: $default-color;
+        font-size: 14px;
+        font-weight: $font-weight-medium;
+        text-decoration: none;
+        display: block;
+        clear: both;
+        line-height: 1.42857;
+        white-space: nowrap;
+
+        img {
+          height: $dropdown-icon-height;
+          width: $dropdown-icon-width;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+      }
+
+      &.active {
+        > a {
+          background-color: #f5f5f5;
+
+          &:hover {
+            color: inherit;
+          }
+        }
+      }
+    }
+
+    ul {
+      padding-left: 0;
+
+      li {
+        a {
+          padding-left: 35px;
+        }
+
+        &:hover > a {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  }
+
+  &-header {
+    color: #1e1e1e;
+    font-weight: 400;
+    padding: 5px 10px;
+  }
+
+  li.group-title {
+    > a {
+      color: $slate-2;
+      cursor: initial;
+
+      &:hover {
+        color: $slate-2;
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.dropup + .dropup {
+  margin-left: 10px;
+}
+
+.add-dropdown-space {
+  > *:last-child {
+    padding-bottom: 100px;
+  }
+}

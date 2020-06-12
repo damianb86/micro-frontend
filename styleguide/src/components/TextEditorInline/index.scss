@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.text-editor-inline {
+  width: 100%;
+  cursor: pointer;
+
+  &__content {
+    color: #455565;
+    font-size: 14px;
+    line-height: 16px;
+
+    .empty-message {
+      @include font-weight(medium);
+      font-style: italic;
+    }
+  }
+}

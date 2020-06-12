@@ -1,0 +1,32 @@
+.alert-message {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  min-width: 400px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  transition: opacity 0.6s ease-in-out;
+  opacity: 1;
+  z-index: 1000; }
+  .alert-message--hide {
+    opacity: 0; }
+  .alert-message--success {
+    background-color: #50d087;
+    border: 1px solid #45AF72; }
+  .alert-message--error {
+    border: 1px solid #C44F63;
+    background-color: #FB657E; }
+  .alert-message--warning {
+    background-color: #F8C752;
+    border: 1px solid #D0A643;
+    color: #455565; }
+  .alert-message--info {
+    background-color: #55ABEF;
+    border: 1px solid #4589BF; }
+  .alert-message p {
+    margin: 0; }

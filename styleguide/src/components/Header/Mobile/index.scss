@@ -1,0 +1,30 @@
+@import "../../../../styles/variables";
+
+.page-header {
+  display: flex;
+  height: 32px;
+  padding: 24px 20px;
+  align-items: center;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #455565;
+    margin-left: 20px;
+    flex: 1;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+      margin-left: 16px;
+
+      .avatar-image.medium {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

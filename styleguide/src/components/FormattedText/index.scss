@@ -1,0 +1,14 @@
+.formatted-text {
+  display: block;
+  display: -webkit-inline-box;
+  line-height: 19px;
+  max-height: calc(19*2*1px);
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 0;
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+.radio-button-wrapper {
+  margin-top: 5px;
+  cursor: pointer;
+  margin: 5px 20px 0 0;
+
+  &.disabled {
+    opacity: 0.3;
+  }
+
+  &__input {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+
+    &__item {
+      margin: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked + .radio-button-wrapper__input__custom {
+        background-color: $sky-color;
+        box-shadow: none;
+        border: none;
+
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          background-color: $white-color;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          box-shadow: 0 0 2px rgba(0,0,0,0.1)
+        }
+      }
+    }
+
+    &__custom {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background-color: $white-color;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+      border: 1px solid $light-grey;
+    }
+  }
+
+  &__label {
+    vertical-align: middle;
+  }
+}

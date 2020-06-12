@@ -1,0 +1,328 @@
+@import 'variables';
+
+.notes {
+  padding-bottom: 35px;
+
+  &__body {
+    padding-bottom: 45px;
+
+    &__list {
+      &__item {
+        padding: 20px 20px 0;
+        position: relative;
+
+        &:hover {
+          background-color: #f3f6fb;
+
+          .notes__body__list__item__right__info__actions, .notes-actions {
+            display: block;
+          }
+        }
+
+        &__left, &__right {
+          float: left;
+        }
+
+        &__right {
+          padding-bottom: 20px;
+          margin-left: 5px;
+          width: calc(100% - 40px);
+
+          &__content {
+            &__user-name {
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+
+          &__info {
+            font-size: 12px;
+
+            &__content {
+              float: left;
+              color: #99aabb;
+              width: calc(100% - 40px);
+
+              a {
+                color: #99aabb;
+              }
+            }
+
+            &__actions {
+              float: right;
+              display: none;
+            }
+          }
+        }
+
+        &__reply-editor {
+          margin-top: 10px;
+          position: relative;
+        }
+
+        &__attachments {
+          margin: 10px 0 10px 10px;
+
+          &__item {
+            margin-top: 5px;
+
+            .icon-action-wrapper {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__input {
+    bottom: 0;
+    right: 0;
+    left: auto;
+    position: fixed;
+    width: 100%;
+    background: $white-color;
+    z-index: 1061;
+
+    > section:first-child {
+      > a {
+        font-size: 16px;
+        color: $white-color;
+        font-weight: 400;
+        display: block;
+        padding: 10px 0;
+        background: $sky-color;
+      }
+    }
+
+    &__controls {
+      margin-bottom: 10px;
+
+      .dropup {
+        width: 50%;
+        margin-left: 0;
+
+        ~ .chkbox-label {
+          width: 50%;
+
+          + .chkbox-label {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .chkbox-label {
+        vertical-align: top;
+        margin: 6px 0 0;
+
+        + .chkbox-label {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  &-actions {
+    background-color: $white-color;
+    border: 1px solid #efefef;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    display: none;
+  }
+
+  &-drop-zone {
+    margin-top: 15px;
+
+    .filepicker {
+      .dz-message {
+        border: 1px dashed #cccccc;
+        font-size: 14px;
+        height: 60px;
+        width: 100%;
+      }
+    }
+  }
+
+  &-filter {
+    background-color: #f5f8fb;
+    padding: 10px 0 0 15px;
+
+    .dropdown {
+      margin: 0 0 10px 10px;
+    }
+
+    &__label {
+      color: $dark-steel-grey;
+      font-weight: 400;
+      height: 30px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &-editor-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    z-index: 1060;
+  }
+
+  &-edit-mode {
+    position: relative;
+
+    + .form-group {
+      margin-bottom: 10px;
+
+      &:after {
+        content: "";
+        display:block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+      }
+    }
+  }
+}
+
+.modal-body .notes-form > .container-fluid {
+  margin: 0 -15px;
+}
+
+.reply {
+  &-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+  }
+
+  &-list {
+    padding-left: 27px;
+
+    &__item {
+      margin: 10px 0;
+    }
+  }
+}
+
+.close-reply-btn {
+  position: absolute;
+  top: 14px;
+  right: 35px;
+}
+
+.editor-draft-notice {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+  color: $default-color;
+
+  &--top {
+    top: -17px;
+  }
+}
+
+.toggle-notes {
+  margin-right: 20px;
+}
+
+.note-visible-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../assets/images/icon-tag-green.svg) no-repeat center;
+  margin-right: 5px;
+}
+
+.notes-drop-zone .dz-message {
+  > div {
+    width: 100%;
+  }
+
+  .choose-files-btn {
+    line-height: 20px;
+    display: block;
+    width: 90%;
+    max-width: 198px;
+    margin: 0 auto 5px;
+  }
+
+  .drag-drop-msg-splitter {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+.dropdown-menu .nested-filed-in-option {
+  font-size: 12px;
+  text-indent: 5px;
+
+  a {
+    padding: 5px 15px;
+  }
+}
+
+.note-submit-btn {
+  margin-top: 5px;
+}
+
+.details-view {
+  .notes__body__list__item {
+    form:first-child {
+      margin: 0 -20px;
+    }
+  }
+}
+
+/* responsive styles */
+@media (min-width: 480px) {
+  .notes__input__controls {
+    padding: 5px 10px 0 2px;
+    width: calc(100% - 84px);
+    float: left;
+  }
+
+  .notes-drop-zone .dz-message .choose-files-btn {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .notes__input__controls {
+    .dropup {
+      width: auto;
+
+      + .dropup {
+        margin-left: 10px;
+      }
+
+      ~ .chkbox-label {
+        width: auto;
+        margin: 6px 0 0 8px;
+
+        + .chkbox-label {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .notes__input {
+    width: calc(100% - 232px);
+  }
+
+  .menu-collapse {
+    .notes__input {
+      width: calc(100% - 75px);
+    }
+  }
+}

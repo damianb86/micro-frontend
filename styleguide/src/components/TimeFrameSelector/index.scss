@@ -1,0 +1,73 @@
+@import '../../styles/variables';
+
+.time-frame-selector {
+  width: 358px;
+  border-radius: $border-radius;
+  z-index: 100;
+  background-color: $white;
+  margin-bottom: 10px;
+
+  &__title {
+    color: $slate-3;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid $grey-3;
+  }
+
+  &__date-picker-wrapper {
+    padding: 14px 22px;
+
+    &__label {
+      margin-bottom: 8px;
+
+      span {
+        display: inline-block;
+        color: $default-color;
+      }
+
+      &__start {
+        width: 175px;
+      }
+    }
+  }
+
+  .DateRangePicker_picker {
+    left: auto !important;
+  }
+
+  .DateRangePickerInput {
+    input {
+      font-size: 14px;
+
+      &::placeholder {
+        color: $slate-3;
+        font-weight: normal;
+      }
+    }
+  }
+
+  &__presets {
+    padding: 12px 20px 4px 20px;
+
+    button#timeframePresetsSelector {
+      width: 100%;
+    }
+
+    &__label {
+      margin-bottom: 8px;
+
+      span {
+        display: inline-block;
+        color: $slate-1;
+      }
+    }
+
+    .select-options > div:focus {
+      outline: none;
+    }
+
+    .dropdown-menu {
+      width: 315px;
+    }
+  }
+}

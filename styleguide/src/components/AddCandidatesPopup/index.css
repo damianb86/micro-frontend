@@ -1,0 +1,80 @@
+.add-candidates-options__item {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid #dfe3e8;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  margin-top: 8px; }
+  .add-candidates-options__item:first-child {
+    margin-top: 0; }
+  .add-candidates-options__item__icon {
+    margin-right: 30px; }
+  .add-candidates-options__item__text {
+    color: #455565;
+    font-size: 14px;
+    font-weight: 500; }
+
+.search-candidates__input {
+  margin-bottom: 30px;
+  display: block; }
+  .search-candidates__input input[type='text'] {
+    width: 100%; }
+
+.search-candidates__list {
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .search-candidates__list__item {
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #dfe3e8;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+    align-items: center;
+    padding: 20px;
+    margin: 8px 4px 0 0; }
+    .search-candidates__list__item .checkbox-wrapper input:disabled:checked + .checkbox-wrapper__input {
+      opacity: 1; }
+    .search-candidates__list__item:first-child {
+      margin-top: 0; }
+    .search-candidates__list__item__img {
+      flex: 0 0 auto; }
+    .search-candidates__list__item__content {
+      flex: 1 1 auto;
+      margin-left: 20px; }
+      .search-candidates__list__item__content__name {
+        display: block;
+        font-size: 14px;
+        font-weight: 500; }
+      .search-candidates__list__item__content__position {
+        font-size: 12px;
+        display: inline-block;
+        width: 165px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap; }
+    .search-candidates__list__item .checkbox-wrapper {
+      flex: 0 0 auto; }
+    .search-candidates__list__item__added-text {
+      flex: 0 0 auto;
+      margin-right: 10px;
+      color: #50D087;
+      font-weight: 500;
+      font-size: 12px; }
+
+.add-candidates-options .form-actions,
+.create-new-candidates .form-actions {
+  padding: 20px 20px 0;
+  margin: 30px -20px 0;
+  border-top: 1px solid #dfe3e8; }
+  .add-candidates-options .form-actions .sec-button,
+  .create-new-candidates .form-actions .sec-button {
+    float: left; }
+
+.search-candidates .form-actions {
+  padding: 20px 20px 0;
+  margin: 0 -20px 0;
+  border-top: 1px solid #dfe3e8; }

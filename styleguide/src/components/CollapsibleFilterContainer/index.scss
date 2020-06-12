@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.collapsible-filter-container {
+  background-color: $white;
+  border-top: 1px solid $grey-2;
+
+  &__header {
+    display: flex;
+    padding: 25px 0;
+    color: $slate-1;
+    cursor: pointer;
+    outline: none;
+
+    &__title {
+      flex: 1;
+
+      > span:first-child {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+      }
+    }
+
+    &__icons {
+      svg {
+        margin-left: 17px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__body {
+    padding: 20px 4px;
+  }
+}

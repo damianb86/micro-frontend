@@ -1,0 +1,442 @@
+@charset "UTF-8";
+/* bootstrap grid override */
+.form-horizontal-label-left .control-label {
+  text-align: left; }
+
+.form-horizontal.horizontal-list__item {
+  padding: 5px 20px; }
+
+.form-horizontal .form-group,
+.form-horizontal .row {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/* Generic styles */
+html {
+  height: 100%; }
+
+body {
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.49;
+  color: #455565;
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  background-color: #f5f8fb; }
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0; }
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+  display: flex; }
+
+a {
+  color: #455565;
+  cursor: pointer; }
+  a:hover {
+    text-decoration: none; }
+
+button:disabled {
+  opacity: 0.3; }
+
+input[type="text"] {
+  font-family: inherit;
+  font-weight: 500; }
+
+.clr {
+  clear: both; }
+
+label {
+  font-weight: normal; }
+
+h4,
+.h4 {
+  font-size: 14px; }
+
+.required:after {
+  content: " *";
+  color: red; }
+
+.table > thead > tr > th {
+  vertical-align: top;
+  padding: 4px; }
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+  padding: 3px; }
+
+.table th {
+  background-color: #939393;
+  color: #ffffff; }
+
+.table-responsive {
+  border: none;
+  margin-bottom: 0; }
+
+.padding-sm {
+  padding: 10px; }
+
+.ocean-green {
+  background-color: #50d087; }
+
+.purple {
+  background-color: #778df8; }
+
+.light-coral {
+  background-color: #fb657e; }
+
+.sky-blue {
+  background-color: #55abef; }
+
+.green {
+  background-color: #8dc142; }
+
+.sky {
+  background-color: #29aae1; }
+
+.sky-light {
+  background-color: #add9ff; }
+
+.blue {
+  background-color: #0070d2; }
+
+.greyish-blue {
+  background-color: #4b7790; }
+
+.grey {
+  background-color: #7b7a7a; }
+
+.dark-grey {
+  background-color: #1e1e1e; }
+
+.green-text {
+  color: #8dc142; }
+
+.dark-green-text {
+  color: #50d087; }
+
+.pink-text {
+  color: #fb657e; }
+
+.sky-text {
+  color: #009cf6; }
+
+.dark-blue-text {
+  color: #455565; }
+
+.grey-text {
+  color: #99aabb; }
+
+.dark-grey-text {
+  color: #455565; }
+
+.grey-7 {
+  color: #778da4; }
+
+.text-strong {
+  font-weight: 400; }
+
+.text-grey {
+  color: #97a8b8; }
+  .text-grey:hover, .text-grey:active {
+    color: #97a8b8;
+    cursor: text; }
+
+.text-bright-green {
+  color: #50d087; }
+
+.text-dark-green {
+  color: #055565; }
+
+.text-block {
+  display: block; }
+
+.text-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.expand-link {
+  font-size: 13px;
+  color: #009cf6;
+  font-style: italic; }
+
+.break-word {
+  word-wrap: break-word; }
+
+.width-100 {
+  width: 100%; }
+
+.text-italic {
+  font-style: italic; }
+
+.content-wrapper {
+  position: relative;
+  left: 0;
+  transition: all 0.2s linear; }
+
+.page-view__header {
+  padding: 0 10px 20px; }
+  .page-view__header__name {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    vertical-align: middle; }
+  .page-view__header__right {
+    float: right; }
+
+.page-view .popup-view-tabs .site-tabs__nav {
+  display: none; }
+
+.page-view .details-view__content__header {
+  height: auto;
+  overflow-y: visible;
+  overflow-x: visible; }
+
+.page-view .notes__input {
+  bottom: 22px; }
+
+.dot-splitter:after {
+  content: "•";
+  margin: 0 3px; }
+
+.btn-wrapper {
+  margin-top: 30px; }
+
+.inline-block {
+  display: inline-block; }
+
+/* common error */
+.error {
+  color: #a94442; }
+
+.read-more > div > p:last-child {
+  margin-bottom: 0; }
+
+.action-icon-splitter {
+  border-right: 1px solid #e9edf1;
+  padding-right: 15px; }
+
+.page-title-bar {
+  font-size: 16px;
+  float: left; }
+  .page-title-bar__value {
+    max-width: 72px;
+    display: inline-block; }
+  .page-title-bar__splitter {
+    display: inline-block;
+    width: 3px;
+    height: 17px;
+    background-color: #455565;
+    margin: 0 8px; }
+  .page-title-bar span {
+    vertical-align: middle; }
+
+.pointer-cursor {
+  cursor: pointer; }
+
+.load-more-text-wrapper {
+  padding: 5px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #cccccc; }
+  .load-more-text-wrapper a {
+    cursor: pointer; }
+
+.account-profile {
+  background-color: #ffffff;
+  padding: 0 15px; }
+  .account-profile__main-content {
+    width: 500px; }
+  .account-profile-email {
+    position: relative; }
+    .account-profile-email:hover .actions-popup {
+      display: block; }
+
+/* highlight edit */
+.edit-highlight {
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: text; }
+  .edit-highlight:hover {
+    border: 1px solid #009cf6; }
+  .edit-highlight-align {
+    padding: 5px 6px; }
+
+.auto-height {
+  height: auto; }
+
+.main-content-space {
+  padding: 0 10px; }
+
+.time-splitter {
+  margin: 7px 15px 0;
+  display: inline-block; }
+
+.toolbar-action-input {
+  margin-top: 20px; }
+  .toolbar-action-input__input,
+  .toolbar-action-input .Select {
+    display: inline-block;
+    vertical-align: middle; }
+  .toolbar-action-input__input {
+    width: 150px; }
+  .toolbar-action-input .Select {
+    margin-bottom: 10px;
+    width: 100%; }
+  .toolbar-action-input__button {
+    margin-left: 10px; }
+
+.border-top {
+  border-top: 1px solid #e9edf1; }
+
+/* cropping image */
+.ReactCrop__crop-selection {
+  border-radius: 50%;
+  border-image-source: none !important;
+  border: 2px dashed !important; }
+
+.ReactCrop--fixed-aspect {
+  display: table !important;
+  margin: 0 auto; }
+
+/* role status */
+.role-indicator {
+  position: relative;
+  padding-left: 15px; }
+  .role-indicator:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 4px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    border: 2px solid transparent; }
+  .role-indicator--active:before {
+    background-color: #50d087; }
+  .role-indicator--deactivated {
+    color: #cad1d8; }
+    .role-indicator--deactivated:before {
+      background-color: #ffffff;
+      border-color: #cad1d8; }
+
+.link-disabled {
+  cursor: auto;
+  color: #97a8b8; }
+
+/* responsive styles */
+@media (min-width: 480px) {
+  .page-title-bar__value {
+    max-width: 100px; } }
+
+@media (min-width: 768px) {
+  .page-title-bar {
+    font-size: 18px; }
+    .page-title-bar .firm-logo {
+      vertical-align: top; }
+    .page-title-bar span {
+      display: inline-block; }
+  .toolbar-action-input {
+    clear: both;
+    margin-top: 50px; }
+    .toolbar-action-input .Select {
+      display: inline-block;
+      width: calc(100% - 150px);
+      margin-right: 10px;
+      vertical-align: top; } }
+
+@media (min-width: 992px) {
+  .main-content-space {
+    padding: 0 40px; }
+  .page-title-bar__value {
+    max-width: 150px; }
+  .toolbar-action-input {
+    float: left;
+    clear: none;
+    width: 260px;
+    margin: 0 0 0 10px; }
+    .toolbar-action-input .Select {
+      width: 100%;
+      margin-right: 0; } }
+
+@media (min-width: 1200px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"],
+  select,
+  select.form-control,
+  textarea,
+  textarea.form-control {
+    font-size: 13px; }
+  .page-title-bar__value {
+    max-width: none; }
+  .toolbar-action-input {
+    width: 180px; } }

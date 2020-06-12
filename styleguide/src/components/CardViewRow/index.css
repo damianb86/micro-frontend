@@ -1,0 +1,25 @@
+.card-view-row {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid #dfe3e8;
+  margin: 0 20px;
+  font-size: 14px; }
+  .card-view-row:first-child {
+    padding-top: 28px; }
+  .card-view-row:last-child {
+    border: none;
+    padding-bottom: 20px; }
+  .card-view-row__content {
+    flex: 1 1 0; }
+    .card-view-row__content__title {
+      color: #1c2228;
+      display: block;
+      font-weight: 500;
+      line-height: normal; }
+    .card-view-row__content__subtitle {
+      font-size: 12px;
+      color: #778da4; }
+  .card-view-row svg {
+    margin-top: 2px; }
+    .card-view-row svg use {
+      fill: #99aabb; }

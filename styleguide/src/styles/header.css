@@ -1,0 +1,44 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  padding: 20px 40px 10px;
+  align-items: center;
+  box-sizing: border-box; }
+  .site-header .site-dropdown {
+    left: auto;
+    right: 0;
+    top: 135%; }
+
+.site-header-actions {
+  display: flex;
+  align-items: center; }
+
+.site-header-actions__item {
+  margin-left: 24px;
+  position: relative;
+  font-size: 14px; }
+
+.site-header__link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000; }
+
+.site-header__title {
+  display: flex;
+  align-items: center;
+  color: #455565;
+  font-size: 20px;
+  font-weight: 500; }
+  .site-header__title .current-firm-logo {
+    height: 60px; }
+
+.site-header__page-title {
+  align-items: left;
+  flex: 0 1 100%;
+  margin-top: 40px;
+  margin-bottom: -40px; }
+
+#user-menu-list .user-initials-circle {
+  margin-right: 10px; }

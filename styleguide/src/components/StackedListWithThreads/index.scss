@@ -1,0 +1,237 @@
+@import "../../../styles/_variables";
+
+.stacked-list-with-threads {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    background-color: $white-color;
+    border-top: 1px solid #e9edf1;
+    border-left: 2px solid #99AABB;
+    padding: 15px 12px 15px 8px;
+    position: relative;
+
+    &__no-padding {
+      padding: 0px;
+    }
+
+    &__action-controls {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      svg {
+        margin-right: 10px;
+
+        path, polygon, rect {
+          fill: #455565 !important;
+        }
+
+        defs > path {
+          fill: #455565;
+        }
+
+        g > g > path:nth-child(2) {
+          stroke: #455565;
+        }
+      }
+
+      .dropdown {
+        .dropdown-menu {
+          max-width: 140px;
+          min-width: fit-content;
+
+          .simple-option-delete > a {
+            color: #FB657E;
+
+            svg path {
+              fill: #FB657E !important;
+            }
+          }
+        }
+
+        .caret {
+          display: none;
+        }
+      }
+
+      &__top {
+        .dropdown {
+          button {
+            path {
+              fill: #99aabb !important;
+            }
+          }
+
+          ul > li.hide {
+            display: none;
+          }
+        }
+      }
+
+      &__botton {
+        a {
+          cursor: pointer;
+          color: #009CF6;
+          width: 80px;
+          display: block;
+          margin-left: -60px;
+          font-size: 12px;
+          font-weight: 500;
+          text-align: right;
+        }
+      }
+
+    }
+
+    &__title {
+      white-space: nowrap;
+      max-width: 280px;
+      position: relative;
+
+      &__avatar, &__title {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &__avatar {
+        width: 32px;
+        height: 32px;
+
+
+        .avatar-image {
+          height: 32px;
+        }
+
+        &__pin-icon {
+          position: absolute;
+          top: -10px;
+          left: -10px;
+        }
+      }
+
+      &__title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #1C2228;
+        margin-left: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 240px;
+      }
+    }
+
+    .stacked-list-content {
+      &__title__main {
+        max-width: 325px;
+        overflow: hidden;
+        padding: 10px 0 0 10px;
+        margin: -10px 0 0 -10px;
+      }
+
+      &__tags span {
+        height: 20px;
+        font-size: 12px;
+        padding: 2px 7px
+      }
+
+      &__label {
+        display: inline !important;
+
+        &__item {
+          display: block;
+          max-width: 325px;
+        }
+      }
+    }
+
+    &__files {
+      margin-top: 10px;
+
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        color: #455565;
+        text-decoration: none;
+        display: block;
+        margin-top: 4px;
+      }
+
+    }
+
+    .read-more {
+      .sky-text {
+        color: #009CF6;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+
+      }
+    }
+  }
+
+  &__item.visible {
+    border-left:8px solid #50D087;
+    padding-left: 2px;
+
+    .dropdown ul {
+      li.hide {
+        display: initial;
+      }
+
+      li.show {
+        display: none;
+      }
+    }
+
+    &::before {
+      content:"";
+      position:absolute;
+      border-left:8px solid #50D087;
+      height:1px;
+      left:-8px;
+      top:-1px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-mobile){
+    &__item__action-controls {
+      position: absolute;
+      right: 10px;
+      height: calc(100% - 25px);
+    }
+  }
+}
+
+.stacked-list-with-threads.reply {
+  border-top: 1px solid #e9edf1;
+
+  li.stacked-list-with-threads__item {
+    margin-left: 40px;
+  }
+
+  .stacked-list-with-threads {
+    &__is-reply {
+      margin: 28px 0 -41px 14px;
+      opacity: 0.5;
+      height: 12px;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    &__is-reply-form {
+      padding: 26px 20px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-mobile){
+    .stacked-list-content__label {
+      display: grid !important;
+    }
+  }
+}

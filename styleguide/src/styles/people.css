@@ -1,0 +1,77 @@
+.people-list-view tbody {
+  border-bottom: 1px solid #cccccc; }
+
+.people-add-person-modal__btn-sec {
+  margin-top: 50px; }
+  .people-add-person-modal__btn-sec .btn + .btn {
+    margin-left: 15px; }
+
+.people-export-form__title {
+  margin: 0 0 10px; }
+
+.people-export-form__no-title {
+  padding-top: 25px; }
+
+.optional-fields-export {
+  margin-top: 35px; }
+
+/* people import */
+.import-contacts {
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid #e7eaec;
+  border-radius: 5px;
+  padding: 10px; }
+  .import-contacts h2 {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 13px; }
+  .import-contacts__choices-item {
+    height: 75px;
+    cursor: pointer;
+    border-top: 2px #e7eaec solid; }
+    .import-contacts__choices-item:hover {
+      background: #eeeeee; }
+    .import-contacts__choices-item h3 {
+      text-align: center;
+      font-size: 32px;
+      padding-top: 15px;
+      margin: 0; }
+
+.person-view-list__btn-container {
+  margin: 10px 0;
+  text-align: right; }
+
+.person-files-drag-drop .dz-message > div {
+  width: 100%; }
+
+.person-files-drag-drop .dz-message .choose-files-btn, .person-files-drag-drop .dz-message .drag-drop-msg-splitter {
+  display: inline-block; }
+
+.person-files-drag-drop .dz-message .drag-drop-msg-splitter {
+  margin: 0 10px; }
+
+.person-history .list-view__tbody__row__cell {
+  vertical-align: top; }
+  .person-history .list-view__tbody__row__cell__date span {
+    display: inline-block; }
+
+.person-history .list-view__tbody__row__expand {
+  margin: 8px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9fbfd; }
+
+.person-history-search {
+  float: right;
+  margin: 10px; }
+  .person-history-search + div {
+    clear: both; }
+
+.person-overview .no-relocation-icon, .person-overview .do-not-contact-icon {
+  min-width: 180px; }
+
+@media (min-width: 768px) {
+  .optional-fields-export {
+    margin-top: 0; } }

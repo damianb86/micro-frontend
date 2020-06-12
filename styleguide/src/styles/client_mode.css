@@ -1,0 +1,52 @@
+/*Client View Mode*/
+.client-mode-message {
+  background-color: #29aae1;
+  padding: 10px;
+  position: fixed;
+  z-index: 1050;
+  width: 100%; }
+  .client-mode-message__text {
+    color: #ffffff;
+    width: calc(100% - 130px);
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top; }
+    .client-mode-message__text__user-name {
+      text-transform: uppercase;
+      font-style: italic;
+      display: block;
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+
+.client-mode .main-content {
+  padding: 62px 0 0; }
+
+.client-mode .sidebar {
+  padding-top: 109px; }
+
+.client-mode .details-view {
+  top: 59px;
+  height: calc(100% - 59px); }
+  .client-mode .details-view--minimize {
+    top: auto; }
+
+.client-mode .project-tabs-wrapper {
+  width: 100%; }
+
+.candidate-list-view--client-mode .list-view__thead > div:first-child, .candidate-list-view--client-mode .list-view__tbody__row > div:first-child {
+  padding-left: 25px; }
+
+.grid-view__item__summary--client-mode {
+  height: calc(100% - 81px); }
+
+@media (min-width: 768px) {
+  .client-mode-message__text {
+    font-size: 26px; }
+    .client-mode-message__text__user-name {
+      display: inline-block;
+      width: calc(100% - 380px);
+      vertical-align: text-top; }
+  .client-mode .main-content {
+    padding: 60px 0 0; } }

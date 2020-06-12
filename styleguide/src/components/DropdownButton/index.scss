@@ -1,0 +1,103 @@
+@import '../../../styles/_variables.scss';
+
+.dropdown-button {
+  position: relative;
+
+  &__content {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #DFE3E8;
+    border-radius: 5px;
+    margin-top: 8px;
+    z-index: $dropdown;
+
+    &__buttons {
+      display: flex;
+      flex-direction: row-reverse;
+      min-width: 200px;
+      padding: 0 15px 20px 0;
+
+      .btn {
+        float: none;
+      }
+    }
+
+    &.pull-right {
+      right: 0;
+    }
+  }
+
+  .dropdown-right-align {
+    right: 0 !important;
+    left: auto !important;
+  }
+
+  .dropdown-left-align {
+    right: auto !important;
+    left: 0 !important;
+  }
+
+  .dropdown-top-align {
+    bottom: 0 !important;
+    top: auto !important;
+    margin-top: 2px;
+  }
+
+  .dropdown-bottom-align {
+    bottom: auto !important;
+    top: 0 !important;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .dropdown-button {
+    &__content.isMobileResponsive {
+      position: relative;
+      margin-top: 0;
+      border: none;
+
+      .dropdown-button {
+        &__content {
+          &__buttons {
+            position: fixed;
+            flex-direction: column-reverse;
+            left: 0;
+            bottom: 0;
+            padding: 0;
+            z-index: $modal-action-button;
+
+            .btn.pri-button, .btn.sec-button {
+              border: none;
+              display: block;
+              box-sizing: border-box;
+              padding: 16px 0px !important;
+              box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
+              border-radius: 4px;
+              font-size: 16px;
+              @include font-weight(medium);
+              text-align: center;
+              width: 100vw;
+      
+              &.disabled {
+                cursor: auto;
+                opacity: 0.24;
+              }
+            }
+      
+            .btn.sec-button {
+              line-height: 22px;
+              text-align: center;
+              width: 100vw;
+            }
+          
+            .btn.pri-button {
+              background-color: $action-blue-1;
+              color: $white;
+              line-height: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

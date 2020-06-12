@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>No Relocation</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="7.50361652" y="-0.476245481" width="1.32885822" height="13.2885822"></rect>
+    </defs>
+    <g id="Icon/16/no-relocation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,8 L7.5527864,15.1055728 C7.67628103,15.3525621 7.97661755,15.4526742 8.2236068,15.3291796 C8.3203705,15.2807978 8.39883174,15.2023365 8.4472136,15.1055728 L12,8 L4,8 Z" id="Path-14" fill="#778DA4" fill-rule="nonzero"></path>
+        <circle id="Oval-8" stroke="#778DA4" fill="#FFFFFF" fill-rule="nonzero" cx="8" cy="6" r="4"></circle>
+        <g id="Rectangle-15" fill-rule="nonzero" transform="translate(8.168046, 6.168046) rotate(-45.000000) translate(-8.168046, -6.168046) ">
+            <rect stroke="#778DA4" fill="#778DA4" stroke-width="0.2" stroke-linejoin="square" x="7.58361652" y="-0.726245481" width="1" height="13.7885822"></rect>
+            <rect stroke="#FFFFFF" stroke-width="0.2" x="7.473616" y="-0.716245481" width="1.2" height="13.7985822"></rect>
+        </g>
+    </g>
+</svg>

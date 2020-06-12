@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#99AABB;stroke-width:12.3077;}
+	.st1{fill:#99AABB;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:12.3077;}
+	.st3{fill:#FFFFFF;}
+</style>
+<title>icon-projects</title>
+<desc>Created with Sketch.</desc>
+<g id="Projects-_x3E_-Candidates">
+	<g id="Candidates-1.15" transform="translate(-462.000000, -484.000000)">
+		<g id="body" transform="translate(280.000000, 108.000000)">
+			<g id="main">
+				<g id="projects" transform="translate(0.000000, 62.000000)">
+					<g id="Group-13" transform="translate(0.000000, 72.000000)">
+						<g id="card-candidate">
+							<g id="no-color-icons" transform="translate(119.000000, 238.000000)">
+								<g id="icon-projects" transform="translate(63.000000, 5.000000)">
+									<g id="Group-28">
+										<circle id="Oval-7" class="st0" cx="143.1" cy="59.8" r="36.9"/>
+										<path id="Rectangle-9" class="st1" d="M44.7,96.7h123.1c20.4,0,36.9,16.5,36.9,36.9v61.5c0,20.4-16.5,36.9-36.9,36.9H44.7
+											c-20.4,0-36.9-16.5-36.9-36.9v-61.5C7.8,113.3,24.3,96.7,44.7,96.7z"/>
+										<g id="Rectangle-9_1_">
+											<g>
+												<path id="path-1" class="st1" d="M44.7,133.7h196.9v36.9l0,0c0,13.6-11,24.6-24.6,24.6H69.3l0,0
+													c-13.6,0-24.6-11-24.6-24.6V133.7z"/>
+											</g>
+											<path class="st2" d="M38.5,127.5h209.2v43.1c0,17-13.8,30.8-30.8,30.8H69.3c-17,0-30.8-13.8-30.8-30.8V127.5z"/>
+										</g>
+										<g id="Rectangle-9_2_">
+											<g>
+												<path id="path-2" class="st1" d="M69.3,59.8H217l0,0c13.6,0,24.6,11,24.6,24.6v36.9H44.7V84.4l0,0
+													C44.7,70.8,55.7,59.8,69.3,59.8z"/>
+											</g>
+											<path class="st2" d="M69.3,53.7H217c17,0,30.8,13.8,30.8,30.8v43.1H38.5V84.4C38.5,67.4,52.3,53.7,69.3,53.7z"/>
+										</g>
+										<circle id="Oval-6" class="st3" cx="143.1" cy="96.7" r="12.3"/>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

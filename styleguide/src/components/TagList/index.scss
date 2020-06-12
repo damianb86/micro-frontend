@@ -1,0 +1,46 @@
+@import "../../styles/_variables.scss";
+
+.tag-list {
+  margin-bottom: 10px;
+
+  &__item {
+    margin: 0 10px 10px 0;
+  }
+
+  &__add {
+    margin-bottom: 10px;
+    color: $slate-1;
+    display: inline-block;
+    @include font-weight(medium);
+  }
+
+  &.highlight-news {
+    margin-bottom: 0;
+    
+    .tag-list {
+      &__item {
+        margin: 0 10px 10px 0;
+
+        &__blue {
+          background-color: $action-blue-3;
+  
+          svg {
+            use {
+              fill: $chart-blue;
+            }
+  
+            &:hover {
+              use {
+                fill: $white-color;
+              }
+            }
+          }
+
+          &:hover {
+            background-color: #326288;
+          }
+        }
+      }
+    }
+  }
+}

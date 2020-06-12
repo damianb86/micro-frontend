@@ -1,0 +1,25 @@
+/* pagination */
+.pagination > li > a, .pagination > li > span {
+  border: none;
+  color: #939393; }
+
+.pagination-sm > li > a, .pagination-sm > li > span {
+  font-size: 14px; }
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background: #ffffff;
+  color: #00b3ff; }
+
+.site-pagination {
+  margin-top: 25px; }
+  .site-pagination__view-all {
+    font-size: 16px; }
+  .site-pagination__view-all, .site-pagination__links, .site-pagination__per-page {
+    display: inline-block;
+    vertical-align: middle; }
+  .site-pagination__links {
+    margin: 0 15px; }
+    .site-pagination__links li:first-child + li, .site-pagination__links li:nth-last-child(2) {
+      display: none; }
+    .site-pagination__links li:active a {
+      background: #ffffff; }

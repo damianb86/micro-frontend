@@ -1,0 +1,17 @@
+.page-title {
+  &__text {
+    color: #455565;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__splitter::before {
+    content: ">";
+    display: inline-block;
+    margin: 0 6px;
+    color: #99AABB;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

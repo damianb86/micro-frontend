@@ -1,0 +1,144 @@
+.my-tasks-header {
+  height: auto; }
+
+.my-tasks-filter--page-view {
+  padding: 10px 40px 20px; }
+
+.my-tasks-filter__left {
+  clear: both;
+  margin-top: 10px;
+  margin: 10px 0;
+  display: block; }
+  .my-tasks-filter__left__item {
+    display: block; }
+    .my-tasks-filter__left__item .btn-group {
+      display: block; }
+      .my-tasks-filter__left__item .btn-group .btn {
+        float: none;
+        width: 100%; }
+    .my-tasks-filter__left__item + .my-tasks-filter__left__item {
+      margin: 10px 0 0; }
+
+.my-tasks-filter__right {
+  float: right;
+  margin: 0 0 10px 10px; }
+  .my-tasks-filter__right--header-dropdown {
+    width: 190px; }
+  .my-tasks-filter__right--dashboard {
+    padding-right: 10px; }
+    .my-tasks-filter__right--dashboard .btn + .btn {
+      margin-left: 10px; }
+
+.my-tasks-info {
+  margin-bottom: 0; }
+  .my-tasks-info > tbody > tr > td.my-tasks-info__task, .my-tasks-info > tbody > tr > td.my-tasks-info__people {
+    text-align: left; }
+  .my-tasks-info--all-tasks {
+    margin: 0 auto;
+    width: calc(100% - 80px);
+    overflow-x: auto; }
+    .my-tasks-info--all-tasks > tbody > tr {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      background-color: #ffffff;
+      border-top: solid 1px #ccd2d9; }
+      .my-tasks-info--all-tasks > tbody > tr:first-child {
+        border-top: none; }
+      .my-tasks-info--all-tasks > tbody > tr > td {
+        border: none;
+        align-items: center;
+        color: #455565;
+        display: flex;
+        flex: 1 1 150px;
+        font-size: 13.3px;
+        font-weight: 300;
+        letter-spacing: 0.1px;
+        line-height: 1.38;
+        padding: 15px; }
+      .my-tasks-info--all-tasks > tbody > tr .task-checkbox,
+      .my-tasks-info--all-tasks > tbody > tr .my-tasks-info__people,
+      .my-tasks-info--all-tasks > tbody > tr .task-edit,
+      .my-tasks-info--all-tasks > tbody > tr .task-close {
+        flex: 0 0 30px;
+        padding: 4px; }
+      .my-tasks-info--all-tasks > tbody > tr .task-edit,
+      .my-tasks-info--all-tasks > tbody > tr .task-close {
+        visibility: hidden; }
+      .my-tasks-info--all-tasks > tbody > tr:hover .task-edit,
+      .my-tasks-info--all-tasks > tbody > tr:hover .task-close {
+        visibility: visible; }
+      .my-tasks-info--all-tasks > tbody > tr .task-duedate {
+        flex: 0 1 170px; }
+      .my-tasks-info--all-tasks > tbody > tr .task-duedate,
+      .my-tasks-info--all-tasks > tbody > tr .my-tasks-info__task {
+        justify-content: left; }
+      .my-tasks-info--all-tasks > tbody > tr .my-tasks-info__task {
+        display: flex;
+        flex-wrap: wrap; }
+        .my-tasks-info--all-tasks > tbody > tr .my-tasks-info__task .link-to-task {
+          display: block;
+          width: 100%;
+          font-family: 'Nunito';
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.38;
+          letter-spacing: 0.1px;
+          text-align: left;
+          color: #455565; }
+        .my-tasks-info--all-tasks > tbody > tr .my-tasks-info__task .task-info {
+          font-family: 'Nunito';
+          font-size: 13px;
+          font-weight: 300;
+          line-height: 1.38;
+          letter-spacing: 0.1px;
+          text-align: left;
+          color: #455565; }
+
+.task-dropdown {
+  position: absolute;
+  right: -5px;
+  top: 35px;
+  width: 310px;
+  z-index: 2;
+  display: none;
+  opacity: 0;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  padding: 10px; }
+  .task-dropdown--show {
+    display: block;
+    opacity: 1; }
+
+@media (min-width: 480px) {
+  .task-dropdown {
+    width: 343px; } }
+
+@media (min-width: 768px) {
+  .my-tasks-header {
+    height: 50px; }
+  .my-tasks-filter__left {
+    margin-top: 0;
+    clear: none;
+    display: inline-block; }
+    .my-tasks-filter__left__item {
+      display: inline-block; }
+      .my-tasks-filter__left__item .btn-group {
+        display: inline-block; }
+        .my-tasks-filter__left__item .btn-group .btn {
+          float: left;
+          width: auto; }
+      .my-tasks-filter__left__item + .my-tasks-filter__left__item {
+        margin: 0 0 0 10px; }
+  .my-tasks-filter__right {
+    margin-bottom: 0; }
+  .task-dropdown {
+    width: 470px; } }
+
+@media (max-width: 992px) {
+  .task-edit,
+  .task-close {
+    visibility: visible !important; } }

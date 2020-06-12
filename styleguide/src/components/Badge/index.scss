@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+
+.badge {
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 6px;
+  height: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-success {
+    background-color: $success-green;
+    color: $white;
+  }
+
+  &-unread_notifications {
+    background-color: $unread-red;
+    color: $white;
+  }
+
+  &-client-visible {
+    background-color: $success-green;
+  }
+
+  &-project-owner {
+    background-color: $owner-orange;
+  }
+
+  &-counter {
+    background-color: $action-blue-1;
+    color: $white;
+
+    &-round-on-top {
+      border-radius: 8.5px;
+      width: 26px;
+      height: 17px;
+      line-height: 14px;
+    }
+  }
+
+  &-round-on-top {
+    border-radius: 100%;
+    padding: 0;
+    float: right;
+    height: 8px;
+    width: 8px;
+    margin: 1px;
+  }
+}

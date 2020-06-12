@@ -1,0 +1,11 @@
+.form-modal-content__item {
+  display: block;
+  margin-bottom: 20px; }
+  .form-modal-content__item__value {
+    color: #455565; }
+
+.form-modal-content__space-generator {
+  margin: 40px 1px 1px; }
+
+.form-modal-content .filepicker .dz-message {
+  width: 100%; }

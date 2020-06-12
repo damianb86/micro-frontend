@@ -1,0 +1,19 @@
+.report-table-container {
+  margin: 0 -40px; }
+  .report-table-container .list-view__tbody__row:first-child {
+    background-color: #E9EDF1; }
+  .report-table-container .list-view__tbody__row__cell:first-child, .report-table-container .list-view__thead__cell:first-child {
+    padding-left: 40px; }
+  .report-table-container .sort-ascending:before, .report-table-container .sort-descending:before {
+    float: right;
+    margin-left: 6px;
+    padding-top: 3px;
+    vertical-align: middle;
+    width: 12px; }
+  .report-table-container .sort-ascending:before {
+    content: url("../../../assets/images/icon-12-arrow-up.svg"); }
+  .report-table-container .sort-descending:before {
+    content: url("../../../assets/images/icon-12-arrow-down.svg"); }
+  .report-table-container .sort-ascending:after, .report-table-container .sort-descending:after {
+    content: none;
+    display: none; }

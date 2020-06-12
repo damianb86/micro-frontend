@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#99AABB;}
+</style>
+<title>icon-maximize</title>
+<desc>Created with Sketch.</desc>
+<g id="Symbols">
+	<g id="icon-maximize">
+		
+			<g id="Group" transform="translate(6.000000, 6.000000) scale(-1, 1) translate(-6.000000, -6.000000) translate(2.000000, 2.000000)">
+			<path id="Rectangle-2" class="st0" d="M-141.8,6H-13l0,0c8.3,0,15,6.7,15,15v128.8l0,0c0,8.3-6.7,15-15,15c-4,0-7.8-1.6-10.6-4.4
+				L-152.4,31.6l0,0c-5.9-5.9-5.9-15.4,0-21.2C-149.6,7.6-145.8,6-141.8,6z"/>
+			<path id="Rectangle-2_1_" class="st0" d="M-212.4,91.6l128.8,128.8l0,0c5.9,5.9,5.9,15.4,0,21.2c-2.8,2.8-6.6,4.4-10.6,4.4H-223
+				l0,0c-8.3,0-15-6.7-15-15V102.2l0,0c0-8.3,6.7-15,15-15C-219,87.2-215.2,88.8-212.4,91.6z"/>
+		</g>
+	</g>
+</g>
+</svg>

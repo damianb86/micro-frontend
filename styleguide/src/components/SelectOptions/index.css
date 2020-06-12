@@ -1,0 +1,143 @@
+.dropdown + .dropdown {
+  margin-left: 10px; }
+
+.dropdown-left + .dropdown-menu {
+  left: 0;
+  right: auto; }
+
+.dropdown .pullRight {
+  right: 0;
+  left: auto; }
+
+.dropdown.open .dropdown-menu {
+  display: block; }
+
+.dropdown .dropdown-menu,
+.dropup .dropdown-menu {
+  border-radius: 4px;
+  max-height: 196px;
+  overflow: auto;
+  top: 38px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+  border: 1px solid #cad1d8;
+  padding: 10px 0;
+  min-width: 240px;
+  background-color: #fff; }
+  .dropdown .dropdown-menu > li, .dropdown .dropdown-menu ul li,
+  .dropup .dropdown-menu > li,
+  .dropup .dropdown-menu ul li {
+    list-style-type: none; }
+    .dropdown .dropdown-menu > li.danger a, .dropdown .dropdown-menu ul li.danger a,
+    .dropup .dropdown-menu > li.danger a,
+    .dropup .dropdown-menu ul li.danger a {
+      color: #fb657e; }
+    .dropdown .dropdown-menu > li > a, .dropdown .dropdown-menu ul li > a,
+    .dropup .dropdown-menu > li > a,
+    .dropup .dropdown-menu ul li > a {
+      padding: 10px 15px;
+      color: #455565;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      display: block;
+      clear: both;
+      line-height: 1.42857;
+      white-space: nowrap; }
+      .dropdown .dropdown-menu > li > a img, .dropdown .dropdown-menu ul li > a img,
+      .dropup .dropdown-menu > li > a img,
+      .dropup .dropdown-menu ul li > a img {
+        height: 12px;
+        width: 12px;
+        margin-right: 10px;
+        vertical-align: middle; }
+    .dropdown .dropdown-menu > li.active > a, .dropdown .dropdown-menu ul li.active > a,
+    .dropup .dropdown-menu > li.active > a,
+    .dropup .dropdown-menu ul li.active > a {
+      background-color: #f5f5f5; }
+      .dropdown .dropdown-menu > li.active > a:hover, .dropdown .dropdown-menu ul li.active > a:hover,
+      .dropup .dropdown-menu > li.active > a:hover,
+      .dropup .dropdown-menu ul li.active > a:hover {
+        color: inherit; }
+  .dropdown .dropdown-menu ul,
+  .dropup .dropdown-menu ul {
+    padding-left: 0; }
+    .dropdown .dropdown-menu ul li a,
+    .dropup .dropdown-menu ul li a {
+      padding-left: 35px; }
+    .dropdown .dropdown-menu ul li:hover > a,
+    .dropup .dropdown-menu ul li:hover > a {
+      background-color: #f5f5f5; }
+
+.dropdown .btn-primary,
+.dropup .btn-primary {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  background: #ffffff;
+  border-radius: 4px;
+  color: #455565;
+  border: 1px solid #dfe3e8;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  height: 32px;
+  min-width: 128px;
+  padding: 8px;
+  text-align: left;
+  line-height: 1;
+  cursor: pointer; }
+  .dropdown .btn-primary .caret,
+  .dropup .btn-primary .caret {
+    background-image: url("../../../assets/images/Chevron_Down_Slate1_455565.svg");
+    width: 12px;
+    height: 12px;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border: none;
+    margin: 1px 0 0 15px; }
+  .dropdown .btn-primary.borderLess,
+  .dropup .btn-primary.borderLess {
+    border: none;
+    box-shadow: none;
+    padding: 8px 0;
+    font-size: 12px;
+    min-width: auto;
+    background: none; }
+    .dropdown .btn-primary.borderLess .caret,
+    .dropup .btn-primary.borderLess .caret {
+      margin: 0 0 0 5px; }
+    .dropdown .btn-primary.borderLess .select-options__title,
+    .dropup .btn-primary.borderLess .select-options__title {
+      max-width: 70px; }
+  .dropdown .btn-primary:focus,
+  .dropup .btn-primary:focus {
+    outline: none; }
+
+.dropdown-header,
+.dropup-header {
+  color: #1e1e1e;
+  font-weight: 400;
+  padding: 5px 10px; }
+
+.dropdown li.group-title > a,
+.dropup li.group-title > a {
+  color: #778DA4;
+  cursor: initial; }
+  .dropdown li.group-title > a:hover,
+  .dropup li.group-title > a:hover {
+    color: #778DA4;
+    background-color: #fff; }
+
+.dropup + .dropup {
+  margin-left: 10px; }
+
+.add-dropdown-space > *:last-child {
+  padding-bottom: 100px; }
+
+.select-options__title {
+  max-width: 134px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 15px; }

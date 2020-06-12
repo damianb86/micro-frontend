@@ -1,0 +1,46 @@
+.stars .star-container svg path {
+  stroke: #F8C752; }
+
+.stars svg.widget-svg.hovered path {
+  stroke: #F8C752 !important; }
+
+.stars svg.widget-svg.current-hovered {
+  transform: none !important; }
+
+.stars__rate-number {
+  display: inline-flex;
+  color: #455565;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  vertical-align: middle;
+  width: 35px; }
+
+.stars__container {
+  display: inline; }
+
+.stars.clickable {
+  cursor: pointer; }
+  .stars.clickable .star-container:hover ~ .star-container svg path {
+    stroke: #CAD1D8; }
+
+.stars-0 .star-container svg path {
+  stroke: #CAD1D8; }
+
+.stars-1 .star-container:nth-child(2) ~ .star-container svg path {
+  stroke: #CAD1D8; }
+
+.stars-2 .star-container:nth-child(3) ~ .star-container svg path {
+  stroke: #CAD1D8; }
+
+.stars-3 .star-container:nth-child(4) ~ .star-container svg path {
+  stroke: #CAD1D8; }
+
+.stars-4 .star-container:nth-child(5) ~ .star-container svg path {
+  stroke: #CAD1D8; }
+
+.stars-5 .star-container:nth-child(6) ~ .star-container svg path {
+  stroke: #CAD1D8; }
+
+.stars.strokeYellow__container .star-container svg path {
+  stroke: #F8C752; }

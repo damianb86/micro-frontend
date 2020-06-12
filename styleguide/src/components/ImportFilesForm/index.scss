@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.import-files-form {
+  .dnd-list__files {
+    &__file {
+      margin-top: 20px;
+    }
+  }
+
+  &__description {
+    color:$default-color;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .form-actions {
+    .pri-button, .sec-button {
+      font-size: 14px;
+    }
+  }
+}

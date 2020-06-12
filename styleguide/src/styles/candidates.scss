@@ -1,0 +1,113 @@
+/* candidates relationships tab */
+.candidate-relationship {
+  &__header {
+    padding: 15px 10px 0;
+
+    &__btn {
+      margin-top: 2px;
+    }
+  }
+
+  &__content {
+    + .candidate-relationship__content {
+      margin-top: 15px;
+    }
+  }
+
+  .icon-action-wrapper {
+    + .icon-action-wrapper {
+      margin-left: 10px;
+    }
+  }
+}
+
+/* Candidate relationship search */
+.candidate-relationship-search {
+  background-color: #f9fbfd;
+  margin: 0;
+  padding-top: 11px;
+  position: absolute;
+  right: 10px;
+  top: -2px;
+  z-index: 1;
+
+  &-bg {
+    height: 38px;
+    background-color: #f9fbfd;
+    position: absolute;
+    right: 10px;
+    top: -2px;
+    width: 22px;
+  }
+
+  &.site-search--quick-expand + .candidate-relationship-search-bg {
+    width: calc(600px - 15px);
+  }
+}
+
+/* candidate projects tab */
+.candidate-project-view-list {
+  .btn {
+    min-width: 110px;
+  }
+
+  &__header {
+    float: left;
+    margin: 8px 0 0 10px;
+    font-size: 16px;
+  }
+}
+
+/* candidate deals tab */
+.candidates-tbody-bottom-padding .list-view__tbody > div:last-child {
+  margin-bottom: 150px;
+}
+
+.new-candidate {
+  &__search-options {
+    display: inline-block;
+    overflow: hidden;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    white-space: nowrap;;
+    vertical-align: top;
+    margin: 20px 0px;
+
+    &__item {
+      border: 1px solid #999999;
+      border-radius: 10px;
+      padding: 20px;
+      width: 80%;
+      margin: auto;
+      cursor: pointer;
+
+      img {
+        margin-right: 5px;
+        vertical-align: top;
+        width: 45px;
+        height: 45px;
+      }
+      span {
+        margin: 12px 0px;
+        vertical-align: middle;
+        display: inline-block;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.candidacy-panel-message {
+  clear: both;
+  position: absolute;
+  top: 30px;
+}
+
+.out-status {
+  background-color: #e1e7ec;
+
+  &:hover, .fixed, &:hover .fixed {
+    background-color: #e1e7ec;
+  }
+}

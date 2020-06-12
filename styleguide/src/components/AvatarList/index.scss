@@ -1,0 +1,124 @@
+@import "../../styles/_variables";
+
+.avatar-list {
+  display: flex;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      position: relative;
+      height: 28px;
+
+      .avatar {
+        cursor: pointer;
+        margin: 4px 4px 0 0;
+        border: none;
+      }
+
+      .lead, .badge {
+        position: absolute;
+        top: -3px;
+        margin-left: 16px;
+      }
+
+      .badge {
+        top: 0px;
+      }
+
+      .simple-pop-over-container {
+        .simple-pop-over {
+          left: -34px;
+
+          &.fields-visible-0 {
+            top: -60px;
+          }
+
+          &.fields-visible-1 {
+            top: -78px;
+          }
+
+          &.fields-visible-2 {
+            top: -96px;
+          }
+
+          &.fields-visible-3 {
+            top: -130px;
+          }
+
+          &.fields-visible-1, &.fields-visible-2 {
+            &.has-label {
+              margin-top: -16px;
+            }
+          }
+
+          &__content {
+            padding: 15px 12px;
+            min-width: 200px;
+            max-width: 500px;
+
+            p {
+              margin: 0;
+            }
+
+            .name, .telephone-email, .company {
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+
+            .telephone-email-company {
+              margin-top: 4px;
+            }
+
+            .name {
+              color: $slate-1;
+              font-size: 14px;
+              line-height: 20px;
+              @include font-weight(medium);
+            }
+
+            .telephone-email, .company {
+              color: $slate-2;
+              font-size: 12px;
+              line-height: 18px;
+              @include font-weight(thin);
+            }
+
+            .lead, .owner {
+              position: relative;
+              margin-top: 16px;
+              font-size: 12px;
+              line-height: 18px;
+              @include font-weight(thin);
+            }
+
+            .lead {
+              color: $sky-color;
+            }
+
+            .owner {
+              color: $chart-orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__see-more {
+    a, svg {
+      display: block;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 14px;
+      color: #455565;
+      margin: 5px 0 0 4px;
+    }
+
+    svg {
+      margin-top: 8px;
+    }
+  }
+}

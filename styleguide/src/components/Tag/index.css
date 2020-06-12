@@ -1,0 +1,27 @@
+.tag-item {
+  display: inline-block;
+  background-color: #778da4;
+  border-radius: 3px;
+  padding: 4px 8px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 24px;
+  line-height: 16px;
+  box-sizing: border-box; }
+  .tag-item:hover {
+    background-color: #455565; }
+  .tag-item--multiple {
+    margin: 4px 0 0 4px; }
+    .tag-item--multiple:last-child {
+      margin: 4px 0 4px 4px; }
+  .tag-item svg {
+    vertical-align: middle;
+    margin-left: 5px;
+    cursor: pointer; }
+    .tag-item svg use {
+      fill: #99aabb; }
+    .tag-item svg:hover use {
+      fill: #ffffff; }

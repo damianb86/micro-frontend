@@ -1,0 +1,39 @@
+.status-report-card-mobile {
+  .status-report-card {
+    &__item {
+      flex-wrap: wrap;
+
+      &__info {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-right: 0;
+
+        &.with-avatar {
+          width: calc(100% - 50px); // 40px Avatar + 10px Margin
+          min-height: 40px;
+        }
+
+        &__icons {
+          margin-left: auto;
+        }
+
+        &__dates {
+          width: 100%;
+
+          &__added, &__presented, &__updated {
+            margin-top: 12px;
+          }
+        }
+      }
+
+      &__note {
+        flex: 2;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.collapsible-card {
+  min-width: 330px;
+}

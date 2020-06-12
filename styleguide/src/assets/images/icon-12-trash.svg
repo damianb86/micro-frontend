@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-12-trash</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,3 L10,3 L9.60250259,11.0493226 C9.5762081,11.581786 9.13683193,12 8.60371969,12 L3.39628031,12 C2.86316807,12 2.4237919,11.581786 2.39749741,11.0493226 L2,3 Z M4,5 L5,5 L5,10 L4,10 L4,5 Z M7,5 L8,5 L8,10 L7,10 L7,5 Z M8,2 L10.4903505,2 C10.7718221,2 11,2.23193359 11,2.5 C11,2.77614237 10.7723472,3 10.4903505,3 L1.50964952,3 C1.22817786,3 1,2.76806641 1,2.5 C1,2.22385763 1.22765279,2 1.50964952,2 L4,2 L4,1 C4,0.44771525 4.44771525,5.45542273e-16 5,4.4408921e-16 L7,4.4408921e-16 C7.55228475,3.42636147e-16 8,0.44771525 8,1 L8,2 Z M5,2 L7,2 L7,1 L5,1 L5,2 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-12-trash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/12/Trash">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Shape" fill="#fb657e" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <g id="Color/Slate-1" mask="url(#mask-2)" fill="#fb657e" fill-rule="evenodd">
+                <rect x="0" y="0" width="12" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

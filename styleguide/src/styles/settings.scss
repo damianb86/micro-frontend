@@ -1,0 +1,60 @@
+@import "variables";
+
+.firm-settings-container {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+
+  .main-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: all 0.2s linear;
+    min-width: 245px;
+  }
+
+  #header-container {
+    flex: 0 0 auto;
+  }
+
+  .content-wrapper {
+    flex: 1 1 auto;
+    overflow-y: auto;
+  }
+}
+
+.firm-settings-tabs {
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+
+.firm-settings-section {
+  padding: 0 40px;
+}
+
+// Firm Features
+.firm-features {
+  .dropdown {
+    width: 100%;
+    margin-bottom: 20px;
+
+    .dropdown-menu,
+    .dropdown-toggle {
+      width: 100%;
+    }
+  }
+}
+
+// firm tags
+.tags-list-view {
+  &__count {
+    color: $default-color;
+    &:hover {
+      color: $sky-color;
+      text-decoration: underline;
+    }
+  }
+}

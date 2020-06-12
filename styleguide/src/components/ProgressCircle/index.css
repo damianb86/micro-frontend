@@ -1,0 +1,14 @@
+.progress-circle .c3-chart-arcs .c3-gauge-value {
+  font-size: 36px !important;
+  font-weight: 500;
+  font-family: Roboto;
+  fill: #4a4a4a;
+  dominant-baseline: central;
+  transform: translateY(0.1em); }
+
+.progress-circle .c3-chart-arcs .c3-chart-arcs-background {
+  fill: #dfe3e7; }
+
+.progress-circle .c3-chart-arcs .c3-chart-arc path,
+.progress-circle .c3-chart-arcs .c3-chart-arcs-background {
+  stroke: transparent; }

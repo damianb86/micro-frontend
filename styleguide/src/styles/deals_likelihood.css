@@ -1,0 +1,37 @@
+/* Deals Likelihood */
+.deals-likelihood {
+  text-align: left;
+  padding-bottom: 10px; }
+  .deals-likelihood__progress-show {
+    background-color: #efefef;
+    border-radius: 5px;
+    display: inline-block;
+    width: calc(100% - 35px); }
+    .deals-likelihood__progress-show__item {
+      background-color: #29aae1;
+      border-radius: 5px;
+      display: block;
+      height: 8px;
+      width: 78%; }
+  .deals-likelihood__progress-value {
+    float: right; }
+
+.rc-slider {
+  height: 8px !important;
+  padding: 0 !important; }
+
+.rc-slider-rail {
+  height: 8px !important; }
+
+.rc-slider-track {
+  background-color: #009cf6 !important;
+  height: 8px !important; }
+
+.rc-slider-step {
+  height: 8px !important; }
+
+.rc-slider-handle {
+  width: 10px !important;
+  height: 10px !important;
+  margin-top: -1px !important;
+  border: 2px solid #009cf6 !important; }

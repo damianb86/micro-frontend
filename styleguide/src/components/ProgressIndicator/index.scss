@@ -1,0 +1,60 @@
+@import '../../styles/variables';
+
+.progress-indicator {
+  display: flex;
+  width: 100%;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 8px;
+    flex: 1 1 auto;
+
+    &:last-child {
+      flex: 0 0 auto;
+
+      .progress-indicator__item__splitter {
+        display: none;
+      }
+    }
+
+    &__indicator {
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 50%;
+      height: 8px;
+      width: 8px;
+      box-sizing: border-box;
+
+      &.inactive {
+        background-color: $white-color;
+        border-color: $grey1;
+      }
+
+      &.active {
+        border-color: $sky-color;
+      }
+
+      &.validated,
+      &.completed {
+        background-color: $sky-color;
+        border-color: $sky-color;
+      }
+    }
+
+    &__splitter {
+      height: 2px;
+      width: calc(100% - 8px);
+
+      &.active,
+      &.validated,
+      &.inactive {
+        background-color: $grey1;
+      }
+
+      &.completed {
+        background-color: $sky-color;
+      }
+    }
+  }
+}

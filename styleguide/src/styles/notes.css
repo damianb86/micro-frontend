@@ -1,0 +1,203 @@
+.notes {
+  padding-bottom: 35px; }
+  .notes__body {
+    padding-bottom: 45px; }
+    .notes__body__list__item {
+      padding: 20px 20px 0;
+      position: relative; }
+      .notes__body__list__item:hover {
+        background-color: #f3f6fb; }
+        .notes__body__list__item:hover .notes__body__list__item__right__info__actions, .notes__body__list__item:hover .notes-actions {
+          display: block; }
+      .notes__body__list__item__left, .notes__body__list__item__right {
+        float: left; }
+      .notes__body__list__item__right {
+        padding-bottom: 20px;
+        margin-left: 5px;
+        width: calc(100% - 40px); }
+        .notes__body__list__item__right__content__user-name {
+          font-size: 14px;
+          font-weight: 400; }
+        .notes__body__list__item__right__info {
+          font-size: 12px; }
+          .notes__body__list__item__right__info__content {
+            float: left;
+            color: #99aabb;
+            width: calc(100% - 40px); }
+            .notes__body__list__item__right__info__content a {
+              color: #99aabb; }
+          .notes__body__list__item__right__info__actions {
+            float: right;
+            display: none; }
+      .notes__body__list__item__reply-editor {
+        margin-top: 10px;
+        position: relative; }
+      .notes__body__list__item__attachments {
+        margin: 10px 0 10px 10px; }
+        .notes__body__list__item__attachments__item {
+          margin-top: 5px; }
+          .notes__body__list__item__attachments__item .icon-action-wrapper {
+            margin-left: 10px; }
+  .notes__input {
+    bottom: 0;
+    right: 0;
+    left: auto;
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    z-index: 1061; }
+    .notes__input > section:first-child > a {
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 400;
+      display: block;
+      padding: 10px 0;
+      background: #009cf6; }
+    .notes__input__controls {
+      margin-bottom: 10px; }
+      .notes__input__controls .dropup {
+        width: 50%;
+        margin-left: 0; }
+        .notes__input__controls .dropup ~ .chkbox-label {
+          width: 50%; }
+          .notes__input__controls .dropup ~ .chkbox-label + .chkbox-label {
+            margin-left: 0; }
+      .notes__input__controls .chkbox-label {
+        vertical-align: top;
+        margin: 6px 0 0; }
+        .notes__input__controls .chkbox-label + .chkbox-label {
+          margin-left: 20px; }
+  .notes-actions {
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    display: none; }
+  .notes-drop-zone {
+    margin-top: 15px; }
+    .notes-drop-zone .filepicker .dz-message {
+      border: 1px dashed #cccccc;
+      font-size: 14px;
+      height: 60px;
+      width: 100%; }
+  .notes-filter {
+    background-color: #f5f8fb;
+    padding: 10px 0 0 15px; }
+    .notes-filter .dropdown {
+      margin: 0 0 10px 10px; }
+    .notes-filter__label {
+      color: #778da4;
+      font-weight: 400;
+      height: 30px;
+      display: inline-block;
+      vertical-align: middle; }
+  .notes-editor-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    z-index: 1060; }
+  .notes-edit-mode {
+    position: relative; }
+    .notes-edit-mode + .form-group {
+      margin-bottom: 10px; }
+      .notes-edit-mode + .form-group:after {
+        content: "";
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both; }
+
+.modal-body .notes-form > .container-fluid {
+  margin: 0 -15px; }
+
+.reply-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px; }
+
+.reply-list {
+  padding-left: 27px; }
+  .reply-list__item {
+    margin: 10px 0; }
+
+.close-reply-btn {
+  position: absolute;
+  top: 14px;
+  right: 35px; }
+
+.editor-draft-notice {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+  color: #455565; }
+  .editor-draft-notice--top {
+    top: -17px; }
+
+.toggle-notes {
+  margin-right: 20px; }
+
+.note-visible-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../assets/images/icon-tag-green.svg) no-repeat center;
+  margin-right: 5px; }
+
+.notes-drop-zone .dz-message > div {
+  width: 100%; }
+
+.notes-drop-zone .dz-message .choose-files-btn {
+  line-height: 20px;
+  display: block;
+  width: 90%;
+  max-width: 198px;
+  margin: 0 auto 5px; }
+
+.notes-drop-zone .dz-message .drag-drop-msg-splitter {
+  display: inline-block;
+  margin: 0 10px; }
+
+.dropdown-menu .nested-filed-in-option {
+  font-size: 12px;
+  text-indent: 5px; }
+  .dropdown-menu .nested-filed-in-option a {
+    padding: 5px 15px; }
+
+.note-submit-btn {
+  margin-top: 5px; }
+
+.details-view .notes__body__list__item form:first-child {
+  margin: 0 -20px; }
+
+/* responsive styles */
+@media (min-width: 480px) {
+  .notes__input__controls {
+    padding: 5px 10px 0 2px;
+    width: calc(100% - 84px);
+    float: left; }
+  .notes-drop-zone .dz-message .choose-files-btn {
+    display: inline-block; } }
+
+@media (min-width: 768px) {
+  .notes__input__controls .dropup {
+    width: auto; }
+    .notes__input__controls .dropup + .dropup {
+      margin-left: 10px; }
+    .notes__input__controls .dropup ~ .chkbox-label {
+      width: auto;
+      margin: 6px 0 0 8px; }
+      .notes__input__controls .dropup ~ .chkbox-label + .chkbox-label {
+        margin-left: 8px; } }
+
+@media (min-width: 1200px) {
+  .notes__input {
+    width: calc(100% - 232px); }
+  .menu-collapse .notes__input {
+    width: calc(100% - 75px); } }

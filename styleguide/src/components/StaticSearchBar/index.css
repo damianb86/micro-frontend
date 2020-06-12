@@ -1,0 +1,11 @@
+.static-search {
+  position: relative;
+  display: inline-block; }
+  .static-search__input[type='search'] {
+    padding-left: 30px;
+    width: 200px;
+    min-width: auto; }
+  .static-search__img {
+    position: absolute;
+    left: 10px;
+    top: 10px; }

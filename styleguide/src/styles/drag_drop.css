@@ -1,0 +1,160 @@
+/* Drop zone */
+.dz-started {
+  padding: 5px 0;
+  border-radius: 5px;
+  border: 1px dashed #C7C7C7;
+  height: 250px;
+  overflow: auto;
+  background-color: white; }
+  .dz-started .dz-preview {
+    display: inline-block; }
+    .dz-started .dz-preview.dz-image-preview {
+      margin-top: 35px; }
+  .dz-started .dz-message {
+    display: none; }
+
+.filepicker:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.filepicker .dz-details {
+  margin-left: 15px; }
+
+.filepicker .dz-size {
+  vertical-align: middle; }
+
+.filepicker .dz-message {
+  background-color: #ffffff;
+  border: 1px dashed #C7C7C7;
+  color: #455565;
+  float: left;
+  height: 100px;
+  line-height: normal;
+  text-align: center;
+  width: 100%;
+  position: relative; }
+  .filepicker .dz-message > div {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    width: 220px; }
+  .filepicker .dz-message svg {
+    height: 40px;
+    width: 40px; }
+  .filepicker .dz-message__wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .filepicker .dz-message__wrapper__display-message {
+      cursor: pointer; }
+  .filepicker .dz-message .choose-files-btn {
+    background-color: #009cf6;
+    background-image: url(../assets/images/Cloud_Upload_icon.svg);
+    background-position: 10px 0;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    height: 28px;
+    padding: 5px;
+    padding-left: 40px;
+    line-height: 28px; }
+
+.filepicker .dz-preview {
+  vertical-align: top;
+  position: relative;
+  vertical-align: middle;
+  min-height: 100px; }
+
+.filepicker .dz-filename {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 120px; }
+
+.filepicker .dz-date, .filepicker .dz-size, .filepicker .dz-remove {
+  display: inline-block;
+  margin-right: 8px;
+  color: #d8d8d8; }
+
+.filepicker .dz-remove {
+  font-size: 16px;
+  cursor: pointer; }
+
+.filepicker img {
+  max-width: 100px; }
+
+.drop-zone-img {
+  min-height: 120px; }
+
+/*drag and drop */
+[draggable] {
+  cursor: pointer; }
+
+.draggable {
+  padding: 1%;
+  width: 25%; }
+
+.dragged {
+  opacity: 0.7; }
+
+.placeholder {
+  opacity: 0.5; }
+
+/* file upload block */
+.file-upload-block {
+  margin: 0 11px; }
+  .file-upload-block__btn-container {
+    margin-top: 10px; }
+    .file-upload-block__btn-container > div, .file-upload-block__btn-container > button {
+      font-size: 13px;
+      margin-bottom: 20px;
+      margin-right: 10px !important; }
+      .file-upload-block__btn-container > div + .btn, .file-upload-block__btn-container > button + .btn {
+        margin-left: 0px !important; }
+  .file-upload-block .filepicker .dz-message {
+    width: 100%; }
+  .file-upload-block .commited-files-list {
+    border-top: 1px solid #cccccc;
+    padding-top: 19px;
+    margin-left: 10px;
+    padding-left: 0;
+    list-style: none;
+    font-family: 'Nunito',helvetica,arial,sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 300;
+    color: #455565; }
+    .file-upload-block .commited-files-list li {
+      line-height: 1.49;
+      margin-bottom: 11px; }
+      .file-upload-block .commited-files-list li > a {
+        vertical-align: middle; }
+      .file-upload-block .commited-files-list li .file-label:hover {
+        color: #009cf6 !important; }
+      .file-upload-block .commited-files-list li .close-circle-icon {
+        margin-left: 12px;
+        background-size: 13px 13px;
+        width: 13px;
+        height: 13px; }
+        .file-upload-block .commited-files-list li .close-circle-icon:hover {
+          background-image: url(../assets/images/Close_Blue_009CF6.svg); }
+
+.drag-drop-msg-splitter {
+  display: block;
+  margin: 10px 0; }
+
+/* responsive styles */
+@media (min-width: 1200px) {
+  .filepicker.full-width .dz-message {
+    width: 100%; }
+  .filepicker .dz-message {
+    width: 200px; }
+  .filepicker .dz-preview {
+    margin: 0 0 10px 5px; } }

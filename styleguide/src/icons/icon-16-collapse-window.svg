@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/16/Close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography-1" transform="translate(-937.000000, -1827.000000)" fill="#99AABB">
+            <g id="Content" transform="translate(280.000000, 266.000000)">
+                <g id="16" transform="translate(0.000000, 992.000000)">
+                    <g id="Icons" transform="translate(0.000000, 56.000000)">
+                        <g id="Close-Copy" transform="translate(608.000000, 464.000000)">
+                            <g id="Icon/16/Collapse-Window" transform="translate(48.000000, 48.000000)">
+                                <g id="Icon/16/Expand-Window">
+                                    <path d="M9,8 L13.5857864,8 C14.1380712,8 14.5857864,8.44771525 14.5857864,9 C14.5857864,9.26521649 14.4804296,9.5195704 14.2928932,9.70710678 L9.70710678,14.2928932 C9.31658249,14.6834175 8.68341751,14.6834175 8.29289322,14.2928932 C8.10535684,14.1053568 8,13.8510029 8,13.5857864 L8,9 C8,8.44771525 8.44771525,8 9,8 Z" id="Rectangle-11"></path>
+                                    <path d="M8,2.41421356 L8,7 C8,7.55228475 7.55228475,8 7,8 L2.41421356,8 C1.86192881,8 1.41421356,7.55228475 1.41421356,7 C1.41421356,6.73478351 1.5195704,6.4804296 1.70710678,6.29289322 L6.29289322,1.70710678 C6.68341751,1.31658249 7.31658249,1.31658249 7.70710678,1.70710678 C7.89464316,1.89464316 8,2.14899707 8,2.41421356 Z" id="Rectangle-11"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+.select-multiple-dropdown {
+  width: 358px;
+  position: absolute;
+  top: 38px;
+  right: 0;
+  border: 1px solid #cad1d8;
+  border-radius: 4px;
+  z-index: 100;
+  background-color: #ffffff;
+  padding-bottom: 12px; }
+  .select-multiple-dropdown__title {
+    color: #99AABB;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid #E9EDF1; }
+  .select-multiple-dropdown__date-picker-wrapper {
+    padding: 14px 22px; }
+  .select-multiple-dropdown__form-buttons {
+    margin-top: 10px;
+    margin-right: 20px; }
+  .select-multiple-dropdown .search-select-multi__list {
+    position: relative;
+    border: none; }

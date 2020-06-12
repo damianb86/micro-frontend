@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Incoming</title>
+    <defs>
+        <path d="M10.8969906,3.68879585 L3.66543794,6.52976296 L6.76467479,7.82111165 L10.8969906,3.68879585 Z M12.3169389,5.09727462 L8.17991767,9.23429589 L9.47273682,12.3370618 L12.3169389,5.09727462 Z M6.23529597,9.76720381 L0.615386472,7.42557485 C-0.214249759,7.07989309 -0.202184441,5.90038476 0.634349484,5.57174643 L14.6343495,0.0717464347 C15.447177,-0.247578654 16.2500784,0.555322801 15.9307533,1.3681503 L10.4307533,15.3681503 C10.102115,16.2046842 8.9226067,16.2167495 8.57692493,15.3871133 L6.23529597,9.76720381 Z" id="path-outgoing"></path>
+    </defs>
+    <g id="Icon/16/Outgoing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="icon-16-outgoing" fill="#455565" fill-rule="nonzero" xlink:href="#path-outgoing"></use>
+    </g>
+</svg>

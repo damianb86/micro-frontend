@@ -1,0 +1,38 @@
+.firm-settings-container {
+  display: flex;
+  overflow: hidden;
+  height: 100vh; }
+  .firm-settings-container .main-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: all 0.2s linear;
+    min-width: 245px; }
+  .firm-settings-container #header-container {
+    flex: 0 0 auto; }
+  .firm-settings-container .content-wrapper {
+    flex: 1 1 auto;
+    overflow-y: auto; }
+
+.firm-settings-tabs {
+  padding: 0 40px;
+  margin-bottom: 30px; }
+
+.firm-settings-section {
+  padding: 0 40px; }
+
+.firm-features .dropdown {
+  width: 100%;
+  margin-bottom: 20px; }
+  .firm-features .dropdown .dropdown-menu,
+  .firm-features .dropdown .dropdown-toggle {
+    width: 100%; }
+
+.tags-list-view__count {
+  color: #455565; }
+  .tags-list-view__count:hover {
+    color: #009cf6;
+    text-decoration: underline; }

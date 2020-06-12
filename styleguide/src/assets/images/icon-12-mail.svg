@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-12-mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.2308432,2.02677622 L6,6.82171581 L0.76915681,2.02677622 C0.843259243,2.00926596 0.920547531,2 1,2 L11,2 C11.0794525,2 11.1567408,2.00926596 11.2308432,2.02677622 Z M11.9590457,2.71582563 C11.9856953,2.80590291 12,2.90128094 12,3 L12,9 C12,9.55228475 11.5522847,10 11,10 L1,10 C0.44771525,10 6.76353751e-17,9.55228475 0,9 L0,3 C-1.20895984e-17,2.90128094 0.0143046696,2.80590291 0.0409542955,2.71582563 L5.66213769,7.86857707 C5.85329831,8.04380764 6.14670169,8.04380764 6.33786231,7.86857707 L11.9590457,2.71582563 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-12-mail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/12/Mail">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Shape" fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <g id="Color/Slate-1" mask="url(#mask-2)" fill="#455565" fill-rule="evenodd">
+                <rect x="0" y="0" width="12" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

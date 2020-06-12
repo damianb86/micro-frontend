@@ -1,0 +1,71 @@
+@import "../../../styles/_variables.scss";
+
+.search-select-multi {
+  flex: 0 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+
+  &__input-wrapper {
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    background-color: $white-color;
+    cursor: text;
+
+    input[type="text"] {
+      border: none;
+      background-color: transparent;
+      box-sizing: border-box;
+      padding: 0 4px 0 10px;
+      font-weight: normal;
+      font-size: 14px;
+      height: 30px;
+
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: #99aabb;
+      }
+      &::-ms-input-placeholder {
+        color: #99aabb;
+      }
+    }
+
+    &.focused {
+      border: 1px solid $sky-color;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 12px 0;
+    font-weight: 500;
+    max-height: 220px;
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: $white-color;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 10px);
+    z-index: 1000;
+
+    &__item {
+      padding: 10px 20px;
+      min-height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:hover,
+      &.active {
+        background-color: #f2f6fa;
+        cursor: pointer;
+      }
+    }
+  }
+}

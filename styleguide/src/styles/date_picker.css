@@ -1,0 +1,45 @@
+/* Date Range picker */
+.date-range-picker + ul {
+  width: 320px; }
+
+.DateInput {
+  width: 135px; }
+
+.CalendarDay__selected, .CalendarDay__selected:active, .CalendarDay__selected:hover {
+  background-color: #009cf6;
+  border: 1px solid #009cf6; }
+
+.CalendarDay__selected_span, .CalendarDay__hovered_span, .CalendarDay__hovered_span:hover {
+  background: #55abef;
+  border: 1px solid #009cf6;
+  color: #ffffff; }
+
+.CalendarDay__selected_span:hover {
+  background: #75baf1;
+  border: 1px solid #009cf6; }
+
+.DayPickerKeyboardShortcuts_show__bottomRight {
+  border-right: 33px solid #009cf6; }
+
+.DateInput_input__focused {
+  border-bottom: 1px solid #009cf6; }
+
+/* Datepicker direction */
+.SingleDatePicker .SingleDatePickerInput {
+  border: none;
+  border-radius: 4px; }
+
+.SingleDatePicker .DateInput {
+  border-radius: 8px;
+  line-height: normal; }
+  .SingleDatePicker .DateInput__openDown:after {
+    top: 35px; }
+  .SingleDatePicker .DateInput__openDown:before {
+    top: 34px; }
+  .SingleDatePicker .DateInput_input {
+    border-radius: 4px;
+    height: 32px;
+    padding: 0 12px; }
+
+.SingleDatePicker_picker__openDown {
+  top: 44px; }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="16px" viewBox="0 0 29 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-16-dragging columns</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21.3109749,2.72457356 C20.9105834,2.34393956 20.8947376,1.71097285 21.2755823,1.31080285 C21.656427,0.910632849 22.2897441,0.894795796 22.6901357,1.2754298 L28.540129,6.93439046 C29.1528953,7.5169195 29.1536852,8.48232957 28.540129,9.06560954 L22.6901357,14.7245702 C22.2897441,15.1052042 21.656427,15.0893672 21.2755823,14.6891972 C20.8947376,14.2890272 20.9105834,13.6560604 21.3109749,13.2754264 L26.7575259,8 L21.3109749,2.72457356 Z" id="path-1"></path>
+        <path d="M2.31097492,2.72457356 C1.91058337,2.34393956 1.89473755,1.71097285 2.27558228,1.31080285 C2.65642701,0.910632849 3.28974415,0.894795796 3.69013569,1.2754298 L9.54012899,6.93439046 C10.1528953,7.5169195 10.1536852,8.48232957 9.54012899,9.06560954 L3.69013569,14.7245702 C3.28974415,15.1052042 2.65642701,15.0893672 2.27558228,14.6891972 C1.89473755,14.2890272 1.91058337,13.6560604 2.31097492,13.2754264 L7.75752592,8 L2.31097492,2.72457356 Z" id="path-3"></path>
+    </defs>
+    <g id="icon-16-dragging-columns" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icon-16-chevron-right" fill="#455565" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <mask id="mask-4" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <use id="icon-16-chevron-right" fill="#455565" fill-rule="nonzero" transform="translate(6.000000, 8.000000) scale(-1, -1) translate(-6.000000, -8.000000) " xlink:href="#path-3"></use>
+        <path d="M3.5,8 L27.5,8" id="Line-2" stroke="#455565" stroke-width="2" stroke-linecap="square" fill-rule="nonzero"></path>
+    </g>
+</svg>

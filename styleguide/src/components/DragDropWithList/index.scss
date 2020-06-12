@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+.dnd-list {
+  margin: 20px -18px 32px -20px;
+
+  .dz-message {
+    display: block !important;
+    color: $white;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 6px;
+    background-color: rgba($action-blue-1, 0.8);
+    border: 1px solid rgba($action-blue-1, 0.8);
+
+    svg {
+      width: 17px;
+      height: 17px;
+      padding-bottom: 2px;
+
+      rect {
+        fill: $white;
+      }
+    }
+
+    &__wrapper {
+      width: 280px !important;
+    }
+  }
+
+  .dz-preview {
+    display: none !important;
+  }
+
+  &__files {
+    clear: both;
+
+    .dropzone.dz-started {
+      padding: initial;
+      border-radius: initial;
+      height: initial;
+      overflow: initial;
+      background-color: initial;
+      border: initial;
+    }
+
+    &__file {
+      font-size: 14px;
+      margin: 10px 0;
+
+      .name {
+        color: $default-color;
+        font-weight: $font-weight-medium;
+        max-width: calc(100% - 50px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+      }
+
+      .delete {
+        color: $action-blue-1;
+        float: right;
+        font-weight: $font-weight-medium;
+        cursor: pointer;
+      }
+    }
+  }
+}
