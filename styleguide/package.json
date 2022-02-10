@@ -52,7 +52,7 @@
   "dependencies": {
     "@svgr/webpack": "^5.4.0",
     "classnames": "^2.2.6",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.12.1",
     "react": "^16.12.0",
